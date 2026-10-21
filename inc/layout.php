@@ -25,9 +25,8 @@ function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = 
 <meta property="og:title" content="<?= e($title) ?>">
 <meta property="og:description" content="<?= e($desc) ?>">
 <meta property="og:url" content="<?= e($url) ?>">
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link rel="stylesheet" href="https://fonts.bunny.net/css?family=fraunces:400,400i,500|source-sans-3:400,600&amp;display=swap">
-<link rel="stylesheet" href="/assets/styles.css?v=2">
+<link rel="preload" href="/assets/fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/styles.css?v=3">
 <script type="application/ld+json"><?= ao_jsonld($faqLd) ?></script>
 </head>
 <body>

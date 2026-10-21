@@ -4,13 +4,13 @@
 
 $AO_SERVICES = [
     ['id' => 'pokalbis', 'name' => 'Pokalbis', 'note' => '30 min., gyvai arba nuotoliu',
-     'desc' => 'Išsiaiškiname, kas trukdo, ir ar galiu padėti.', 'price' => 'Nemokamai', 'free' => true],
+     'desc' => 'Išsiaiškiname, kas trukdo ir ar galiu padėti.', 'price' => 'Nemokamai', 'free' => true],
     ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir aiški įdiegimo kaina.',
      'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
     ['id' => 'idiegimas', 'name' => 'Sistemos įdiegimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
-     'desc' => 'Dažniausiai 2–4 savaitės. Dalį sistemos naudojate jau po pirmos savaitės.', 'price' => 'Fiksuota, pagal apimtį'],
+     'desc' => 'Kuriu tik tai, ko reikia jūsų darbui, o ne šabloną visiems. Dalį sistemos naudojate jau po pirmos savaitės.', 'price' => 'Fiksuota, pagal apimtį'],
     ['id' => 'prieziura', 'name' => 'Priežiūra', 'note' => 'Pakeitimai, klausimai, vienas kontaktas',
-     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Aiškus mėnesio biudžetas.', 'price' => 'Mėnesio paketas'],
+     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Galima mėnesio priežiūra arba pagalba tada, kai jos prireikia.', 'price' => 'Mėnesio paketas'],
 ];
 
 $AO_CASES = [
@@ -22,6 +22,7 @@ $AO_CASES = [
             ['Sprendimas', 'Viena sistema visam keliui: užklausa → kainos skaičiavimas → gamyba → kokybės patikra → pakavimas. Kiekvienas darbuotojas mato tik savo darbo vaizdą.'],
             ['Po', 'Užsakymo būsena matoma iš karto, be skambučių ir perrašinėjimo.'],
         ],
+        'demo' => '', // nuoroda į peržiūrimą Docs versiją; tuščia = „Peržiūra kuriama“
     ],
     [
         'tag' => 'Optikos salonai · vizitų registracija',
@@ -31,6 +32,7 @@ $AO_CASES = [
             ['Sprendimas', 'Filialų darbo laikas ir specialistų grafikai vienoje vietoje. Sistema sugeneruoja laisvus laikus, o užregistruoti vizitai patenka į bendrą sąrašą.'],
             ['Po', 'Visi filialai ir jų užimtumas matomi viename lange.'],
         ],
+        'demo' => '',
     ],
     [
         'tag' => 'Paslaugos · darbų aktai ir sąskaitos',
@@ -40,15 +42,17 @@ $AO_CASES = [
             ['Sprendimas', 'Darbai fiksuojami lentelėje, suma apskaičiuojama automatiškai, PDF aktas ir sąskaita sugeneruojami ir išsiunčiami klientui. Klientas mato savo statistiką.'],
             ['Po', 'Visada aišku, kas išsiųsta, kas dar ne ir kiek uždirbta per mėnesį.'],
         ],
+        'demo' => '',
     ],
     [
-        'tag' => 'Šokių mokyklos · Dance Check-in',
-        'title' => 'Nuskenuotas QR kodas — ir apsilankymas jau įrašytas.',
+        'tag' => 'Šokių mokyklos · Danc’in',
+        'title' => 'Mokytojai moko, o ne pildo lenteles.',
         'rows' => [
-            ['Prieš', 'Lankomumas ir abonementų likučiai sekami rankomis.'],
-            ['Sprendimas', 'Registracija į pamoką QR kodu, abonementų likučiai realiuoju laiku, administravimo langas.'],
-            ['Po', 'Mokykla mato, kas atėjo ir kiek pamokų liko, nieko neperrašinėdama.'],
+            ['Prieš', 'Lankomumas ir abonementai sekami rankomis, o mokytojai administravimui skiria laiką, kurio reikia pamokoms.'],
+            ['Sprendimas', 'Registracija į pamoką QR kodu, abonementų likučiai tikruoju laiku, priminimai mokiniams apie likusias pamokas ir abonemento galiojimą, administravimo langas.'],
+            ['Po', 'Mokytojai sutaupo laiko, mokiniai žino, kiek pamokų liko, o mokykla mato, kas atėjo, nieko neperrašinėdama.'],
         ],
+        'demo' => '',
     ],
     [
         'tag' => 'Automatizacija · kai darbas kartojasi',
@@ -58,6 +62,7 @@ $AO_CASES = [
             ['Sprendimas', 'Skriptas atpažįsta susijusius failus, ištraukia duomenis iš PDF ir ZIP archyvų ir sudeda juos į lentelę.'],
             ['Po', 'Žmogus tikrina tik išimtis, o ne kiekvieną eilutę.'],
         ],
+        'demo' => '',
     ],
 ];
 
@@ -69,33 +74,34 @@ $AO_FAQ = [
     ['Ar reikės keisti programas, kurias jau naudojame?',
      'Dažniausiai ne. Sistema sujungia tai, ką jau turite: el. paštą, kalendorių, skaičiuokles. Keičiame tik tai, kas iš tikrųjų trukdo.'],
     ['Kieno paskyroje bus sistema?',
-     'Superhuman Docs — ne mano platforma: aš joje sukuriu sistemą, pritaikytą būtent jūsų darbui. Kol kuriame ir bandome, sistema veikia mano paskyroje, todėl jums licencijų nereikia. Kai sistema paruošta ir apmokėta, renkatės: perduodu jums administratoriaus teises ir pašalinu savo prieigą, arba sistema lieka mano priežiūroje už mėnesinį mokestį.'],
+     'Jūsų. Superhuman Docs — ne mano platforma: aš joje sukuriu sistemą, pritaikytą būtent jūsų darbui. Kol kuriu, jūsų paskyroje turiu kūrėjo (Doc Maker) licenciją, o baigus darbus ją galima išjungti. Doc Maker licenciją galima bet kada vėl įjungti ir išjungti, todėl prireikus pakeitimų po pusmečio ar metų mokate tik už tą laiką, kol dirbu. Jei patogiau, sistemą galiu sukurti savo paskyroje ir apmokėtą perduoti jums.'],
     ['Kas atsako už mūsų duomenis?',
-     'Jūs esate duomenų valdytojas, aš — duomenų tvarkytojas, o platforma (Superhuman Docs) — subtvarkytojas. Duomenis tvarkau tik pagal jūsų rašytinius nurodymus, apie bet kokį saugumo incidentą pranešu per 24 valandas, o baigus darbus duomenis grąžinu arba ištrinu per 30 dienų. Visa tai įrašoma į duomenų tvarkymo sutartį pagal BDAR 28 straipsnį.'],
+     'Jūs esate duomenų valdytojas, aš — duomenų tvarkytojas, o platforma (Superhuman Docs) duomenis saugo pagal savo sutartį su jumis. Duomenis tvarkau tik pagal jūsų rašytinius nurodymus, apie bet kokį saugumo incidentą pranešu per 24 valandas, o baigus darbus duomenis grąžinu arba ištrinu per 30 dienų. Visa tai įrašoma į duomenų tvarkymo sutartį pagal BDAR 28 straipsnį.'],
     ['Kiek kainuoja?',
      'Priklauso nuo apimties: kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Pokalbis nemokamas, o po audito gaunate fiksuotą kainą — dar prieš pradedant darbus.'],
     ['Kiek kainuoja Superhuman Docs licencijos?',
-     'Mokama tik už kūrėjus (Doc Makers), t. y. žmones, kurie kuria naujus dokumentus. Darbuotojai, kurie sistema tik naudojasi ir ją pildo, nemoka. Tikslią kainą pasakysiu pokalbio metu, nes ji priklauso nuo plano.'],
+     'Mokama tik už kūrėjus (Doc Makers), t. y. žmones, kurie kuria naujus dokumentus. Darbuotojai, kurie sistema tik naudojasi ir ją pildo, nemoka. Tinkamiausią planą parinksime pokalbio metu.',
+     ['https://superhuman.com/plans', 'Superhuman planai ir kainos →']],
     ['Ar sistemoje veiks dirbtinis intelektas (AI)?',
-     'Gali veikti: santraukos apie klientą, laiškų juodraščiai, laukų užpildymas, rytinė suvestinė. AI funkcijos naudoja Superhuman plano kreditus, todėl jas įdiegiame tik ten, kur jos atsiperka.'],
+     'Gali veikti, jei jo reikia. Superhuman Docs yra Superhuman rinkinio dalis, todėl, jei norite, sistemą galima sujungti su Superhuman Mail, Grammarly ir Superhuman Go AI asistentu jūsų paskyroje. AI funkcijos naudoja jūsų plano kreditus, todėl jas diegiame tik ten, kur jos atsiperka.'],
     ['Ar mūsų duomenys saugūs?',
      'Duomenys saugomi Superhuman Docs platformoje, o ne mano kompiuteryje: perduodami šifruotu ryšiu (TLS), laikomi šifruoti (AES-256). Prieiga suteikiama tik tiems, kam jos reikia darbui. Daugiau — privatumo politikoje.'],
     ['Kiek laiko visa tai užtrunka?',
-     'Auditas trunka 1–2 savaites. Sistemos įdiegimas — 2–4 savaites, o dalį sistemos naudojate jau po pirmos savaitės.'],
+     'Priklauso nuo apimties, komandos dydžio ir reikalavimų. Paprastą sistemą kartais galima sukurti per kelias valandas, didesnę — per kelias savaites. Auditas trunka 1–2 savaites, o dalį sistemos naudojate jau po pirmos savaitės.'],
     ['Ar dirbate ne Kaune?',
-     'Taip. Susitinkame gyvai Kaune arba nuotoliu visoje Lietuvoje. Dirbu lietuvių ir anglų kalbomis.'],
+     'Taip, dirbu visoje Lietuvoje. Pagal poreikį atvykstu į vietą, bet dažniausiai to nereikia: rezultatą greičiau parodyti, nei apie jį papasakoti. Dirbu lietuvių ir anglų kalbomis.'],
 ];
 
 $AO_BUILDS = [
-    ['Užsakymų valdymas', 'nuo užklausos iki apmokėjimo'],
+    ['Užsakymų valdymas', 'nuo užklausos iki sąskaitos'],
     ['Skaičiuoklės ir komerciniai pasiūlymai', 'per kelias minutes, ne valandas'],
     ['Sandėlis ir likučiai', 'nurašomi automatiškai pagal užsakymus'],
     ['Klientai ir užklausos', 'paprasta CRM sistema vienoje vietoje'],
-    ['Vadovo ir investuotojo suvestinė', 'statistika ir analitika realiuoju laiku'],
-    ['PDF dokumentai ir laiškai', 'aktai, sąskaitos, priminimai išsiunčiami patys'],
-    ['AI pagalbininkas', 'santraukos, juodraščiai, laukų užpildymas'],
-    ['Skriptai ir automatizacijos', 'kai tas pats darbas kartojasi kasdien'],
-    ['Svetainės', 'greitos, aiškios, randamos Google ir AI — kaip ši'],
+    ['Vadovo suvestinė', 'svarbiausi skaičiai tikruoju laiku'],
+    ['PDF dokumentai', 'sąskaitos, pasiūlymai ir darbų aktai per minutę'],
+    ['AI pagalbininkas', 'Superhuman Go jūsų paskyroje, jei jo reikia'],
+    ['Naršyklės plėtiniai ir skriptai', 'kai neužtenka lentelių: duomenų surinkimas ir įkėlimas'],
+    ['Svetainės', 'informacinės, valdomos jūsų pačių, arba greitos ir randamos Google bei AI — kaip ši'],
 ];
 
 $AO_SECTORS = ['Gamyba', 'Kavinės ir kebabinės', 'Klinikos ir salonai', 'Renginiai', 'Statyba ir remontas',
@@ -119,7 +125,7 @@ function ao_markdown_home(): string
         $md .= "\n";
     }
     $md .= "## Dažni klausimai\n\n";
-    foreach ($AO_FAQ as $q) { $md .= "**{$q[0]}**\n{$q[1]}\n\n"; }
+    foreach ($AO_FAQ as $q) { $md .= "**{$q[0]}**\n{$q[1]}" . (!empty($q[2]) ? " {$q[2][0]}" : '') . "\n\n"; }
     $md .= "## Kontaktai\n\n- El. paštas: " . AO_EMAIL . "\n- Telefonas: " . AO_PHONE_DISPLAY . "\n- Užklausos forma: " . AO_SITE . "/kontaktai/\n- Apie: " . AO_SITE . "/apie/\n";
     return $md;
 }

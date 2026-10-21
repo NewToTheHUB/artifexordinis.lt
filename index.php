@@ -83,6 +83,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       <li><?= e($b[0]) ?><small><?= e($b[1]) ?></small></li>
 <?php endforeach; ?>
     </ul>
+    <p class="aside">Tai ne šablonas visiems. Pradedame nuo to, kaip dirbate jūs, ir sukuriame tik tai, ko reikia.</p>
   </div>
 </section>
 
@@ -111,10 +112,15 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
           <dt><?= e($r[0]) ?></dt><dd><?= e($r[1]) ?></dd>
 <?php endforeach; ?>
         </dl>
+<?php if (!empty($c['demo'])): ?>
+        <a class="btn ghost case-link" href="<?= e($c['demo']) ?>" target="_blank" rel="noopener">Išbandyti sistemą →</a>
+<?php else: ?>
+        <span class="btn ghost case-link soon">Peržiūra kuriama</span>
+<?php endif; ?>
       </article>
 <?php endforeach; ?>
     </div>
-    <p class="demo-note">Peržiūrimos versijos su netikrais duomenimis ir trumpu gidu ruošiamos. Kol kas jas parodau pokalbio metu.</p>
+    <p class="demo-note">Peržiūros versijose — netikri duomenys, todėl sistemą galite drąsiai spaudinėti patys.</p>
   </div>
 </section>
 
@@ -135,24 +141,25 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       </table>
     </div>
     <div>
-      <p class="note">Superhuman Docs — platforma, kurioje kuriu, o aš sukuriu tai, kas pritaikyta būtent jums. Kol kuriame, sistema veikia mano paskyroje, todėl jums licencijų nereikia. Kai sistemą perimate, mokate tik už kūrėjus (Doc Makers), o darbuotojai, kurie sistema naudojasi, nemoka.</p>
+      <p class="note">Superhuman Docs — platforma, kurioje kuriu, o aš sukuriu tai, kas pritaikyta būtent jums. Sistema lieka jūsų paskyroje. Mokate tik už kūrėjus (Doc Makers), o darbuotojai, kurie sistema naudojasi, nemoka. <a href="https://superhuman.com/plans" rel="noopener">Planai ir kainos →</a></p>
     </div>
   </div>
 </section>
 
 <section id="apie">
   <div class="wrap split rev">
-    <div class="photos">
-      <figure><img src="/assets/img/spinta.webp" width="1536" height="1024" loading="lazy" alt="Drabužių kabyklos eskizas su išmatavimais"><figcaption>Laisvalaikiu projektuoju baldus</figcaption></figure>
-      <figure><img src="/assets/img/euc.svg" width="618" height="382" loading="lazy" alt="Elektrinis vienaratis"><figcaption>Kasdien važinėju vienaračiu</figcaption></figure>
-    </div>
+    <figure class="portrait">
+      <!-- Įkelkite nuotrauką kaip /assets/img/saulius.jpg (santykis apie 1 : 1,27, pvz. 800 × 1018 px). -->
+      <img src="/assets/img/saulius.jpg" width="800" height="1018" loading="lazy" alt="Saulius Elinskas" onerror="this.remove()">
+    </figure>
     <div>
       <div class="section-head">
         <p class="label"><b>VII</b> Apie mane</p>
-        <h2>Esu Saulius.</h2>
+        <h2 class="pointer"><span class="arrow" aria-hidden="true">←</span> Saulius</h2>
       </div>
       <p>Mano kelias prasidėjo nuo fizinio darbo ir technikos: statybos, CNC staklės, vamzdynų projektavimas, automatinių išdavimo aparatų įrengimas, 3D spausdinimo gamyba. Todėl žinau, kaip darbas atrodo iš vidaus — ne teoriškai, o praktiškai.</p>
-      <p>Ilgainiui supratau, kad labiausiai mane traukia ne pats darbas, o tai, kaip jis organizuotas: kur stringa procesai, kur per daug rankinio darbo ir kur galima sutaupyti laiko.</p>
+      <p>Daugelyje įmonių mačiau tą patį: darbas vyksta lėtai ir rankomis, viskas laikoma Excel lentelėse, o tvarkinga sistema atrodo kaip kelių dešimčių tūkstančių eurų projektas. Dažniausiai taip nėra.</p>
+      <p>Todėl sistemas kuriu „no-code“ įrankiais, kuriuos supranta ir gali pasikoreguoti kiekvienas darbuotojas. Mano tikslas — ne pririšti jus prie savęs, o išmokyti ir atiduoti įrankį į jūsų rankas, jei norite mokytis.</p>
       <p><a href="/apie/">Daugiau apie mane →</a></p>
     </div>
   </div>
@@ -166,7 +173,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
     </div>
     <div class="faq">
 <?php foreach ($AO_FAQ as $q): ?>
-      <details><summary><?= e($q[0]) ?></summary><p><?= e($q[1]) ?></p></details>
+      <details><summary><?= e($q[0]) ?></summary><p><?= e($q[1]) ?><?php if (!empty($q[2])): ?> <a href="<?= e($q[2][0]) ?>" rel="noopener"><?= e($q[2][1]) ?></a><?php endif; ?></p></details>
 <?php endforeach; ?>
     </div>
   </div>

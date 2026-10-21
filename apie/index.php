@@ -17,7 +17,7 @@ ao_head('Apie — Saulius, Artifex Ordinis',
       <h1>Nuo fizinio darbo iki procesų tvarkos.</h1>
       <p class="lead">Per skirtingus darbus perėjau kelią nuo fizinio darbo ir technikos iki sudėtingesnių procesų valdymo. Tai išmokė suprasti, kaip darbas iš tikrųjų veikia iš vidaus — ne teoriškai, o praktiškai.</p>
       <p>Ilgainiui pastebėjau, kad labiausiai mane traukia ne pats darbas, o tai, kaip jis organizuotas. Kur stringa procesai, kur per daug rankinio darbo, kur galima dirbti našiau ir sutaupyti laiko.</p>
-      <p>Natūraliai pradėjau ieškoti sprendimų: kurti skaičiavimo logiką, automatizuoti pasikartojančius veiksmus, struktūruoti duomenis, programuoti. Šiandien geriausiai jaučiuosi ten, kur reikia perprasti visą darbo eigą ir paversti ją aiškia, veikiančia sistema — nuo problemos supratimo iki sprendimo, kuris veikia realiomis sąlygomis.</p>
+      <p>Natūraliai pradėjau ieškoti sprendimų: kurti skaičiavimo logiką, automatizuoti pasikartojančius veiksmus, struktūrinti duomenis, programuoti. Šiandien geriausiai jaučiuosi ten, kur reikia perprasti visą darbo eigą ir paversti ją aiškia, veikiančia sistema — nuo problemos supratimo iki sprendimo, kuris veikia realiomis sąlygomis.</p>
     </div>
   </div>
 </section>
@@ -34,7 +34,7 @@ ao_head('Apie — Saulius, Artifex Ordinis',
         <li>Techninis konsultantas<small>automatinių išdavimo aparatų įrengimas, gedimų šalinimas, klientų mokymai, komerciniai pasiūlymai, brūkšninių kodų projektas</small></li>
         <li>Inžinerinis projektavimas<small>vamzdynų projektavimas, techninė dokumentacija, 3D CAD</small></li>
         <li>CNC staklės<small>techniniai brėžiniai, programos, vienetinių detalių gamyba</small></li>
-        <li>Statyba, logistika, gamybos priežiūra<small>darbas, kuris išmoko matyti procesą iš vidaus</small></li>
+        <li>Statyba, logistika, gamybos priežiūra<small>darbas, kuris išmokė matyti procesą iš vidaus</small></li>
       </ul>
     </div>
     <div>

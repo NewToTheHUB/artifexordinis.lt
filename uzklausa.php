@@ -46,6 +46,13 @@ $payload = [
 
 $ok = false;
 
+// Atsarginė kopija serveryje (už public_html ribų): private/uzklausos/YYYY-MM.jsonl.
+// Net jei laiškas nenueina, užklausa išlieka ir ją galima rasti per Failų tvarkyklę.
+$logDir = ao_private_dir() . '/uzklausos';
+if (!is_dir($logDir)) { @mkdir($logDir, 0750, true); }
+$logged = @file_put_contents($logDir . '/' . date('Y-m') . '.jsonl',
+    json_encode($payload, JSON_UNESCAPED_UNICODE) . "\n", FILE_APPEND | LOCK_EX) !== false;
+
 // Superhuman Docs automatizacija: „Webhook invoked“ trigeris.
 $hook = (string)cfg('docs_webhook_url');
 $token = (string)cfg('docs_api_token');
@@ -72,4 +79,4 @@ $headers = "From: Artifex Ordinis svetainė <" . AO_EMAIL . ">\r\n"
          . "Content-Type: text/plain; charset=UTF-8\r\n";
 $mailed = @mail(AO_EMAIL, $subject, $body, $headers);
 
-ao_back(($ok || $mailed) ? 'gauta' : 'klaida');
+ao_back(($ok || $mailed || $logged) ? 'gauta' : 'klaida');

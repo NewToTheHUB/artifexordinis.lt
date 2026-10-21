@@ -1,6 +1,18 @@
 /* Artifex Ordinis — φ (1.618) sistema
    Visi tarpai ir šriftai išvesti iš 1rem ir φ / √φ laipsnių. */
 
+/* ---------- šriftai: laikomi pačioje svetainėje (be trečiųjų šalių) ---------- */
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/fraunces-latin-ext-400-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/fraunces-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url(/assets/fonts/fraunces-latin-ext-400-italic.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url(/assets/fonts/fraunces-latin-400-italic.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/fraunces-latin-ext-500-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/fraunces-latin-500-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/source-sans-3-latin-ext-400-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/source-sans-3-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/source-sans-3-latin-ext-600-normal.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/source-sans-3-latin-600-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 :root {
   color-scheme: light dark;
 
@@ -185,14 +197,17 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .statement p { margin-top: var(--s1); color: var(--muted); }
 
 /* ---------- cases ---------- */
-.cases { display: grid; gap: var(--s2); }
-@media (min-width: 760px) { .cases { grid-template-columns: 1fr 1fr; gap: var(--s2) var(--s3); } }
-.case { border-top: 1px solid var(--ink); padding-top: var(--s0); }
+.cases { display: grid; gap: var(--s1); }
+@media (min-width: 760px) { .cases { grid-template-columns: 1fr 1fr; } }
+.case { display: flex; flex-direction: column; border: 1px solid var(--line); border-top: 2px solid var(--ink); padding: var(--s1); }
 .case .tag { color: var(--muted); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
 .case h3 { margin: var(--s-2) 0 var(--s0); }
-.case dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: var(--s-2) var(--s0); }
-.case dt { color: var(--accent); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; padding-top: 0.2em; }
-.case dd { margin: 0; }
+.case dl { margin: 0 0 var(--s1); display: grid; gap: var(--s-1); }
+.case dt { color: var(--accent); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
+.case dd { margin: 0 0 var(--s-2); }
+.case .case-link { margin-top: auto; align-self: flex-start; }
+.case .soon { cursor: default; color: var(--muted) !important; border-style: dashed; }
+.case .soon:hover { border-color: var(--line); }
 .case figure { margin: var(--s0) 0 0; }
 .case img { width: 100%; aspect-ratio: 1.618 / 1; object-fit: cover; border: 1px solid var(--line); }
 .case figcaption { color: var(--muted); font-size: var(--t-1); margin-top: var(--s-2); }
@@ -220,6 +235,11 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .photos figure { margin: 0; }
 .photos img { width: 100%; aspect-ratio: 1 / 1.618; object-fit: cover; border: 1px solid var(--line); border-radius: 50% 50% 0 0 / 30.9% 30.9% 0 0; }
 .photos figcaption { color: var(--muted); font-size: var(--t-1); margin-top: var(--s-2); }
+.portrait { margin: 0; max-width: 23.6rem; aspect-ratio: 1 / 1.272; border: 1px solid var(--line); border-radius: 50% 50% 0 0 / 38.2% 38.2% 0 0; overflow: hidden; background: var(--line); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pointer { display: flex; align-items: center; gap: var(--s-1); }
+.pointer .arrow { color: var(--accent); font-family: var(--sans); }
+@media (max-width: 760px) { .pointer .arrow { transform: rotate(90deg); } }
 
 /* ---------- faq ---------- */
 .faq { max-width: var(--measure); }

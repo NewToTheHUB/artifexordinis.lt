@@ -4,7 +4,7 @@
 
 ## Puslapiai
 
-- [Pradžia](https://artifexordinis.lt/): paslaugos, pavyzdžiai, kainos, užimtumas, dažni klausimai
+- [Pradžia](https://artifexordinis.lt/): paslaugos, pavyzdžiai, kainos, dažni klausimai
 - [Apie](https://artifexordinis.lt/apie/): Sauliaus patirtis — gamyba, užsakymų valdymas, techninis darbas, automatizacija
 - [Kontaktai](https://artifexordinis.lt/kontaktai/): užklausos forma nemokamam 30 min. pokalbiui, el. paštas
 - [Privatumo politika](https://artifexordinis.lt/privatumo-politika/): kaip tvarkomi užklausų duomenys
@@ -14,20 +14,20 @@
 - Pokalbis (30 min.): nemokamai — išsiaiškinama, kas trukdo ir ar sistema apskritai reikalinga
 - Tvarkos auditas: proceso žemėlapis, kiek kainuoja netvarka, prioritetai; kaina fiksuota ir sutariama iš anksto
 - Sistemos įdiegimas: nuo kelių valandų darbo iki kelių savaičių sistemos; fiksuota kaina pagal apimtį, žinoma prieš pradedant
-- Priežiūra: mėnesio paketas
+- Priežiūra: mėnesio paketas arba pagalba pagal poreikį
 - Konsultacija be kūrimo: rekomendacijos, kurias įmonė įgyvendina pati
 
 ## Ką sukuria
 
-- Užsakymų valdymas nuo užklausos iki apmokėjimo
+- Užsakymų valdymas nuo užklausos iki sąskaitos
 - Skaičiuoklės ir komerciniai pasiūlymai
 - Sandėlis ir likučiai, nurašomi pagal užsakymus
 - Paprasta CRM sistema klientams ir užklausoms
-- Vadovo ir investuotojo suvestinės realiuoju laiku
-- PDF dokumentai (aktai, sąskaitos) ir automatiniai laiškai
-- AI pagalbininkas (Superhuman Go): santraukos, juodraščiai, laukų užpildymas
-- Skriptai ir automatizacijos pasikartojančiam darbui
-- Svetainės, kurias randa Google ir AI
+- Vadovo suvestinė tikruoju laiku
+- PDF dokumentai: sąskaitos, pasiūlymai, darbų aktai
+- AI pagalbininkas (Superhuman Go) kliento paskyroje, jei jo reikia
+- Naršyklės plėtiniai ir skriptai duomenims surinkti ir įkelti
+- Informacinės svetainės, valdomos pačių klientų, ir svetainės, kurias randa Google bei AI
 
 ## Kam tinka
 
@@ -38,12 +38,12 @@ Gamyba, kavinės ir kebabinės, klinikos ir salonai, renginiai, statyba ir remon
 - Gamyba: užsakymų ir gamybos sekimas — užklausa, kainos skaičiavimas, gamyba, kokybės patikra, pakavimas
 - Optikos salonai: vizitų registracija — laisvi laikai generuojami pagal filialų darbo laiką
 - Paslaugos: darbų aktai ir sąskaitos — nuo atlikto darbo iki išsiųsto PDF
-- Šokių mokyklos: Dance Check-in — QR registracija ir abonementų likučiai
+- Šokių mokyklos: Danc’in — QR registracija, abonementų likučiai, priminimai mokiniams, mažiau administravimo mokytojams
 - Automatizacija: failų atpažinimas ir duomenų išgavimas iš PDF ir ZIP
 
 ## Duomenų apsauga
 
-Sistemos kuriamos Superhuman Docs platformoje. Klientas — duomenų valdytojas, Artifex Ordinis — duomenų tvarkytojas, platforma — subtvarkytojas; sudaroma duomenų tvarkymo sutartis pagal BDAR 28 str. Plačiau: [Privatumo politika](https://artifexordinis.lt/privatumo-politika/#klientu-sistemos)
+Sistemos kuriamos Superhuman Docs platformoje. Sistema kuriama kliento paskyroje. Klientas — duomenų valdytojas, Artifex Ordinis — duomenų tvarkytojas; sudaroma duomenų tvarkymo sutartis pagal BDAR 28 str. Plačiau: [Privatumo politika](https://artifexordinis.lt/privatumo-politika/#klientu-sistemos)
 
 ## Kontaktai
 

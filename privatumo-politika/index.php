@@ -27,10 +27,10 @@ ao_head('Privatumo politika — Artifex Ordinis',
 
       <h2>Kas dar gali matyti duomenis</h2>
       <ul>
-        <li><strong>Hostinger</strong> — svetainės talpinimas ir el. paštas (ES).</li>
-        <li><strong>Superhuman (Superhuman Docs)</strong> — užklausų sąrašas, kuriame jas tvarkau. Duomenys gali būti perduodami į JAV taikant Europos Komisijos patvirtintas standartines sutarčių sąlygas.</li>
-        <li><strong>bunny.net</strong> — šriftų pateikimas (ES); jūsų IP adresas naudojamas tik šriftams perduoti.</li>
+        <li><strong>Hostinger</strong> — svetainės talpinimas, el. paštas ir užklausų atsarginė kopija serveryje (ES).</li>
+        <li><strong>Superhuman (Superhuman Docs)</strong> — užklausų sąrašas, kuriame jas tvarkau. Duomenys gali būti perduodami į JAV pagal ES ir JAV duomenų privatumo sistemą (Data Privacy Framework) ir Europos Komisijos patvirtintas standartines sutarčių sąlygas.</li>
       </ul>
+      <p>Šriftai ir visi kiti svetainės failai pateikiami iš to paties serverio, todėl lankantis svetainėje jūsų naršyklė nesikreipia į trečiųjų šalių serverius.</p>
       <p>Duomenų neparduodu ir neperduodu kitiems tikslams.</p>
 
       <h2 id="klientu-sistemos">Kai kuriu sistemą jūsų įmonei</h2>
@@ -38,7 +38,7 @@ ao_head('Privatumo politika — Artifex Ordinis',
       <ul>
         <li><strong>Jūsų įmonė</strong> — duomenų valdytojas: sprendžia, kokie duomenys tvarkomi ir kam.</li>
         <li><strong>Artifex Ordinis</strong> — duomenų tvarkytojas: duomenis tvarkau tik pagal jūsų rašytinius nurodymus ir jokiais savais tikslais.</li>
-        <li><strong>Superhuman (Docs platforma)</strong> — subtvarkytojas: saugo duomenis savo infrastruktūroje.</li>
+        <li><strong>Superhuman (Docs platforma)</strong> — saugo duomenis savo infrastruktūroje pagal savo duomenų tvarkymo sutartį su jumis. Jei sistema kuriama mano paskyroje, platforma tuo metu yra mano subtvarkytoja.</li>
       </ul>
       <p>Tai įtvirtinama duomenų tvarkymo sutartyje pagal BDAR 28 straipsnį. Joje sutariame:</p>
       <ul>
@@ -47,7 +47,7 @@ ao_head('Privatumo politika — Artifex Ordinis',
         <li>duomenų subjektų prašymus persiunčiu jums per 2 darbo dienas;</li>
         <li>baigus darbus duomenis grąžinu arba ištrinu per 30 dienų.</li>
       </ul>
-      <p>Kol sistema kuriama, ji veikia mano Superhuman Docs paskyroje, o jūs turite redaktoriaus teises. Kai sistema paruošta ir apmokėta, jūsų prašymu per 3 dienas perduodu jums administratoriaus teises ir pašalinu savo prieigą. Platforma duomenis perduoda šifruotu ryšiu (TLS 1.2 ar naujesnis) ir saugo šifruotus (AES-256); jos saugumo ataskaitas (SOC 2, ISO 27001 santraukas) pateikiu jums paprašius.</p>
+      <p>Sistema kuriama jūsų Superhuman Docs paskyroje, o aš gaunu tik darbui reikalingą prieigą. Jei sistemą kuriu savo paskyroje, ją paruoštą ir apmokėtą perduodu jums ir pašalinu savo prieigą. Platforma duomenis perduoda šifruotu ryšiu (TLS 1.2 ar naujesnis) ir saugo šifruotus (AES-256). Jos sertifikatai (ISO 27001, SOC 2 Type 2) aprašyti platformos saugumo puslapyje <a href="https://coda.io/trust/security">coda.io/trust/security</a>.</p>
 
       <h2>Jūsų teisės</h2>
       <p>Galite prašyti susipažinti su savo duomenimis, juos ištaisyti, ištrinti, apriboti jų tvarkymą arba nesutikti, kad jie būtų tvarkomi. Parašykite <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a> — atsakysiu per 30 dienų. Jei manote, kad jūsų teisės pažeistos, galite kreiptis į Valstybinę duomenų apsaugos inspekciją (<a href="https://vdai.lrv.lt">vdai.lrv.lt</a>).</p>
