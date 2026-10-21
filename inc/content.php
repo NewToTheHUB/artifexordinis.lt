@@ -101,7 +101,7 @@ $AO_BUILDS = [
     ['PDF dokumentai', 'sąskaitos, pasiūlymai ir darbų aktai per minutę'],
     ['AI pagalbininkas', 'Superhuman Go jūsų paskyroje, jei jo reikia'],
     ['Naršyklės plėtiniai ir skriptai', 'kai neužtenka lentelių: duomenų surinkimas ir įkėlimas'],
-    ['Svetainės', 'informacinės, valdomos jūsų pačių, arba greitos ir randamos Google bei AI — kaip ši'],
+    ['Svetainės', 'nekainuoja tūkstančių, o prižiūrėti mokėsite patys: jei mokate dirbti su Word, mokėsite ir čia'],
 ];
 
 $AO_SECTORS = ['Gamyba', 'Kavinės ir kebabinės', 'Klinikos ir salonai', 'Renginiai', 'Statyba ir remontas',
@@ -114,7 +114,7 @@ function ao_markdown_home(): string
     $md  = "# Artifex Ordinis — verslo procesų tvarka\n\n";
     $md .= "> Saulius, Kaunas. Išanalizuoju, kaip įmonėje juda darbas, ir užsakymus, skaičiuokles, pasiūlymus, sandėlį ir ataskaitas sujungiu į vieną gyvą valdymo centrą (Superhuman Docs, Superhuman Go AI, skriptai). Tikslas: mažiau rankinio darbo, greitesnis procesas.\n\n";
     $md .= "## Kam tinka\n\n" . implode(', ', $AO_SECTORS) . ". Nuo vieno žmogaus iki kelių dešimčių darbuotojų.\n\n";
-    $md .= "## Ką sukuriu\n\n";
+    $md .= "## Galimybės\n\n";
     foreach ($AO_BUILDS as $b) { $md .= "- {$b[0]}: {$b[1]}\n"; }
     $md .= "\n## Paslaugos ir kainos\n\n";
     foreach ($AO_SERVICES as $s) { $md .= "- **{$s['name']}** — {$s['price']}. {$s['desc']}\n"; }

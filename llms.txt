@@ -27,7 +27,7 @@
 - PDF dokumentai: sąskaitos, pasiūlymai, darbų aktai
 - AI pagalbininkas (Superhuman Go) kliento paskyroje, jei jo reikia
 - Naršyklės plėtiniai ir skriptai duomenims surinkti ir įkelti
-- Informacinės svetainės, valdomos pačių klientų, ir svetainės, kurias randa Google bei AI
+- Nebrangios svetainės, kurias klientas prižiūri pats
 
 ## Kam tinka
 

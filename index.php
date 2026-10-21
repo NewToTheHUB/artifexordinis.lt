@@ -23,11 +23,11 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       <p class="note">Pirmas pokalbis nemokamas. Jei manęs jums nereikia, taip ir pasakysiu.</p>
     </div>
     <div>
-      <svg class="hero-figure" viewBox="-14 -14 128 190" role="img" aria-label="Arka su raktiniu akmeniu, sukonstruota pagal aukso pjūvį">
-<g class="construct"><rect x="0" y="0" width="100" height="161.80"/><rect x="38.20" y="0.00" width="61.80" height="61.80"/><rect x="0.00" y="0.00" width="38.20" height="38.20"/><rect x="0.00" y="38.20" width="23.61" height="23.61"/><rect x="23.61" y="47.21" width="14.59" height="14.59"/><rect x="29.18" y="38.20" width="9.02" height="9.02"/><rect x="23.61" y="38.20" width="5.57" height="5.57"/><rect x="23.61" y="43.77" width="3.44" height="3.44"/><path d="M0 161.80A100.00 100.00 0 0 1 100.00 61.80A61.80 61.80 0 0 1 38.20 0.00A38.20 38.20 0 0 1 0.00 38.20A23.61 23.61 0 0 1 23.61 61.80A14.59 14.59 0 0 1 38.20 47.21A9.02 9.02 0 0 1 29.18 38.20A5.57 5.57 0 0 1 23.61 43.77A3.44 3.44 0 0 1 27.05 47.21"/></g>
-<g class="arch"><path d="M0.02 48.60A50 50 0 0 1 8.74 21.75L24.50 32.54A30.9 30.9 0 0 0 19.11 49.14Z" class="v"/><path d="M10.39 19.49A50 50 0 0 1 33.23 2.90L39.63 20.89A30.9 30.9 0 0 0 25.52 31.15Z" class="v"/><path d="M35.88 2.03A50 50 0 0 1 64.12 2.03L58.72 20.36A30.9 30.9 0 0 0 41.28 20.36Z" class="ks"/><path d="M66.77 2.90A50 50 0 0 1 89.61 19.49L74.48 31.15A30.9 30.9 0 0 0 60.37 20.89Z" class="v"/><path d="M91.26 21.75A50 50 0 0 1 99.98 48.60L80.89 49.14A30.9 30.9 0 0 0 75.50 32.54Z" class="v"/><path d="M0 50.90H19.10V161.80H0Z" class="v"/><path d="M80.90 50.90H100.00V161.80H80.90Z" class="v"/></g>
-<g class="dim"><path d="M-8 0V161.80M-10 0H-6M-10 161.80H-6M0 -8H100M0 -10V-6M100 -10V-6"/>
-<text x="-10" y="80.9" transform="rotate(-90 -10 80.9)">φ</text><text x="50" y="-10">1</text></g>
+      <svg class="hero-figure" viewBox="-16 -16 132 132" role="img" aria-label="Arka iš penkių akmenų su variniu raktiniu akmeniu ir jos konstrukcijos linijomis">
+<g class="construct"><rect x="4" y="4" width="92" height="92"/><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="24"/><path d="M-4 50H104M50 -4V104"/></g>
+<g class="arch"><path d="M4.02 48.72A46 46 0 0 1 12.04 24.01L30.20 36.44A24 24 0 0 0 26.01 49.33Z" class="v"/><path d="M13.55 21.93A46 46 0 0 1 34.57 6.67L41.95 27.39A24 24 0 0 0 30.99 35.36Z" class="v"/><path d="M37.01 5.87A46 46 0 0 1 62.99 5.87L56.78 26.98A24 24 0 0 0 43.22 26.98Z" class="ks"/><path d="M65.43 6.67A46 46 0 0 1 86.45 21.93L69.01 35.36A24 24 0 0 0 58.05 27.39Z" class="v"/><path d="M87.96 24.01A46 46 0 0 1 95.98 48.72L73.99 49.33A24 24 0 0 0 69.80 36.44Z" class="v"/><path d="M4 52H26V96H4Z" class="v"/><path d="M74 52H96V96H74Z" class="v"/></g>
+<g class="dim"><path d="M-9 4V96M-11 4H-7M-11 96H-7M4 -9H96M4 -11V-7M96 -11V-7"/>
+<text x="-11" y="50" transform="rotate(-90 -11 50)">1</text><text x="50" y="-11">1</text></g>
 </svg>
     </div>
   </div>
@@ -77,8 +77,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
 <?php endforeach; ?>
     </ul>
     <p class="note">Nuo vieno žmogaus iki kelių dešimčių darbuotojų komandos. Svarbu ne dydis, o tai, kad darbas kartojasi.</p>
-    <h3 class="sub">Ką sukuriu</h3>
-    <ul class="cols" aria-label="Ką sukuriu">
+    <h3 class="sub">Galimybės</h3>
+    <ul class="cols" aria-label="Galimybės">
 <?php foreach ($AO_BUILDS as $b): ?>
       <li><?= e($b[0]) ?><small><?= e($b[1]) ?></small></li>
 <?php endforeach; ?>
