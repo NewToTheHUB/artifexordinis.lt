@@ -15,6 +15,7 @@ $booking = (string)cfg('booking_url');
       <p class="lead">Kelių sakinių pakanka. Atsakau per 24 valandas ir pasiūlau laiką nemokamam 30 min. pokalbiui.</p>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
+        <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
 <?php if ($booking !== ''): ?>
         <li><span>Pokalbis</span><a href="<?= e($booking) ?>">Rezervuoti 30 min.</a></li>
 <?php endif; ?>

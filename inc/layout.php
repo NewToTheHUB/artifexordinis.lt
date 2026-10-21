@@ -66,6 +66,7 @@ function ao_footer(): void
       <a href="/kontaktai/">Kontaktai</a>
       <a href="/privatumo-politika/">Privatumo politika</a>
       <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a>
+      <a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a>
 <?php if ($linked !== ''): ?>
       <a href="<?= e($linked) ?>" rel="me">LinkedIn</a>
 <?php endif; ?>

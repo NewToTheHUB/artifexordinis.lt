@@ -7,6 +7,8 @@ date_default_timezone_set('Europe/Vilnius');
 
 const AO_SITE  = 'https://artifexordinis.lt';
 const AO_EMAIL = 'saulius@artifexordinis.lt';
+const AO_PHONE = '+37063821522';
+const AO_PHONE_DISPLAY = '+370 638 21522';
 
 // Nustatymai gyvena UŽ public_html ribų: domains/artifexordinis.lt/private/config.php
 $aoCfgFile = dirname(__DIR__, 2) . '/private/config.php';

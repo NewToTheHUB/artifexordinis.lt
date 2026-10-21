@@ -49,3 +49,4 @@ Sistemos kuriamos Superhuman Docs platformoje. Klientas — duomenų valdytojas,
 
 - [Užklausos forma](https://artifexordinis.lt/kontaktai/)
 - El. paštas: saulius@artifexordinis.lt
+- Telefonas: +370 638 21522

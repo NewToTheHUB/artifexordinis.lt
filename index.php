@@ -182,6 +182,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       </div>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
+        <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
         <li><span>Vieta</span>Kaunas · visa Lietuva nuotoliu</li>
         <li><span>Daugiau</span><a href="/kontaktai/">Kontaktų puslapis</a></li>
       </ul>

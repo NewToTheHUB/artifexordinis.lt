@@ -120,7 +120,7 @@ function ao_markdown_home(): string
     }
     $md .= "## Dažni klausimai\n\n";
     foreach ($AO_FAQ as $q) { $md .= "**{$q[0]}**\n{$q[1]}\n\n"; }
-    $md .= "## Kontaktai\n\n- El. paštas: " . AO_EMAIL . "\n- Užklausos forma: " . AO_SITE . "/kontaktai/\n- Apie: " . AO_SITE . "/apie/\n";
+    $md .= "## Kontaktai\n\n- El. paštas: " . AO_EMAIL . "\n- Telefonas: " . AO_PHONE_DISPLAY . "\n- Užklausos forma: " . AO_SITE . "/kontaktai/\n- Apie: " . AO_SITE . "/apie/\n";
     return $md;
 }
 
@@ -153,6 +153,7 @@ function ao_jsonld(bool $withFaq = false): string
             'logo' => AO_SITE . '/assets/img/logo.svg',
             'image' => AO_SITE . '/assets/img/logo.svg',
             'email' => AO_EMAIL,
+            'telephone' => AO_PHONE,
             'description' => 'Verslo procesų tvarka: užsakymų valdymas, skaičiuoklės ir komerciniai pasiūlymai, sandėlis, CRM, PDF dokumentai ir vadovo suvestinės vienoje gyvoje sistemoje su Superhuman Docs, AI ir skriptais.',
             'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Kaunas', 'addressCountry' => 'LT'],
             'areaServed' => ['@type' => 'Country', 'name' => 'Lithuania'],
@@ -160,7 +161,7 @@ function ao_jsonld(bool $withFaq = false): string
             'priceRange' => '€€',
             'founder' => ['@type' => 'Person', 'name' => 'Saulius', 'jobTitle' => 'Procesų konsultantas',
                           'knowsAbout' => ['Verslo procesų optimizavimas', 'Užsakymų valdymas', 'Superhuman Docs', 'Coda', 'Automatizacija', 'Gamybos procesai']],
-            'contactPoint' => ['@type' => 'ContactPoint', 'contactType' => 'customer service', 'email' => AO_EMAIL,
+            'contactPoint' => ['@type' => 'ContactPoint', 'contactType' => 'customer service', 'email' => AO_EMAIL, 'telephone' => AO_PHONE,
                                'url' => AO_SITE . '/kontaktai/', 'availableLanguage' => ['lt', 'en']],
             'hasOfferCatalog' => ['@type' => 'OfferCatalog', 'name' => 'Paslaugos', 'itemListElement' => $offers],
             'sameAs' => $linkedin !== '' ? [$linkedin] : null,
