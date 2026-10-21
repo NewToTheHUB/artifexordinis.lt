@@ -25,7 +25,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
     <div>
       <svg class="hero-figure" viewBox="-14 -14 128 190" role="img" aria-label="Arka su raktiniu akmeniu, sukonstruota pagal aukso pjūvį">
 <g class="construct"><rect x="0" y="0" width="100" height="161.80"/><rect x="38.20" y="0.00" width="61.80" height="61.80"/><rect x="0.00" y="0.00" width="38.20" height="38.20"/><rect x="0.00" y="38.20" width="23.61" height="23.61"/><rect x="23.61" y="47.21" width="14.59" height="14.59"/><rect x="29.18" y="38.20" width="9.02" height="9.02"/><rect x="23.61" y="38.20" width="5.57" height="5.57"/><rect x="23.61" y="43.77" width="3.44" height="3.44"/><path d="M0 161.80A100.00 100.00 0 0 1 100.00 61.80A61.80 61.80 0 0 1 38.20 0.00A38.20 38.20 0 0 1 0.00 38.20A23.61 23.61 0 0 1 23.61 61.80A14.59 14.59 0 0 1 38.20 47.21A9.02 9.02 0 0 1 29.18 38.20A5.57 5.57 0 0 1 23.61 43.77A3.44 3.44 0 0 1 27.05 47.21"/></g>
-<g class="arch"><path d="M0.00 49.30A50.0 50.0 0 0 1 4.65 28.94L21.97 36.98A30.90 30.90 0 0 0 19.10 49.57Z" class="v"/><path d="M5.26 27.68A50.0 50.0 0 0 1 18.28 11.35L30.40 26.11A30.90 30.90 0 0 0 22.35 36.20Z" class="v"/><path d="M19.37 10.48A50.0 50.0 0 0 1 38.19 1.41L42.70 19.97A30.90 30.90 0 0 0 31.07 25.57Z" class="v"/><path d="M39.56 1.10A50.0 50.0 0 0 1 60.44 1.10L56.45 19.78A30.90 30.90 0 0 0 43.55 19.78Z" class="ks"/><path d="M61.81 1.41A50.0 50.0 0 0 1 80.63 10.48L68.93 25.57A30.90 30.90 0 0 0 57.30 19.97Z" class="v"/><path d="M81.72 11.35A50.0 50.0 0 0 1 94.74 27.68L77.65 36.20A30.90 30.90 0 0 0 69.60 26.11Z" class="v"/><path d="M95.35 28.94A50.0 50.0 0 0 1 100.00 49.30L80.90 49.57A30.90 30.90 0 0 0 78.03 36.98Z" class="v"/><path d="M0 50.90H19.10V161.80H0Z" class="v"/><path d="M80.90 50.90H100.00V161.80H80.90Z" class="v"/></g>
+<g class="arch"><path d="M0.02 48.60A50 50 0 0 1 8.74 21.75L24.50 32.54A30.9 30.9 0 0 0 19.11 49.14Z" class="v"/><path d="M10.39 19.49A50 50 0 0 1 33.23 2.90L39.63 20.89A30.9 30.9 0 0 0 25.52 31.15Z" class="v"/><path d="M35.88 2.03A50 50 0 0 1 64.12 2.03L58.72 20.36A30.9 30.9 0 0 0 41.28 20.36Z" class="ks"/><path d="M66.77 2.90A50 50 0 0 1 89.61 19.49L74.48 31.15A30.9 30.9 0 0 0 60.37 20.89Z" class="v"/><path d="M91.26 21.75A50 50 0 0 1 99.98 48.60L80.89 49.14A30.9 30.9 0 0 0 75.50 32.54Z" class="v"/><path d="M0 50.90H19.10V161.80H0Z" class="v"/><path d="M80.90 50.90H100.00V161.80H80.90Z" class="v"/></g>
 <g class="dim"><path d="M-8 0V161.80M-10 0H-6M-10 161.80H-6M0 -8H100M0 -10V-6M100 -10V-6"/>
 <text x="-10" y="80.9" transform="rotate(-90 -10 80.9)">φ</text><text x="50" y="-10">1</text></g>
 </svg>
@@ -99,8 +99,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
   <div class="wrap">
     <div class="section-head">
       <p class="label"><b>V</b> Pavyzdžiai</p>
-      <h2>Ką jau esu sutvarkęs.</h2>
-      <p>Skirtingos sritys, tas pats principas: duomenys vienoje vietoje, o pasikartojantis darbas atliekamas automatiškai.</p>
+      <h2>Kas jau sukurta.</h2>
+      <p>Skirtingos sritys, tas pats principas: visi duomenys vienoje vietoje, o rankinio darbo lieka kuo mažiau.</p>
     </div>
     <div class="cases">
 <?php foreach ($AO_CASES as $c): ?>
@@ -149,18 +149,16 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
 <section id="apie">
   <div class="wrap split rev">
     <figure class="portrait">
-      <!-- Įkelkite nuotrauką kaip /assets/img/saulius.jpg (santykis apie 1 : 1,27, pvz. 800 × 1018 px). -->
-      <img src="/assets/img/saulius.jpg" width="800" height="1018" loading="lazy" alt="Saulius Elinskas" onerror="this.remove()">
+      <img src="/assets/img/saulius.webp" width="720" height="1165" loading="lazy" alt="Saulius Elinskas">
     </figure>
     <div>
       <div class="section-head">
         <p class="label"><b>VII</b> Apie mane</p>
         <h2 class="pointer"><span class="arrow" aria-hidden="true">←</span> Saulius</h2>
       </div>
-      <p>Mano kelias prasidėjo nuo fizinio darbo ir technikos: statybos, CNC staklės, vamzdynų projektavimas, automatinių išdavimo aparatų įrengimas, 3D spausdinimo gamyba. Todėl žinau, kaip darbas atrodo iš vidaus — ne teoriškai, o praktiškai.</p>
-      <p>Daugelyje įmonių mačiau tą patį: darbas vyksta lėtai ir rankomis, viskas laikoma Excel lentelėse, o tvarkinga sistema atrodo kaip kelių dešimčių tūkstančių eurų projektas. Dažniausiai taip nėra.</p>
+      <p>Dirbau statybose, logistikoje, gamyboje ir techninėje priežiūroje — Lietuvoje ir užsienyje. Daugelyje įmonių mačiau tą patį: darbas vyksta lėtai ir rankomis, viskas laikoma Excel lentelėse, o tvarkinga sistema atrodo kaip kelių dešimčių tūkstančių eurų projektas. Dažniausiai taip nėra.</p>
       <p>Todėl sistemas kuriu „no-code“ įrankiais, kuriuos supranta ir gali pasikoreguoti kiekvienas darbuotojas. Mano tikslas — ne pririšti jus prie savęs, o išmokyti ir atiduoti įrankį į jūsų rankas, jei norite mokytis.</p>
-      <p><a href="/apie/">Daugiau apie mane →</a></p>
+      <p><a href="/apie/">Mano istorija →</a></p>
     </div>
   </div>
 </section>
@@ -190,7 +188,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
-        <li><span>Vieta</span>Kaunas · visa Lietuva nuotoliu</li>
+        <li><span>Vieta</span>Kaunas · visa Lietuva</li>
         <li><span>Daugiau</span><a href="/kontaktai/">Kontaktų puslapis</a></li>
       </ul>
     </div>

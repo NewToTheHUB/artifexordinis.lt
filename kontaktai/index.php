@@ -19,9 +19,7 @@ $booking = (string)cfg('booking_url');
 <?php if ($booking !== ''): ?>
         <li><span>Pokalbis</span><a href="<?= e($booking) ?>">Rezervuoti 30 min.</a></li>
 <?php endif; ?>
-        <li><span>Vieta</span>Kaunas · visa Lietuva nuotoliu</li>
-        <li><span>Kalbos</span>Lietuvių, anglų</li>
-        <li><span>Veikla</span>Saulius, individuali veikla<!-- PATIKRINTI: ar rodyti pavardę ir pažymos numerį --></li>
+        <li><span>Vieta</span>Kaunas · visa Lietuva</li>
       </ul>
     </div>
     <div class="contact-box">

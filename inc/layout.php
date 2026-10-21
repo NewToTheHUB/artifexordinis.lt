@@ -1,7 +1,8 @@
 <?php
 // Bendras puslapio karkasas: <head>, viršutinė juosta, poraštė ir užklausos forma.
 
-const AO_MARK = '<svg viewBox="0 0 100 161.8" aria-hidden="true"><path d="M0.00 49.30A50.0 50.0 0 0 1 4.65 28.94L21.97 36.98A30.90 30.90 0 0 0 19.10 49.57Z" fill="currentColor"/><path d="M5.26 27.68A50.0 50.0 0 0 1 18.28 11.35L30.40 26.11A30.90 30.90 0 0 0 22.35 36.20Z" fill="currentColor"/><path d="M19.37 10.48A50.0 50.0 0 0 1 38.19 1.41L42.70 19.97A30.90 30.90 0 0 0 31.07 25.57Z" fill="currentColor"/><path d="M39.56 1.10A50.0 50.0 0 0 1 60.44 1.10L56.45 19.78A30.90 30.90 0 0 0 43.55 19.78Z" style="fill:var(--accent)"/><path d="M61.81 1.41A50.0 50.0 0 0 1 80.63 10.48L68.93 25.57A30.90 30.90 0 0 0 57.30 19.97Z" fill="currentColor"/><path d="M81.72 11.35A50.0 50.0 0 0 1 94.74 27.68L77.65 36.20A30.90 30.90 0 0 0 69.60 26.11Z" fill="currentColor"/><path d="M95.35 28.94A50.0 50.0 0 0 1 100.00 49.30L80.90 49.57A30.90 30.90 0 0 0 78.03 36.98Z" fill="currentColor"/><path d="M0 50.90H19.10V161.80H0Z" fill="currentColor"/><path d="M80.90 50.90H100.00V161.80H80.90Z" fill="currentColor"/></svg>';
+// Ženklas: arka iš 5 akmenų su variniu raktiniu akmeniu, proporcija 1 : 1.
+const AO_MARK = '<svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M4.02 48.72A46 46 0 0 1 12.04 24.01L30.20 36.44A24 24 0 0 0 26.01 49.33ZM13.55 21.93A46 46 0 0 1 34.57 6.67L41.95 27.39A24 24 0 0 0 30.99 35.36ZM65.43 6.67A46 46 0 0 1 86.45 21.93L69.01 35.36A24 24 0 0 0 58.05 27.39ZM87.96 24.01A46 46 0 0 1 95.98 48.72L73.99 49.33A24 24 0 0 0 69.80 36.44ZM4 52H26V96H4ZM74 52H96V96H74Z"/><path style="fill:var(--accent)" d="M37.01 5.87A46 46 0 0 1 62.99 5.87L56.78 26.98A24 24 0 0 0 43.22 26.98Z"/></svg>';
 
 function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = false): void
 {
@@ -39,11 +40,21 @@ function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = 
       <a href="/#pavyzdziai">Pavyzdžiai</a>
       <a href="/#kainos">Kainos</a>
       <a href="/apie/">Apie</a>
-      <a href="/kontaktai/">Kontaktai</a>
       <a class="btn" href="<?= e(ao_cta()) ?>">Pokalbis</a>
     </nav>
   </div>
 </header>
+<script>
+// Viršutinė juosta: slenkant žemyn pasislepia, vos paslinkus į viršų vėl atsiranda.
+(function () {
+  var top = document.querySelector('.top'), last = window.scrollY;
+  window.addEventListener('scroll', function () {
+    var y = window.scrollY;
+    top.classList.toggle('hide', y > last && y > 120);
+    last = y;
+  }, { passive: true });
+})();
+</script>
 <?php
 }
 
