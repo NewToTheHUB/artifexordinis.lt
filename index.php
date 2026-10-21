@@ -3,7 +3,6 @@ require __DIR__ . '/inc/bootstrap.php';
 
 if (ao_wants_markdown()) { ao_send_markdown(ao_markdown_home()); }
 
-$talpa = ao_talpa($AO_CFG);
 
 ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
         'Sutvarkau, kaip juda darbas jūsų versle: užsakymai, skaičiuoklės, pasiūlymai, sandėlis ir ataskaitos vienoje gyvoje sistemoje. Pirmas pokalbis nemokamas.',
@@ -141,32 +140,6 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
   </div>
 </section>
 
-<section id="uzimtumas">
-  <div class="wrap split">
-    <div>
-      <div class="section-head">
-        <p class="label"><b>VII</b> Užimtumas</p>
-        <h2>Vienu metu imu nedaug projektų.</h2>
-        <p>Kad kiekvienam skirčiau tikrą dėmesį.</p>
-      </div>
-      <ul class="capacity">
-<?php foreach ($talpa as $m):
-        $vietos = (int)$m['vietos']; $uzimta = min((int)$m['uzimta'], $vietos); $laisva = $vietos - $uzimta; ?>
-        <li>
-          <span class="m"><?= e((string)$m['menuo']) ?></span>
-          <span class="slots" aria-hidden="true"><?php for ($i = 0; $i < $vietos; $i++): ?><span class="dot<?= $i < $uzimta ? ' taken' : '' ?>"></span><?php endfor; ?></span>
-          <span class="free"><?= e(ao_laisvos($laisva)) ?></span>
-        </li>
-<?php endforeach; ?>
-      </ul>
-      <a class="btn" href="<?= e(ao_cta()) ?>">Rezervuoti pokalbį</a>
-    </div>
-    <div>
-      <p class="note">Viena arka — viena įdiegimo vieta. Užpildyta arka reiškia, kad vieta jau užimta. Pokalbiui ir auditui laiką rasime greičiau.</p>
-    </div>
-  </div>
-</section>
-
 <section id="apie">
   <div class="wrap split rev">
     <div class="photos">
@@ -175,7 +148,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
     </div>
     <div>
       <div class="section-head">
-        <p class="label"><b>VIII</b> Apie mane</p>
+        <p class="label"><b>VII</b> Apie mane</p>
         <h2>Esu Saulius.</h2>
       </div>
       <p>Mano kelias prasidėjo nuo fizinio darbo ir technikos: statybos, CNC staklės, vamzdynų projektavimas, automatinių išdavimo aparatų įrengimas, 3D spausdinimo gamyba. Todėl žinau, kaip darbas atrodo iš vidaus — ne teoriškai, o praktiškai.</p>
@@ -188,7 +161,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
 <section id="duk">
   <div class="wrap">
     <div class="section-head">
-      <p class="label"><b>IX</b> Dažni klausimai</p>
+      <p class="label"><b>VIII</b> Dažni klausimai</p>
       <h2>Ko dažniausiai klausiama.</h2>
     </div>
     <div class="faq">
@@ -203,7 +176,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
   <div class="wrap split">
     <div>
       <div class="section-head">
-        <p class="label"><b>X</b> Kontaktai</p>
+        <p class="label"><b>IX</b> Kontaktai</p>
         <h2>Papasakokite, kas vyksta.</h2>
         <p>Atsakau per 24 valandas.</p>
       </div>

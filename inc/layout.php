@@ -107,6 +107,7 @@ function ao_contact_form(): void
   <input type="hidden" name="t" value="<?= time() ?>">
   <button class="btn" type="submit">Siųsti užklausą</button>
   <p class="note">Duomenis naudosiu tik atsakyti į jūsų užklausą. Daugiau — <a href="/privatumo-politika/">privatumo politikoje</a>.</p>
+  <p class="note agent-note"><b>Turite AI asistentą?</b> Ši forma pažymėta kaip WebMCP įrankis <code>uzsakyti_pokalbi</code>, todėl asistentas naršyklėje gali ją užpildyti už jus.</p>
 </form>
 <?php
 }
