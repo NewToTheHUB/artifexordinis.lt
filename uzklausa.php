@@ -77,6 +77,8 @@ $body = "Vardas: $vardas\nEl. paštas: $email\nĮmonė: $imone\n\n$zinute\n\n—
 $headers = "From: Artifex Ordinis svetainė <" . AO_EMAIL . ">\r\n"
          . "Reply-To: $email\r\n"
          . "Content-Type: text/plain; charset=UTF-8\r\n";
-$mailed = @mail(AO_EMAIL, $subject, $body, $headers);
+// Pirmiausia per SMTP (nepatenka į šlamštą); jei slaptažodis neįrašytas ar SMTP nepasiekiamas — PHP mail().
+require_once __DIR__ . '/inc/smtp.php';
+$mailed = ao_smtp_send(AO_EMAIL, $subject, $body, $email) || @mail(AO_EMAIL, $subject, $body, $headers);
 
 ao_back(($ok || $mailed || $logged) ? 'gauta' : 'klaida');

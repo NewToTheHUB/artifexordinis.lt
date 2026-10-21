@@ -29,4 +29,11 @@ return [
     // Pokalbio rezervacija (Google Calendar appointment schedule) ir LinkedIn.
     'booking_url'  => '',
     'linkedin_url' => '',
+
+    // Užklausų laiškai per Hostinger SMTP (su DKIM parašu, kad nekristų į šlamštą).
+    // Tuščias slaptažodis = siunčiama per PHP mail(), kuris dažnai patenka į Spam.
+    'smtp_host' => 'smtp.hostinger.com',
+    'smtp_port' => 465,
+    'smtp_user' => 'saulius@artifexordinis.lt',
+    'smtp_pass' => '',
 ];
