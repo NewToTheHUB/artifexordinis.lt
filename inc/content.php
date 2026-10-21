@@ -4,14 +4,13 @@
 
 $AO_SERVICES = [
     ['id' => 'pokalbis', 'name' => 'Pokalbis', 'note' => '30 min., gyvai arba nuotoliu',
-     'desc' => 'Išsiaiškiname, kas trukdo, ir ar galiu padėti.', 'price' => 'Nemokamai', 'min' => 0, 'exact' => true],
-    ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir fiksuota įdiegimo kaina. Įskaičiuojama į įdiegimą, jei pradedame per 30 dienų.',
-     'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => '150 €', 'min' => 150, 'exact' => true,
-     'badge' => 'pilotinė kaina pirmiesiems trims klientams'],
-    ['id' => 'idiegimas', 'name' => 'Sistemos įdiegimas', 'note' => 'Fiksuota kaina, žinoma iš anksto',
-     'desc' => '2–4 savaitės. Dalį sistemos naudojate jau po pirmos savaitės.', 'price' => 'nuo 800 €', 'min' => 800, 'exact' => false],
+     'desc' => 'Išsiaiškiname, kas trukdo, ir ar galiu padėti.', 'price' => 'Nemokamai', 'free' => true],
+    ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir aiški įdiegimo kaina.',
+     'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
+    ['id' => 'idiegimas', 'name' => 'Sistemos įdiegimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
+     'desc' => 'Dažniausiai 2–4 savaitės. Dalį sistemos naudojate jau po pirmos savaitės.', 'price' => 'Fiksuota, pagal apimtį'],
     ['id' => 'prieziura', 'name' => 'Priežiūra', 'note' => 'Pakeitimai, klausimai, vienas kontaktas',
-     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Aiškus mėnesio biudžetas.', 'price' => 'nuo 150 €/mėn.', 'min' => 150, 'exact' => false],
+     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Aiškus mėnesio biudžetas.', 'price' => 'Mėnesio paketas'],
 ];
 
 $AO_CASES = [
@@ -28,7 +27,7 @@ $AO_CASES = [
         'tag' => 'Optikos salonai · vizitų registracija',
         'title' => 'Laisvi vizitų laikai susidaro patys pagal kiekvieno filialo darbo laiką.',
         'rows' => [
-            ['Prieš', 'Vizitai derinami telefonu, o kiekvienas filialas savo grafiką veda atskirai.'],
+            ['Iššūkis', 'Keli filialai, skirtingas darbo laikas ir specialistų grafikai, o klientas turi matyti tik tikrai laisvus laikus.'],
             ['Sprendimas', 'Filialų darbo laikas ir specialistų grafikai vienoje vietoje. Sistema sugeneruoja laisvus laikus, o užregistruoti vizitai patenka į bendrą sąrašą.'],
             ['Po', 'Visi filialai ir jų užimtumas matomi viename lange.'],
         ],
@@ -70,13 +69,17 @@ $AO_FAQ = [
     ['Ar reikės keisti programas, kurias jau naudojame?',
      'Dažniausiai ne. Sistema sujungia tai, ką jau turite: el. paštą, kalendorių, skaičiuokles. Keičiame tik tai, kas iš tikrųjų trukdo.'],
     ['Kieno paskyroje bus sistema?',
-     'Kol kuriame ir bandome, sistema veikia mano paskyroje, todėl jums licencijų nereikia. Kai sistema paruošta, renkatės: perkeliu ją į jūsų Superhuman Docs paskyrą arba ji lieka mano priežiūroje už mėnesinį mokestį.'],
+     'Superhuman Docs — ne mano platforma: aš joje sukuriu sistemą, pritaikytą būtent jūsų darbui. Kol kuriame ir bandome, sistema veikia mano paskyroje, todėl jums licencijų nereikia. Kai sistema paruošta ir apmokėta, renkatės: perduodu jums administratoriaus teises ir pašalinu savo prieigą, arba sistema lieka mano priežiūroje už mėnesinį mokestį.'],
+    ['Kas atsako už mūsų duomenis?',
+     'Jūs esate duomenų valdytojas, aš — duomenų tvarkytojas, o platforma (Superhuman Docs) — subtvarkytojas. Duomenis tvarkau tik pagal jūsų rašytinius nurodymus, apie bet kokį saugumo incidentą pranešu per 24 valandas, o baigus darbus duomenis grąžinu arba ištrinu per 30 dienų. Visa tai įrašoma į duomenų tvarkymo sutartį pagal BDAR 28 straipsnį.'],
+    ['Kiek kainuoja?',
+     'Priklauso nuo apimties: kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Pokalbis nemokamas, o po audito gaunate fiksuotą kainą — dar prieš pradedant darbus.'],
     ['Kiek kainuoja Superhuman Docs licencijos?',
      'Mokama tik už kūrėjus (Doc Makers), t. y. žmones, kurie kuria naujus dokumentus. Darbuotojai, kurie sistema tik naudojasi ir ją pildo, nemoka. Tikslią kainą pasakysiu pokalbio metu, nes ji priklauso nuo plano.'],
     ['Ar sistemoje veiks dirbtinis intelektas (AI)?',
      'Gali veikti: santraukos apie klientą, laiškų juodraščiai, laukų užpildymas, rytinė suvestinė. AI funkcijos naudoja Superhuman plano kreditus, todėl jas įdiegiame tik ten, kur jos atsiperka.'],
     ['Ar mūsų duomenys saugūs?',
-     'Duomenys saugomi Superhuman Docs platformoje, o ne mano kompiuteryje. Su kiekvienu klientu pasirašome duomenų tvarkymo sutartį pagal BDAR.'],
+     'Duomenys saugomi Superhuman Docs platformoje, o ne mano kompiuteryje: perduodami šifruotu ryšiu (TLS), laikomi šifruoti (AES-256). Prieiga suteikiama tik tiems, kam jos reikia darbui. Daugiau — privatumo politikoje.'],
     ['Kiek laiko visa tai užtrunka?',
      'Auditas trunka 1–2 savaites. Sistemos įdiegimas — 2–4 savaites, o dalį sistemos naudojate jau po pirmos savaitės.'],
     ['Ar dirbate ne Kaune?',
@@ -92,6 +95,7 @@ $AO_BUILDS = [
     ['PDF dokumentai ir laiškai', 'aktai, sąskaitos, priminimai išsiunčiami patys'],
     ['AI pagalbininkas', 'santraukos, juodraščiai, laukų užpildymas'],
     ['Skriptai ir automatizacijos', 'kai tas pats darbas kartojasi kasdien'],
+    ['Svetainės', 'greitos, aiškios, randamos Google ir AI — kaip ši'],
 ];
 
 $AO_SECTORS = ['Gamyba', 'Kavinės ir kebabinės', 'Klinikos ir salonai', 'Renginiai', 'Statyba ir remontas',
@@ -135,8 +139,7 @@ function ao_jsonld(bool $withFaq = false): string
             'priceCurrency' => 'EUR',
             'itemOffered' => ['@type' => 'Service', 'name' => $s['name'], 'provider' => ['@id' => $org]],
         ];
-        if ($s['exact']) { $offer['price'] = (string)$s['min']; }
-        else { $offer['priceSpecification'] = ['@type' => 'PriceSpecification', 'minPrice' => $s['min'], 'priceCurrency' => 'EUR']; }
+        if (!empty($s['free'])) { $offer['price'] = '0'; } else { unset($offer['priceCurrency']); }
         $offers[] = $offer;
     }
     $graph = [

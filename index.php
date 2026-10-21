@@ -124,18 +124,19 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
     <div>
       <div class="section-head">
         <p class="label"><b>VI</b> Kainos</p>
-        <h2>Pirmas žingsnis — mažas ir aiškus.</h2>
+        <h2>Kaina — pagal apimtį, bet visada iš anksto.</h2>
+        <p>Kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Todėl kainą pasakau po pokalbio ar audito, ir ji nesikeičia.</p>
       </div>
       <table class="prices">
         <tbody>
 <?php foreach ($AO_SERVICES as $s): ?>
-          <tr><th scope="row"><?= e($s['name']) ?><small><?= e($s['note']) ?></small></th><td><?= e($s['price']) ?><?php if (!empty($s['badge'])): ?><small><?= e($s['badge']) ?></small><?php endif; ?></td></tr>
+          <tr><th scope="row"><?= e($s['name']) ?><small><?= e($s['note']) ?></small></th><td><?= e($s['price']) ?></td></tr>
 <?php endforeach; ?>
         </tbody>
       </table>
     </div>
     <div>
-      <p class="note">Kol kuriame, sistema veikia mano paskyroje, todėl jums licencijų nereikia. Kai sistemą perimate, mokate tik už kūrėjus (Doc Makers), o darbuotojai, kurie sistema naudojasi, nemoka.</p>
+      <p class="note">Superhuman Docs — platforma, kurioje kuriu, o aš sukuriu tai, kas pritaikyta būtent jums. Kol kuriame, sistema veikia mano paskyroje, todėl jums licencijų nereikia. Kai sistemą perimate, mokate tik už kūrėjus (Doc Makers), o darbuotojai, kurie sistema naudojasi, nemoka.</p>
     </div>
   </div>
 </section>

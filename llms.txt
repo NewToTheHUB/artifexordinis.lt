@@ -9,12 +9,12 @@
 - [Kontaktai](https://artifexordinis.lt/kontaktai/): užklausos forma nemokamam 30 min. pokalbiui, el. paštas
 - [Privatumo politika](https://artifexordinis.lt/privatumo-politika/): kaip tvarkomi užklausų duomenys
 
-## Paslaugos ir kainos
+## Paslaugos
 
 - Pokalbis (30 min.): nemokamai — išsiaiškinama, kas trukdo ir ar sistema apskritai reikalinga
-- Tvarkos auditas: 150 € (pilotinė kaina pirmiesiems trims klientams) — proceso žemėlapis, kiek kainuoja netvarka, prioritetai, fiksuota įdiegimo kaina; įskaičiuojama į įdiegimą, jei pradedama per 30 dienų
-- Sistemos įdiegimas: nuo 800 €, fiksuota kaina, 2–4 savaitės
-- Priežiūra: nuo 150 €/mėn.
+- Tvarkos auditas: proceso žemėlapis, kiek kainuoja netvarka, prioritetai; kaina fiksuota ir sutariama iš anksto
+- Sistemos įdiegimas: nuo kelių valandų darbo iki kelių savaičių sistemos; fiksuota kaina pagal apimtį, žinoma prieš pradedant
+- Priežiūra: mėnesio paketas
 - Konsultacija be kūrimo: rekomendacijos, kurias įmonė įgyvendina pati
 
 ## Ką sukuria
@@ -27,6 +27,7 @@
 - PDF dokumentai (aktai, sąskaitos) ir automatiniai laiškai
 - AI pagalbininkas (Superhuman Go): santraukos, juodraščiai, laukų užpildymas
 - Skriptai ir automatizacijos pasikartojančiam darbui
+- Svetainės, kurias randa Google ir AI
 
 ## Kam tinka
 
@@ -39,6 +40,10 @@ Gamyba, kavinės ir kebabinės, klinikos ir salonai, renginiai, statyba ir remon
 - Paslaugos: darbų aktai ir sąskaitos — nuo atlikto darbo iki išsiųsto PDF
 - Šokių mokyklos: Dance Check-in — QR registracija ir abonementų likučiai
 - Automatizacija: failų atpažinimas ir duomenų išgavimas iš PDF ir ZIP
+
+## Duomenų apsauga
+
+Sistemos kuriamos Superhuman Docs platformoje. Klientas — duomenų valdytojas, Artifex Ordinis — duomenų tvarkytojas, platforma — subtvarkytojas; sudaroma duomenų tvarkymo sutartis pagal BDAR 28 str. Plačiau: [Privatumo politika](https://artifexordinis.lt/privatumo-politika/#klientu-sistemos)
 
 ## Kontaktai
 

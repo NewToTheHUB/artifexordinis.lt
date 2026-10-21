@@ -81,6 +81,12 @@ function ao_footer(): void
 // naršyklės AI agentas mato šią formą kaip įrankį „užsakyti pokalbį“ ir gali ją užpildyti vartotojo prašymu.
 function ao_contact_form(): void
 {
+    // Alternatyva: Superhuman Docs forma (iframe). Įjungiama config.php 'form_url' reikšme.
+    $docsForm = (string)cfg('form_url');
+    if ($docsForm !== '') {
+        echo '<iframe id="forma" class="docs-form" src="' . e($docsForm) . '" title="Užklausos forma" loading="lazy"></iframe>';
+        return;
+    }
     $status = $_GET['forma'] ?? '';
     ?>
 <form class="inquiry" id="forma" method="post" action="/uzklausa.php"

@@ -22,6 +22,10 @@ return [
     // Nuoroda atrodo taip: https://coda.io/apis/v1/docs/<DOC_ID>/hooks/automation/<RULE_ID>
     'docs_webhook_url' => '',
 
+    // ARBA vietoj savos formos — Superhuman Docs forma (Share → Embed → src nuoroda).
+    // Jei užpildyta, svetainėje rodoma Docs forma, o sava forma ir webhook nenaudojami.
+    'form_url' => '',
+
     // Pokalbio rezervacija (Google Calendar appointment schedule) ir LinkedIn.
     'booking_url'  => '',
     'linkedin_url' => '',

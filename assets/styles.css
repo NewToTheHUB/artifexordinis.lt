@@ -278,3 +278,7 @@ footer a { color: var(--muted); }
 /* nuotraukos: horizontalios, φ santykis, viena po kita */
 .photos { grid-template-columns: 1fr; }
 .photos img { aspect-ratio: 1.618 / 1; border-radius: 0; }
+
+/* kainų lentelė be skaičių: tekstinės reikšmės */
+.prices td { font-size: var(--t0); white-space: normal; max-width: 12rem; }
+.docs-form { width: 100%; min-height: 42rem; border: 0; display: block; }
