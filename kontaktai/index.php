@@ -2,7 +2,7 @@
 require dirname(__DIR__) . '/inc/bootstrap.php';
 
 ao_head('Kontaktai — Artifex Ordinis',
-        'Parašykite, kas jūsų versle užima daugiausia laiko. Atsakau per 24 valandas. Kaunas, visa Lietuva nuotoliu.',
+        'Parašykite, kas jūsų versle užima daugiausia laiko. Paprastai atsakau per vieną darbo dieną. Kaunas, visa Lietuva.',
         '/kontaktai/');
 $booking = (string)cfg('booking_url');
 ?>
@@ -12,7 +12,7 @@ $booking = (string)cfg('booking_url');
     <div>
       <p class="label"><b>Kontaktai</b></p>
       <h1>Papasakokite, kas vyksta.</h1>
-      <p class="lead">Kelių sakinių pakanka. Atsakau per 24 valandas ir pasiūlau laiką nemokamam 30 min. pokalbiui.</p>
+      <p class="lead">Kelių sakinių pakanka. Paprastai atsakau per vieną darbo dieną ir pasiūlau laiką nemokamam 30 min. pokalbiui.</p>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>

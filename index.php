@@ -129,8 +129,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
     <div>
       <div class="section-head">
         <p class="label"><b>VI</b> Kainos</p>
-        <h2>Kaina — pagal apimtį, bet visada iš anksto.</h2>
-        <p>Kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Todėl kainą pasakau po pokalbio ar audito, ir ji nesikeičia.</p>
+        <h2>Kaina — sutarta iš anksto pagal darbų apimtį.</h2>
+        <p>Kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Todėl po pokalbio ar audito sutariame darbų apimtį ir jos kainą. Jei apimtis keičiasi, naują kainą suderiname prieš tęsdami darbus.</p>
       </div>
       <table class="prices">
         <tbody>
@@ -157,7 +157,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
         <h2 class="pointer"><span class="arrow" aria-hidden="true">←</span> Saulius</h2>
       </div>
       <p>Dirbau statybose, logistikoje, gamyboje ir techninėje priežiūroje — Lietuvoje ir užsienyje. Daugelyje įmonių mačiau tą patį: darbas vyksta lėtai ir rankomis, viskas laikoma Excel lentelėse, o tvarkinga sistema atrodo kaip kelių dešimčių tūkstančių eurų projektas. Dažniausiai taip nėra.</p>
-      <p>Todėl sistemas kuriu „no-code“ įrankiais, kuriuos supranta ir gali pasikoreguoti kiekvienas darbuotojas. Mano tikslas — ne pririšti jus prie savęs, o išmokyti ir atiduoti įrankį į jūsų rankas, jei norite mokytis.</p>
+      <p>Todėl sistemas kuriu „no-code“ įrankiais, kuriuos lengva suprasti, o šiek tiek pasimokius — ir pasikoreguoti patiems. Mano tikslas — ne pririšti jus prie savęs, o išmokyti ir atiduoti įrankį į jūsų rankas, jei norite mokytis.</p>
       <p><a href="/apie/">Mano istorija →</a></p>
     </div>
   </div>
@@ -183,7 +183,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       <div class="section-head">
         <p class="label"><b>IX</b> Kontaktai</p>
         <h2>Papasakokite, kas vyksta.</h2>
-        <p>Atsakau per 24 valandas.</p>
+        <p>Paprastai atsakau per vieną darbo dieną.</p>
       </div>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>

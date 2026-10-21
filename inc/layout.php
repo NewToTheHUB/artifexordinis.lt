@@ -104,7 +104,7 @@ function ao_contact_form(): void
       toolname="uzsakyti_pokalbi"
       tooldescription="Užsakyti nemokamą 30 min. pokalbį su Artifex Ordinis (Saulius, Kaunas) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
 <?php if ($status === 'gauta'): ?>
-  <p class="form-msg ok" role="status">Ačiū! Užklausą gavau ir atsakysiu per 24 valandas.</p>
+  <p class="form-msg ok" role="status">Ačiū! Užklausą gavau ir atsakysiu per vieną darbo dieną.</p>
 <?php elseif ($status === 'klaida'): ?>
   <p class="form-msg err" role="alert">Nepavyko išsiųsti. Parašykite tiesiai į <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a>.</p>
 <?php elseif ($status === 'trukumas'): ?>
