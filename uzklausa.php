@@ -71,6 +71,36 @@ if ($hook !== '' && $token !== '' && function_exists('curl_init')) {
     $ok = $code >= 200 && $code < 300;
 }
 
+// Tiesiogiai į Business OS → Leads per Docs API (be automatizacijos taisyklės).
+// Reikia tik 'docs_api_token' faile private/config.php. Lentelės ir stulpelių ID nėra slapti.
+if (!$ok && $token !== '' && function_exists('curl_init')) {
+    $doc = (string)cfg('leads_doc_id', 'BsiN9tYW_P');
+    $tbl = (string)cfg('leads_table', 'grid-61hKKY8RGK');
+    $cells = [
+        ['column' => 'c-ekvZ1YYjmv', 'value' => $vardas],                                   // Lead
+        ['column' => 'c-Sca8-vhYOi', 'value' => $imone],                                    // Organizacija
+        ['column' => 'c-oUXlZBx3Wm', 'value' => 'Svetainė'],                                // Šaltinis
+        ['column' => 'c-LTFBCT-obo', 'value' => 'Naujas'],                                  // Statusas
+        ['column' => 'c-tr0hHCbktV', 'value' => $zinute],                                   // Problema / poreikis
+        ['column' => 'c-YJtTe91ght', 'value' => 'Atsakyti ir pasiūlyti pokalbio laiką'],    // Kitas veiksmas
+        ['column' => 'c-kWsw8yKMi_', 'value' => date('Y-m-d', time() + 86400)],             // Kito veiksmo data
+        ['column' => 'c-PkHFZlbOP1', 'value' => "El. paštas: $email\nGauta: " . date('Y-m-d H:i')], // Pastabos
+    ];
+    $base = rtrim((string)cfg('docs_api_base', 'https://coda.io/apis/v1'), '/');
+    $ch = curl_init("$base/docs/$doc/tables/$tbl/rows");
+    curl_setopt_array($ch, [
+        CURLOPT_POST => true,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT => 6,
+        CURLOPT_HTTPHEADER => ['Authorization: Bearer ' . $token, 'Content-Type: application/json'],
+        CURLOPT_POSTFIELDS => json_encode(['rows' => [['cells' => $cells]]], JSON_UNESCAPED_UNICODE),
+    ]);
+    curl_exec($ch);
+    $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    $ok = $code >= 200 && $code < 300;
+}
+
 // El. laiškas sau (visada, kaip atsarginis kanalas).
 $subject = '=?UTF-8?B?' . base64_encode('Nauja užklausa: ' . $vardas) . '?=';
 $body = "Vardas: $vardas\nEl. paštas: $email\nĮmonė: $imone\n\n$zinute\n\n— artifexordinis.lt, " . date('Y-m-d H:i');
