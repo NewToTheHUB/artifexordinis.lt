@@ -1,0 +1,29 @@
+# Artifex Ordinis
+# HTTPS peradresavimas įjungtas Hostinger skydelyje (ne čia, kad nebūtų ciklų su CDN).
+
+DirectoryIndex index.php
+Options -Indexes
+
+# Vidiniai aplankai ir Git istorija neprieinami iš interneto
+RedirectMatch 404 ^/(\.git|inc|setup)(/.*)?$
+RedirectMatch 404 ^/README\.md$
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  <FilesMatch "^llms\.txt$">
+    Header set Content-Type "text/markdown; charset=utf-8"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddCharset utf-8 .txt .css .xml
+</IfModule>

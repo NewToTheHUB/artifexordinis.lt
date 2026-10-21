@@ -1,0 +1,28 @@
+<?php
+// Artifex Ordinis — nustatymai.
+// Šio failo kopiją pavadinkite config.php ir laikykite serveryje:
+//   domains/artifexordinis.lt/private/config.php   (UŽ public_html ribų)
+// Į Git šis failas su tikromis reikšmėmis NIEKADA nekeliamas.
+
+return [
+    // Superhuman Docs API tokenas: docs.superhuman.com/account → API settings.
+    'docs_api_token' => '',
+    'docs_api_base'  => 'https://coda.io/apis/v1',
+
+    // Užimtumas: doc ID ir lentelė „Talpa“ (Mėnuo, Vietos, Užimta, Rodyti).
+    'docs_doc_id'    => '',
+    'docs_table'     => 'Talpa',
+    'cache_ttl'      => 900,
+    'talpa_fallback' => [
+        ['Lapkritis', 2, 1],
+        ['Gruodis', 2, 0],
+    ],
+
+    // Užklausos forma → Docs automatizacija su trigeriu „Webhook invoked“.
+    // Nuoroda atrodo taip: https://coda.io/apis/v1/docs/<DOC_ID>/hooks/automation/<RULE_ID>
+    'docs_webhook_url' => '',
+
+    // Pokalbio rezervacija (Google Calendar appointment schedule) ir LinkedIn.
+    'booking_url'  => '',
+    'linkedin_url' => '',
+];

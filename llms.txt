@@ -1,0 +1,46 @@
+# Artifex Ordinis
+
+> Verslo procesų tvarka Lietuvoje. Saulius (Kaunas) išanalizuoja, kaip įmonėje juda darbas, ir užsakymus, skaičiuokles, komercinius pasiūlymus, sandėlį, klientus, PDF dokumentus ir ataskaitas sujungia į vieną gyvą valdymo centrą su Superhuman Docs (buvęs Coda), Superhuman Go AI ir skriptais. Tikslas: mažiau rankinio darbo ir greitesnis procesas. Dirba lietuvių ir anglų kalbomis, visoje Lietuvoje.
+
+## Puslapiai
+
+- [Pradžia](https://artifexordinis.lt/): paslaugos, pavyzdžiai, kainos, užimtumas, dažni klausimai
+- [Apie](https://artifexordinis.lt/apie/): Sauliaus patirtis — gamyba, užsakymų valdymas, techninis darbas, automatizacija
+- [Kontaktai](https://artifexordinis.lt/kontaktai/): užklausos forma nemokamam 30 min. pokalbiui, el. paštas
+- [Privatumo politika](https://artifexordinis.lt/privatumo-politika/): kaip tvarkomi užklausų duomenys
+
+## Paslaugos ir kainos
+
+- Pokalbis (30 min.): nemokamai — išsiaiškinama, kas trukdo ir ar sistema apskritai reikalinga
+- Tvarkos auditas: 150 € (pilotinė kaina pirmiesiems trims klientams) — proceso žemėlapis, kiek kainuoja netvarka, prioritetai, fiksuota įdiegimo kaina; įskaičiuojama į įdiegimą, jei pradedama per 30 dienų
+- Sistemos įdiegimas: nuo 800 €, fiksuota kaina, 2–4 savaitės
+- Priežiūra: nuo 150 €/mėn.
+- Konsultacija be kūrimo: rekomendacijos, kurias įmonė įgyvendina pati
+
+## Ką sukuria
+
+- Užsakymų valdymas nuo užklausos iki apmokėjimo
+- Skaičiuoklės ir komerciniai pasiūlymai
+- Sandėlis ir likučiai, nurašomi pagal užsakymus
+- Paprasta CRM sistema klientams ir užklausoms
+- Vadovo ir investuotojo suvestinės realiuoju laiku
+- PDF dokumentai (aktai, sąskaitos) ir automatiniai laiškai
+- AI pagalbininkas (Superhuman Go): santraukos, juodraščiai, laukų užpildymas
+- Skriptai ir automatizacijos pasikartojančiam darbui
+
+## Kam tinka
+
+Gamyba, kavinės ir kebabinės, klinikos ir salonai, renginiai, statyba ir remontas, servisai, prekyba ir sandėlis, konsultantai. Nuo vieno žmogaus iki kelių dešimčių darbuotojų.
+
+## Pavyzdžiai
+
+- Gamyba: užsakymų ir gamybos sekimas — užklausa, kainos skaičiavimas, gamyba, kokybės patikra, pakavimas
+- Optikos salonai: vizitų registracija — laisvi laikai generuojami pagal filialų darbo laiką
+- Paslaugos: darbų aktai ir sąskaitos — nuo atlikto darbo iki išsiųsto PDF
+- Šokių mokyklos: Dance Check-in — QR registracija ir abonementų likučiai
+- Automatizacija: failų atpažinimas ir duomenų išgavimas iš PDF ir ZIP
+
+## Kontaktai
+
+- [Užklausos forma](https://artifexordinis.lt/kontaktai/)
+- El. paštas: saulius@artifexordinis.lt
