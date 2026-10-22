@@ -2,7 +2,7 @@
 require dirname(__DIR__) . '/inc/bootstrap.php';
 
 ao_head('Apie — Saulius, Artifex Ordinis',
-        'Saulius iš Kauno: nuo fizinio darbo ir technikos iki verslo procesų tvarkos. Patirtis gamyboje, užsakymų valdyme ir automatizacijoje.',
+        'Saulius: nuo fizinio darbo ir technikos iki verslo procesų tvarkos. Patirtis gamyboje, užsakymų valdyme ir automatizacijoje.',
         '/apie/');
 ?>
 <main id="turinys" class="page">

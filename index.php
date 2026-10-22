@@ -4,7 +4,7 @@ require __DIR__ . '/inc/bootstrap.php';
 if (ao_wants_markdown()) { ao_send_markdown(ao_markdown_home()); }
 
 
-ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
+ao_head('Artifex Ordinis — verslo procesų tvarka',
         'Sutvarkau, kaip juda darbas jūsų versle: užsakymai, skaičiuoklės, pasiūlymai, sandėlis ir ataskaitos vienoje gyvoje sistemoje. Pirmas pokalbis nemokamas.',
         '/', true);
 ?>
@@ -15,7 +15,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
     <div>
       <p class="eyebrow">Tvarkos architektas</p>
       <h1>Tvarka, kuri dirba už jus.</h1>
-      <p class="lead">Ateinu, pažiūriu, kaip jūsų versle iš tikrųjų juda darbas, ir parodau, kur prarandama laiko ir pinigų. Tada užsakymus, skaičiuokles, pasiūlymus, sandėlį ir ataskaitas sujungiu į vieną gyvą valdymo centrą.</p>
+      <p class="lead">Pažiūriu, kaip jūsų versle iš tikrųjų juda darbas, ir parodau, kur prarandama laiko ir pinigų. Tada užsakymus, skaičiuokles, pasiūlymus, sandėlį ir ataskaitas sujungiu į vieną gyvą valdymo centrą.</p>
       <div class="actions">
         <a class="btn" href="<?= e(ao_cta()) ?>">Užsisakyti 30 min. pokalbį</a>
         <a class="btn ghost" href="#pavyzdziai">Pažiūrėti pavyzdžius</a>
@@ -188,7 +188,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka | Kaunas',
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
-        <li><span>Vieta</span>Kaunas · visa Lietuva</li>
+        <li><span>Darbas</span>Nuotoliu, visoje Lietuvoje</li>
         <li><span>Daugiau</span><a href="/kontaktai/">Kontaktų puslapis</a></li>
       </ul>
     </div>

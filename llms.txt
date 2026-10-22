@@ -1,6 +1,6 @@
 # Artifex Ordinis
 
-> Verslo procesų tvarka Lietuvoje. Saulius (Kaunas) išanalizuoja, kaip įmonėje juda darbas, ir užsakymus, skaičiuokles, komercinius pasiūlymus, sandėlį, klientus, PDF dokumentus ir ataskaitas sujungia į vieną gyvą valdymo centrą su Superhuman Docs (buvęs Coda), Superhuman Go AI ir skriptais. Tikslas: mažiau rankinio darbo ir greitesnis procesas. Dirba lietuvių ir anglų kalbomis, visoje Lietuvoje.
+> Verslo procesų tvarka Lietuvoje. Saulius išanalizuoja, kaip įmonėje juda darbas, ir užsakymus, skaičiuokles, komercinius pasiūlymus, sandėlį, klientus, PDF dokumentus ir ataskaitas sujungia į vieną gyvą valdymo centrą su Superhuman Docs (buvęs Coda), Superhuman Go AI ir skriptais. Tikslas: mažiau rankinio darbo ir greitesnis procesas. Dirba nuotoliu, visoje Lietuvoje, lietuvių ir anglų kalbomis.
 
 ## Puslapiai
 

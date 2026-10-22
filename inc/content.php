@@ -3,7 +3,7 @@
 // Markdown versijoje agentams ir struktūruotuose duomenyse (JSON-LD).
 
 $AO_SERVICES = [
-    ['id' => 'pokalbis', 'name' => 'Pokalbis', 'note' => '30 min., gyvai arba nuotoliu',
+    ['id' => 'pokalbis', 'name' => 'Pokalbis', 'note' => '30 min., vaizdo skambučiu',
      'desc' => 'Išsiaiškiname, kas trukdo ir ar galiu padėti.', 'price' => 'Nemokamai', 'free' => true],
     ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir aiški įdiegimo kaina.',
      'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
@@ -88,8 +88,8 @@ $AO_FAQ = [
      'Duomenys saugomi Superhuman Docs platformoje, o ne mano kompiuteryje: perduodami šifruotu ryšiu (TLS), laikomi šifruoti (AES-256). Prieiga suteikiama tik tiems, kam jos reikia darbui. Daugiau — privatumo politikoje.'],
     ['Kiek laiko visa tai užtrunka?',
      'Priklauso nuo apimties, komandos dydžio ir reikalavimų. Paprastą sistemą kartais galima sukurti per kelias valandas, didesnę — per kelias savaites. Terminus sutariame kiekvienam projektui atskirai: auditas dažniausiai užtrunka 1–2 savaites, o didesnes sistemas diegiame etapais.'],
-    ['Ar dirbate ne Kaune?',
-     'Taip, dirbu visoje Lietuvoje. Pagal poreikį atvykstu į vietą, bet dažniausiai to nereikia: rezultatą greičiau parodyti, nei apie jį papasakoti. Dirbu lietuvių ir anglų kalbomis.'],
+    ['Kur dirbate?',
+     'Nuotoliu, su klientais visoje Lietuvoje: per vaizdo skambučius ir bendrą dokumentą, kuriame matote, kaip sistema kuriama. Rezultatą greičiau parodyti, nei apie jį papasakoti. Dirbu lietuvių ir anglų kalbomis.'],
 ];
 
 $AO_BUILDS = [
@@ -112,7 +112,7 @@ function ao_markdown_home(): string
 {
     global $AO_SERVICES, $AO_CASES, $AO_FAQ, $AO_BUILDS, $AO_SECTORS;
     $md  = "# Artifex Ordinis — verslo procesų tvarka\n\n";
-    $md .= "> Saulius, Kaunas. Išanalizuoju, kaip įmonėje juda darbas, ir užsakymus, skaičiuokles, pasiūlymus, sandėlį ir ataskaitas sujungiu į vieną gyvą valdymo centrą (Superhuman Docs, Superhuman Go AI, skriptai). Tikslas: mažiau rankinio darbo, greitesnis procesas.\n\n";
+    $md .= "> Saulius, nuotoliu visoje Lietuvoje. Išanalizuoju, kaip įmonėje juda darbas, ir užsakymus, skaičiuokles, pasiūlymus, sandėlį ir ataskaitas sujungiu į vieną gyvą valdymo centrą (Superhuman Docs, Superhuman Go AI, skriptai). Tikslas: mažiau rankinio darbo, greitesnis procesas.\n\n";
     $md .= "## Kam tinka\n\n" . implode(', ', $AO_SECTORS) . ". Nuo vieno žmogaus iki kelių dešimčių darbuotojų.\n\n";
     $md .= "## Galimybės\n\n";
     foreach ($AO_BUILDS as $b) { $md .= "- {$b[0]}: {$b[1]}\n"; }
@@ -151,7 +151,7 @@ function ao_jsonld(bool $withFaq = false): string
     $graph = [
         ['@type' => 'WebSite', '@id' => AO_SITE . '/#web', 'url' => AO_SITE . '/', 'name' => 'Artifex Ordinis', 'inLanguage' => 'lt', 'publisher' => ['@id' => $org]],
         array_filter([
-            '@type' => ['Organization', 'LocalBusiness', 'ProfessionalService'],
+            '@type' => ['Organization', 'ProfessionalService'],
             '@id' => $org,
             'name' => 'Artifex Ordinis',
             'slogan' => 'Tvarka, kuri dirba už jus.',
@@ -161,7 +161,7 @@ function ao_jsonld(bool $withFaq = false): string
             'email' => AO_EMAIL,
             'telephone' => AO_PHONE,
             'description' => 'Verslo procesų tvarka: užsakymų valdymas, skaičiuoklės ir komerciniai pasiūlymai, sandėlis, CRM, PDF dokumentai ir vadovo suvestinės vienoje gyvoje sistemoje su Superhuman Docs, AI ir skriptais.',
-            'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Kaunas', 'addressCountry' => 'LT'],
+            'address' => ['@type' => 'PostalAddress', 'addressCountry' => 'LT'],
             'areaServed' => ['@type' => 'Country', 'name' => 'Lithuania'],
             'knowsLanguage' => ['lt', 'en'],
             'priceRange' => '€€',

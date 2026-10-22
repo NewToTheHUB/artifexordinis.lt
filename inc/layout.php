@@ -70,7 +70,7 @@ function ao_footer(): void
     ?>
 <footer>
   <div class="wrap">
-    <span>© <?= date('Y') ?> Artifex Ordinis · Kaunas</span>
+    <span>© <?= date('Y') ?> Artifex Ordinis</span>
     <nav class="foot-nav" aria-label="Poraštės navigacija">
       <a href="/apie/">Apie</a>
       <a href="/kontaktai/">Kontaktai</a>
@@ -102,7 +102,7 @@ function ao_contact_form(): void
     ?>
 <form class="inquiry" id="forma" method="post" action="/uzklausa.php"
       toolname="uzsakyti_pokalbi"
-      tooldescription="Užsakyti nemokamą 30 min. pokalbį su Artifex Ordinis (Saulius, Kaunas) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
+      tooldescription="Užsakyti nemokamą 30 min. pokalbį su Artifex Ordinis (Saulius, nuotoliu visoje Lietuvoje) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
 <?php if ($status === 'gauta'): ?>
   <p class="form-msg ok" role="status">Ačiū! Užklausą gavau ir atsakysiu per vieną darbo dieną.</p>
 <?php elseif ($status === 'klaida'): ?>

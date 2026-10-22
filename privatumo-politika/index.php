@@ -14,7 +14,7 @@ ao_head('Privatumo politika — Artifex Ordinis',
       <p class="note">Atnaujinta 2026-10-21 · <a href="#klientu-sistemos">Kai kuriu sistemą jūsų įmonei</a></p>
 
       <h2>Kas tvarko duomenis</h2>
-      <p>Duomenų valdytojas — Saulius Elinskas, vykdantis individualią veiklą Artifex Ordinis vardu, Kaunas, Lietuva. El. paštas: <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a>.</p>
+      <p>Duomenų valdytojas — Saulius Elinskas, vykdantis individualią veiklą Artifex Ordinis vardu, Lietuva. El. paštas: <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a>.</p>
 
       <h2>Kokius duomenis renku</h2>
       <p>Tik tuos, kuriuos patys pateikiate užklausos formoje arba el. laiške: vardą, el. pašto adresą, įmonės pavadinimą (jei nurodote) ir žinutės tekstą. Svetainė nenaudoja slapukų, analitikos ar reklamos sekimo.</p>
