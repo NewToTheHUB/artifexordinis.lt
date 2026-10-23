@@ -1,6 +1,6 @@
 # artifexordinis.lt
 
-Artifex Ordinis svetainė — „Tvarka, kuri dirba už jus.“
+Artifex Ordinis svetainė — „Tvarka, kuri dirba jums.“
 
 - Statinis PHP (be karkaso), dizainas pagal φ (1,618) sistemą, šviesus ir tamsus režimas pagal naršyklę.
 - `inc/` — bendras karkasas, turinys (`content.php`), užimtumas iš Superhuman Docs (`talpa.php`).

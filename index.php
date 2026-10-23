@@ -14,7 +14,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
   <div class="wrap split">
     <div>
       <p class="eyebrow">Tvarkos architektas</p>
-      <h1>Tvarka, kuri dirba už jus.</h1>
+      <h1>Tvarka, kuri dirba jums.</h1>
       <p class="lead">Pažiūriu, kaip jūsų versle iš tikrųjų juda darbas, ir parodau, kur prarandama laiko ir pinigų. Tada užsakymus, skaičiuokles, pasiūlymus, sandėlį ir ataskaitas sujungiu į vieną gyvą valdymo centrą.</p>
       <div class="actions">
         <a class="btn" href="<?= e(ao_cta()) ?>">Užsisakyti 30 min. pokalbį</a>
