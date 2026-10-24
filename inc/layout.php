@@ -27,7 +27,7 @@ function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = 
 <meta property="og:description" content="<?= e($desc) ?>">
 <meta property="og:url" content="<?= e($url) ?>">
 <link rel="preload" href="/assets/fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/styles.css?v=3">
+<link rel="stylesheet" href="/assets/styles.css?v=4">
 <script type="application/ld+json"><?= ao_jsonld($faqLd) ?></script>
 </head>
 <body>
