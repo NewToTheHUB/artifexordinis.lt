@@ -162,11 +162,8 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .note { color: var(--muted); font-size: var(--t-1); }
 
 .hero-figure { width: 100%; max-width: 16.18rem; margin: 0 auto; overflow: visible; }
-.hero-figure .construct { fill: none; stroke: var(--line); stroke-width: 0.8; }
-.hero-figure .arch .v { fill: none; stroke: var(--ink); stroke-width: 1.2; }
+.hero-figure .arch .v { fill: var(--ink); }
 .hero-figure .arch .ks { fill: var(--accent); }
-.hero-figure .dim path { fill: none; stroke: var(--muted); stroke-width: 0.7; }
-.hero-figure .dim text { fill: var(--muted); font-family: var(--serif); font-size: 13px; text-anchor: middle; }
 @media (max-width: 899px) { .hero-figure { max-width: 10rem; } }
 
 /* ---------- lists ---------- */
@@ -273,7 +270,8 @@ footer a { color: var(--muted); }
 /* ---------- v2: puslapiai, forma, poraštė ---------- */
 /* Vidiniuose puslapiuose h1 vienu φ žingsniu mažesnis nei pradžioje: skalė eina tolygiai, be šuolio. */
 .page h1 { font-size: clamp(var(--t2), 5vw, var(--t3)); margin-bottom: var(--s1); }
-.page .lead { margin-top: 0; }
+/* Vidiniuose puslapiuose pirma pastraipa tokio pat dydžio kaip kitos: vienas teksto dydis, be šuolio. */
+.page .lead { margin-top: 0; font-size: var(--t0); }
 .prose { max-width: var(--measure); }
 .prose h2 { font-size: var(--t1); margin: var(--s2) 0 var(--s-1); }
 .prose ul { padding-left: var(--s1); margin: 0 0 var(--s0); }

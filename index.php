@@ -23,11 +23,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
       <p class="note">Pirmas pokalbis ir vieno proceso demonstracija nemokami. Jei manęs jums nereikia, taip ir pasakysiu.</p>
     </div>
     <div>
-      <svg class="hero-figure" viewBox="-44 -14 258 238" role="img" aria-label="Arka iš penkių akmenų su variniu raktiniu akmeniu, konstrukcijos linijomis ir aukso pjūvio (φ) proporcijomis">
-<g class="construct"><circle cx="100" cy="100" r="100"/><circle cx="100" cy="100" r="52"/><path d="M-8 100H208M100 -8V188"/></g>
+      <svg class="hero-figure" viewBox="0 -10.17 200 200" role="img" aria-label="Artifex Ordinis ženklas: arka iš penkių akmenų su variniu raktiniu akmeniu">
 <g class="arch"><path d="M0.00 100.00A100 100 0 0 1 21.39 38.19L59.12 67.86A52 52 0 0 0 48.00 100.00Z" class="v"/><path d="M23.15 36.02A100 100 0 0 1 77.77 2.50L88.44 49.30A52 52 0 0 0 60.04 66.73Z" class="v"/><path d="M122.23 2.50A100 100 0 0 1 176.85 36.02L139.96 66.73A52 52 0 0 0 111.56 49.30Z" class="v"/><path d="M178.61 38.19A100 100 0 0 1 200.00 100.00L152.00 100.00A52 52 0 0 0 140.88 67.86Z" class="v"/><path d="M0 102H48V179.67H0Z" class="v"/><path d="M152 102H200V179.67H152Z" class="v"/><path d="M80.50 1.92A100 100 0 0 1 119.50 1.92L110.14 49.00A52 52 0 0 0 89.86 49.00Z" class="ks"/></g>
-<g class="dim"><path d="M0 196H48M0 191V201M48 191V201M-16 102V179.67M-21 102H-11M-21 179.67H-11"/>
-<text x="24" y="215">1</text><text x="-30" y="144">φ</text></g>
 </svg>
     </div>
   </div>
