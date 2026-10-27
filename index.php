@@ -41,8 +41,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
       <li>Informacija išbarstyta: Excel, el. paštas, „Messenger“ ir kažkieno atmintis.</li>
       <li>„Paklausk Rasos, tik ji žino.“</li>
       <li>Tą patį įvedate du ar tris kartus — ir kartais su klaida.</li>
-      <li>Negalite per 10 sekundžių pasakyti, kas vėluoja ir kiek uždirbote.</li>
-      <li>Kažkas prasprūsta, o sužinote per vėlai.</li>
+      <li>Viena klaida, kurios buvo galima išvengti, virsta perdarytu darbu, vėlavimu ir nepatenkintu klientu.</li>
+      <li>Apie problemą pirmas praneša klientas, o ne jūsų sistema.</li>
     </ol>
   </div>
 </section>
