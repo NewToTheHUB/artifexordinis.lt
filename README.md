@@ -8,4 +8,4 @@ Artifex Ordinis svetainė — „Tvarka, kuri dirba jums.“
 - `llms.txt`, JSON-LD, Markdown versija (`Accept: text/markdown`), WebMCP formos atributai — AI agentams.
 - Slapti nustatymai **ne repozitorijoje**: serveryje `domains/artifexordinis.lt/private/config.php` (šablonas — `setup/config.example.php`).
 
-Diegimas: Hostinger traukia `main` šaką į `public_html`.
+Diegimas: Hostinger traukia `main` šaką į `public_html`. Kiekvienas push į `main` per GitHub webhook automatiškai paleidžia diegimą.
