@@ -15,7 +15,7 @@
 - Demonstracija: nemokamai — vienas pagrindinis kliento procesas sukuriamas su netikrais duomenimis ir parodomas
 - Tvarkos auditas: proceso žemėlapis, kiek kainuoja netvarka, prioritetai; kaina fiksuota ir sutariama iš anksto
 - Sistemos įdiegimas: nuo kelių valandų darbo iki kelių savaičių sistemos; fiksuota kaina pagal apimtį, žinoma prieš pradedant
-- Priežiūra: trys mėnesio paketai — 49, 149 ir 349 € per mėnesį, pagal sistemos dydį
+- Priežiūra: mėnesio paketai pagal sistemos dydį
 - Konsultacija be kūrimo: rekomendacijos, kurias įmonė įgyvendina pati
 
 ## Ką sukuria

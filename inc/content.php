@@ -11,8 +11,8 @@ $AO_SERVICES = [
      'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
     ['id' => 'idiegimas', 'name' => 'Sistemos įdiegimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
      'desc' => 'Kuriu tik tai, ko reikia jūsų darbui, o ne šabloną visiems. Didesnes sistemas diegiame etapais, todėl pirmąsias dalis galima naudoti dar prieš baigiant visą projektą.', 'price' => 'Fiksuota, pagal apimtį'],
-    ['id' => 'prieziura', 'name' => 'Priežiūra', 'note' => 'Trys mėnesio paketai: 49, 149 ir 349 €',
-     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Priežiūrai siūlau tris mėnesio paketus pagal sistemos dydį: 49, 149 ir 349 € per mėnesį.', 'price' => 'nuo 49 €/mėn.'],
+    ['id' => 'prieziura', 'name' => 'Priežiūra', 'note' => 'Pakeitimai, klausimai, vienas kontaktas',
+     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Priežiūrai siūlau mėnesio paketus pagal sistemos dydį.', 'price' => 'Mėnesio paketas'],
 ];
 
 $AO_CASES = [
@@ -80,7 +80,7 @@ $AO_FAQ = [
     ['Kas atsako už mūsų duomenis?',
      'Jūs esate duomenų valdytojas, aš — duomenų tvarkytojas, o platforma (Superhuman Docs) duomenis saugo pagal savo sutartį su jumis. Duomenis tvarkau tik pagal jūsų rašytinius nurodymus, apie bet kokį saugumo incidentą pranešu per 24 valandas, o baigus darbus duomenis grąžinu arba ištrinu per 30 dienų. Visa tai įrašoma į duomenų tvarkymo sutartį pagal BDAR 28 straipsnį.'],
     ['Kiek kainuoja?',
-     'Priklauso nuo apimties: kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Pokalbis ir vieno proceso demonstracija nemokami. Po audito gaunate fiksuotą kainą sutartai darbų apimčiai — dar prieš pradedant darbus. Priežiūra kainuoja 49, 149 arba 349 € per mėnesį, priklausomai nuo sistemos dydžio.'],
+     'Priklauso nuo apimties: kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Pokalbis ir vieno proceso demonstracija nemokami. Po audito gaunate fiksuotą kainą sutartai darbų apimčiai — dar prieš pradedant darbus. Priežiūrai siūlau mėnesio paketus pagal sistemos dydį.'],
     ['Ar galiu pamatyti, kaip sistema atrodytų, prieš mokėdamas?',
      'Taip. Savo paskyroje nemokamai sukuriu vieną pagrindinį jūsų procesą su netikrais duomenimis ir jį parodau. Užsiregistruoti demonstracijai galite užklausos formoje.'],
     ['Kiek kainuoja Superhuman Docs licencijos?',
