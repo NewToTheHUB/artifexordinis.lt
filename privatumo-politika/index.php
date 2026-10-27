@@ -30,7 +30,6 @@ ao_head('Privatumo politika — Artifex Ordinis',
         <li><strong>Hostinger</strong> — svetainės talpinimas, el. paštas ir užklausų atsarginė kopija serveryje (ES).</li>
         <li><strong>Superhuman (Superhuman Docs)</strong> — užklausų sąrašas, kuriame jas tvarkau. Duomenys gali būti perduodami į JAV pagal ES ir JAV duomenų privatumo sistemą (Data Privacy Framework) ir Europos Komisijos patvirtintas standartines sutarčių sąlygas.</li>
       </ul>
-      <p>Šriftai ir visi kiti svetainės failai pateikiami iš to paties serverio, todėl lankantis svetainėje jūsų naršyklė nesikreipia į trečiųjų šalių serverius.</p>
       <p>Duomenų neparduodu ir neperduodu kitiems tikslams.</p>
 
       <h2 id="klientu-sistemos">Kai kuriu sistemą jūsų įmonei</h2>
