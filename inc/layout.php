@@ -19,7 +19,7 @@ function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = 
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15110D" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.svg?v=<?= (int)@filemtime(dirname(__DIR__) . '/favicon.svg') ?>" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="lt_LT">
 <meta property="og:site_name" content="Artifex Ordinis">
@@ -27,7 +27,7 @@ function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = 
 <meta property="og:description" content="<?= e($desc) ?>">
 <meta property="og:url" content="<?= e($url) ?>">
 <link rel="preload" href="/assets/fonts/fraunces-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/styles.css?v=4">
+<link rel="stylesheet" href="/assets/styles.css?v=<?= (int)@filemtime(dirname(__DIR__) . '/assets/styles.css') ?>">
 <script type="application/ld+json"><?= ao_jsonld($faqLd) ?></script>
 </head>
 <body>
