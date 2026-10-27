@@ -1,8 +1,8 @@
 <?php
 // Bendras puslapio karkasas: <head>, viršutinė juosta, poraštė ir užklausos forma.
 
-// Ženklas: arka iš 5 akmenų su variniu raktiniu akmeniu, proporcija 1 : 1.
-const AO_MARK = '<svg viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" d="M4.02 48.72A46 46 0 0 1 12.04 24.01L30.20 36.44A24 24 0 0 0 26.01 49.33ZM13.55 21.93A46 46 0 0 1 34.57 6.67L41.95 27.39A24 24 0 0 0 30.99 35.36ZM65.43 6.67A46 46 0 0 1 86.45 21.93L69.01 35.36A24 24 0 0 0 58.05 27.39ZM87.96 24.01A46 46 0 0 1 95.98 48.72L73.99 49.33A24 24 0 0 0 69.80 36.44ZM4 52H26V96H4ZM74 52H96V96H74Z"/><path style="fill:var(--accent)" d="M37.01 5.87A46 46 0 0 1 62.99 5.87L56.78 26.98A24 24 0 0 0 43.22 26.98Z"/></svg>';
+// Ženklas: arka iš 5 akmenų su variniu raktiniu akmeniu. Proporcijos pagal φ: šoninis akmuo = raktas × φ, kojos aukštis = arkos storis × φ.
+const AO_MARK = '<svg viewBox="0 -10.17 200 200" aria-hidden="true"><path fill="currentColor" d="M0.00 100.00A100 100 0 0 1 21.39 38.19L59.12 67.86A52 52 0 0 0 48.00 100.00ZM23.15 36.02A100 100 0 0 1 77.77 2.50L88.44 49.30A52 52 0 0 0 60.04 66.73ZM122.23 2.50A100 100 0 0 1 176.85 36.02L139.96 66.73A52 52 0 0 0 111.56 49.30ZM178.61 38.19A100 100 0 0 1 200.00 100.00L152.00 100.00A52 52 0 0 0 140.88 67.86ZM0 102H48V179.67H0ZM152 102H200V179.67H152Z"/><path style="fill:var(--accent)" d="M80.50 1.92A100 100 0 0 1 119.50 1.92L110.14 49.00A52 52 0 0 0 89.86 49.00Z"/></svg>';
 
 function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = false): void
 {
@@ -102,7 +102,7 @@ function ao_contact_form(): void
     ?>
 <form class="inquiry" id="forma" method="post" action="/uzklausa.php"
       toolname="uzsakyti_pokalbi"
-      tooldescription="Užsakyti nemokamą 30 min. pokalbį su Artifex Ordinis (Saulius, nuotoliu visoje Lietuvoje) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
+      tooldescription="Užsakyti nemokamą 30 min. pokalbį arba nemokamą vieno proceso demonstraciją su Artifex Ordinis (Saulius, nuotoliu visoje Lietuvoje) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
 <?php if ($status === 'gauta'): ?>
   <p class="form-msg ok" role="status">Ačiū! Užklausą gavau ir atsakysiu per vieną darbo dieną.</p>
 <?php elseif ($status === 'klaida'): ?>
@@ -110,6 +110,11 @@ function ao_contact_form(): void
 <?php elseif ($status === 'trukumas'): ?>
   <p class="form-msg err" role="alert">Užpildykite vardą, el. paštą ir žinutę.</p>
 <?php endif; ?>
+  <fieldset class="choice">
+    <legend>Ko norėtumėte?</legend>
+    <label><input type="radio" name="noras" value="pokalbis" checked> Nemokamo 30 min. pokalbio</label>
+    <label><input type="radio" name="noras" value="demonstracija"> Nemokamos vieno proceso demonstracijos</label>
+  </fieldset>
   <label><span>Vardas</span><input name="vardas" autocomplete="name" required maxlength="120"></label>
   <label><span>El. paštas</span><input name="el_pastas" type="email" autocomplete="email" required maxlength="200"></label>
   <label><span>Įmonė <small>(nebūtina)</small></span><input name="imone" autocomplete="organization" maxlength="200"></label>

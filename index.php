@@ -20,14 +20,14 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
         <a class="btn" href="<?= e(ao_cta()) ?>">Užsisakyti 30 min. pokalbį</a>
         <a class="btn ghost" href="#pavyzdziai">Pažiūrėti pavyzdžius</a>
       </div>
-      <p class="note">Pirmas pokalbis nemokamas. Jei manęs jums nereikia, taip ir pasakysiu.</p>
+      <p class="note">Pirmas pokalbis ir vieno proceso demonstracija nemokami. Jei manęs jums nereikia, taip ir pasakysiu.</p>
     </div>
     <div>
-      <svg class="hero-figure" viewBox="-16 -16 132 132" role="img" aria-label="Arka iš penkių akmenų su variniu raktiniu akmeniu ir jos konstrukcijos linijomis">
-<g class="construct"><rect x="4" y="4" width="92" height="92"/><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="24"/><path d="M-4 50H104M50 -4V104"/></g>
-<g class="arch"><path d="M4.02 48.72A46 46 0 0 1 12.04 24.01L30.20 36.44A24 24 0 0 0 26.01 49.33Z" class="v"/><path d="M13.55 21.93A46 46 0 0 1 34.57 6.67L41.95 27.39A24 24 0 0 0 30.99 35.36Z" class="v"/><path d="M37.01 5.87A46 46 0 0 1 62.99 5.87L56.78 26.98A24 24 0 0 0 43.22 26.98Z" class="ks"/><path d="M65.43 6.67A46 46 0 0 1 86.45 21.93L69.01 35.36A24 24 0 0 0 58.05 27.39Z" class="v"/><path d="M87.96 24.01A46 46 0 0 1 95.98 48.72L73.99 49.33A24 24 0 0 0 69.80 36.44Z" class="v"/><path d="M4 52H26V96H4Z" class="v"/><path d="M74 52H96V96H74Z" class="v"/></g>
-<g class="dim"><path d="M-9 4V96M-11 4H-7M-11 96H-7M4 -9H96M4 -11V-7M96 -11V-7"/>
-<text x="-11" y="50" transform="rotate(-90 -11 50)">1</text><text x="50" y="-11">1</text></g>
+      <svg class="hero-figure" viewBox="-44 -14 258 238" role="img" aria-label="Arka iš penkių akmenų su variniu raktiniu akmeniu, konstrukcijos linijomis ir aukso pjūvio (φ) proporcijomis">
+<g class="construct"><circle cx="100" cy="100" r="100"/><circle cx="100" cy="100" r="52"/><path d="M-8 100H208M100 -8V188"/></g>
+<g class="arch"><path d="M0.00 100.00A100 100 0 0 1 21.39 38.19L59.12 67.86A52 52 0 0 0 48.00 100.00Z" class="v"/><path d="M23.15 36.02A100 100 0 0 1 77.77 2.50L88.44 49.30A52 52 0 0 0 60.04 66.73Z" class="v"/><path d="M122.23 2.50A100 100 0 0 1 176.85 36.02L139.96 66.73A52 52 0 0 0 111.56 49.30Z" class="v"/><path d="M178.61 38.19A100 100 0 0 1 200.00 100.00L152.00 100.00A52 52 0 0 0 140.88 67.86Z" class="v"/><path d="M0 102H48V179.67H0Z" class="v"/><path d="M152 102H200V179.67H152Z" class="v"/><path d="M80.50 1.92A100 100 0 0 1 119.50 1.92L110.14 49.00A52 52 0 0 0 89.86 49.00Z" class="ks"/></g>
+<g class="dim"><path d="M0 196H48M0 191V201M48 191V201M-16 102V179.67M-21 102H-11M-21 179.67H-11"/>
+<text x="24" y="215">1</text><text x="-30" y="144">φ</text></g>
 </svg>
     </div>
   </div>

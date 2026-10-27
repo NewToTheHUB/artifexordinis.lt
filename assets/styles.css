@@ -162,11 +162,11 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .note { color: var(--muted); font-size: var(--t-1); }
 
 .hero-figure { width: 100%; max-width: 16.18rem; margin: 0 auto; overflow: visible; }
-.hero-figure .construct { fill: none; stroke: var(--line); stroke-width: 0.4; }
-.hero-figure .arch .v { fill: none; stroke: var(--ink); stroke-width: 0.6; }
+.hero-figure .construct { fill: none; stroke: var(--line); stroke-width: 0.8; }
+.hero-figure .arch .v { fill: none; stroke: var(--ink); stroke-width: 1.2; }
 .hero-figure .arch .ks { fill: var(--accent); }
-.hero-figure .dim path { fill: none; stroke: var(--muted); stroke-width: 0.35; }
-.hero-figure .dim text { fill: var(--muted); font-family: var(--serif); font-size: 5px; text-anchor: middle; }
+.hero-figure .dim path { fill: none; stroke: var(--muted); stroke-width: 0.7; }
+.hero-figure .dim text { fill: var(--muted); font-family: var(--serif); font-size: 13px; text-anchor: middle; }
 @media (max-width: 899px) { .hero-figure { max-width: 10rem; } }
 
 /* ---------- lists ---------- */
@@ -271,7 +271,8 @@ footer a { color: var(--muted); }
 .section-head .label { font-size: var(--t-1); color: var(--accent); margin: 0 0 var(--s0); max-width: none; }
 
 /* ---------- v2: puslapiai, forma, poraštė ---------- */
-.page h1 { margin-bottom: var(--s1); }
+/* Vidiniuose puslapiuose h1 vienu φ žingsniu mažesnis nei pradžioje: skalė eina tolygiai, be šuolio. */
+.page h1 { font-size: clamp(var(--t2), 5vw, var(--t3)); margin-bottom: var(--s1); }
 .page .lead { margin-top: 0; }
 .prose { max-width: var(--measure); }
 .prose h2 { font-size: var(--t1); margin: var(--s2) 0 var(--s-1); }
@@ -283,6 +284,10 @@ footer a { color: var(--muted); }
 @media (min-width: 900px) { .inquiry { padding: var(--s2); } }
 .inquiry label { display: grid; gap: var(--s-2); font-size: var(--t-1); letter-spacing: 0.04em; color: var(--muted); }
 .inquiry label small { font-size: inherit; }
+.inquiry .choice { border: 0; margin: 0; padding: 0; display: grid; gap: var(--s-2); }
+.inquiry .choice legend { font-size: var(--t-1); letter-spacing: 0.04em; color: var(--muted); margin-bottom: var(--s-2); padding: 0; }
+.inquiry .choice label { display: flex; align-items: center; gap: var(--s-1); font-size: var(--t0); letter-spacing: 0; color: var(--ink); cursor: pointer; }
+.inquiry .choice input { width: auto; accent-color: var(--accent); margin: 0; }
 .inquiry input, .inquiry textarea {
   font: inherit; font-size: var(--t0); color: var(--ink);
   background: var(--bg); border: 1px solid var(--line); border-radius: 0;

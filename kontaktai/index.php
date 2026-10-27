@@ -12,7 +12,7 @@ $booking = (string)cfg('booking_url');
     <div>
       <p class="label"><b>Kontaktai</b></p>
       <h1>Papasakokite, kas vyksta.</h1>
-      <p class="lead">Kelių sakinių pakanka. Paprastai atsakau per vieną darbo dieną ir pasiūlau laiką nemokamam 30 min. pokalbiui.</p>
+      <p class="lead">Kelių sakinių pakanka. Paprastai atsakau per vieną darbo dieną ir pasiūlau laiką nemokamam 30 min. pokalbiui. Jei norite iš karto pamatyti, kaip sistema atrodytų, pasirinkite nemokamą vieno proceso demonstraciją.</p>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
