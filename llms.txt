@@ -11,8 +11,7 @@
 
 ## Paslaugos
 
-- Pokalbis (30 min.): nemokamai — išsiaiškinama, kas trukdo ir ar sistema apskritai reikalinga
-- Demonstracija: nemokamai — vienas pagrindinis kliento procesas sukuriamas su netikrais duomenimis ir parodomas
+- Pokalbis ir demonstracija: nemokamai — išsiaiškinama, ar pagalba reikalinga ir įmanoma; jei klientas nori, parodomas vieno jo proceso demonstracinis variantas su netikrais duomenimis
 - Tvarkos auditas: proceso žemėlapis, kiek kainuoja netvarka, prioritetai; kaina fiksuota ir sutariama iš anksto
 - Sistemos įdiegimas: nuo kelių valandų darbo iki kelių savaičių sistemos; fiksuota kaina pagal apimtį, žinoma prieš pradedant
 - Priežiūra: mėnesio paketai pagal sistemos dydį

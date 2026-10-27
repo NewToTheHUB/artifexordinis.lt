@@ -3,10 +3,8 @@
 // Markdown versijoje agentams ir struktūruotuose duomenyse (JSON-LD).
 
 $AO_SERVICES = [
-    ['id' => 'pokalbis', 'name' => 'Pokalbis', 'note' => '30 min., vaizdo skambučiu',
-     'desc' => 'Išsiaiškiname, kas trukdo ir ar galiu padėti.', 'price' => 'Nemokamai', 'free' => true],
-    ['id' => 'demonstracija', 'name' => 'Demonstracija', 'note' => 'Vienas jūsų procesas su netikrais duomenimis',
-     'desc' => 'Savo paskyroje sukuriu vieną pagrindinį jūsų procesą su netikrais duomenimis ir parodau, kaip jis veiktų. Tai nieko nekainuoja ir neįpareigoja.', 'price' => 'Nemokamai', 'free' => true],
+    ['id' => 'pokalbis', 'name' => 'Pokalbis ir demonstracija', 'note' => '30 min. pokalbis ir vieno proceso demonstracija',
+     'desc' => 'Išsiaiškiname, ar pagalba reikalinga ir įmanoma. Jei norite, parodau vieno jūsų proceso demonstraciją.', 'price' => 'Nemokamai', 'free' => true],
     ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir aiški įdiegimo kaina.',
      'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
     ['id' => 'idiegimas', 'name' => 'Sistemos įdiegimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
