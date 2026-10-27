@@ -20,7 +20,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
         <a class="btn" href="<?= e(ao_cta()) ?>">Užsisakyti 30 min. pokalbį</a>
         <a class="btn ghost" href="#pavyzdziai">Pažiūrėti pavyzdžius</a>
       </div>
-      <p class="note">Pirmas pokalbis ir vieno proceso demonstracija nemokami. Jei manęs jums nereikia, taip ir pasakysiu.</p>
+      <p class="note">Pirmas pokalbis ir vieno proceso demonstracija nemokami.</p>
     </div>
     <div>
       <svg class="hero-figure" viewBox="0 -10.17 200 200" role="img" aria-label="Artifex Ordinis ženklas: arka iš penkių akmenų su variniu raktiniu akmeniu">
