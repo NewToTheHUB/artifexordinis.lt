@@ -110,15 +110,11 @@ function ao_contact_form(): void
 <?php elseif ($status === 'trukumas'): ?>
   <p class="form-msg err" role="alert">Užpildykite vardą, el. paštą ir žinutę.</p>
 <?php endif; ?>
-  <fieldset class="choice">
-    <legend>Ko norėtumėte?</legend>
-    <label><input type="radio" name="noras" value="pokalbis" checked> Nemokamo 30 min. pokalbio</label>
-    <label><input type="radio" name="noras" value="demonstracija"> Nemokamos vieno proceso demonstracijos</label>
-  </fieldset>
   <label><span>Vardas</span><input name="vardas" autocomplete="name" required maxlength="120"></label>
   <label><span>El. paštas</span><input name="el_pastas" type="email" autocomplete="email" required maxlength="200"></label>
   <label><span>Įmonė <small>(nebūtina)</small></span><input name="imone" autocomplete="organization" maxlength="200"></label>
   <label><span>Kas jūsų versle užima daugiausia laiko?</span><textarea name="zinute" rows="5" required maxlength="4000"></textarea></label>
+  <label class="check"><input type="checkbox" name="demonstracija" value="1"> Norėčiau ir nemokamos vieno proceso demonstracijos<small>Demonstracijai reikės daugiau informacijos apie jūsų procesą, todėl ją aptarsime pokalbio metu.</small></label>
   <div class="hp" aria-hidden="true"><label><span>Svetainė</span><input name="svetaine" tabindex="-1" autocomplete="off"></label></div>
   <input type="hidden" name="t" value="<?= time() ?>">
   <button class="btn" type="submit">Siųsti užklausą</button>

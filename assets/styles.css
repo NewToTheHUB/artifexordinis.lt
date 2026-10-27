@@ -282,10 +282,9 @@ footer a { color: var(--muted); }
 @media (min-width: 900px) { .inquiry { padding: var(--s2); } }
 .inquiry label { display: grid; gap: var(--s-2); font-size: var(--t-1); letter-spacing: 0.04em; color: var(--muted); }
 .inquiry label small { font-size: inherit; }
-.inquiry .choice { border: 0; margin: 0; padding: 0; display: grid; gap: var(--s-2); }
-.inquiry .choice legend { font-size: var(--t-1); letter-spacing: 0.04em; color: var(--muted); margin-bottom: var(--s-2); padding: 0; }
-.inquiry .choice label { display: flex; align-items: center; gap: var(--s-1); font-size: var(--t0); letter-spacing: 0; color: var(--ink); cursor: pointer; }
-.inquiry .choice input { width: auto; accent-color: var(--accent); margin: 0; }
+.inquiry .check { display: grid; grid-template-columns: auto 1fr; column-gap: var(--s-1); align-items: start; font-size: var(--t0); letter-spacing: 0; color: var(--ink); cursor: pointer; }
+.inquiry .check input { width: auto; margin: 0.3em 0 0; accent-color: var(--accent); }
+.inquiry .check small { grid-column: 2; color: var(--muted); font-size: var(--t-1); }
 .inquiry input, .inquiry textarea {
   font: inherit; font-size: var(--t0); color: var(--ink);
   background: var(--bg); border: 1px solid var(--line); border-radius: 0;

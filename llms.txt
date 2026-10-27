@@ -6,7 +6,7 @@
 
 - [Pradžia](https://artifexordinis.lt/): paslaugos, pavyzdžiai, kainos, dažni klausimai
 - [Apie](https://artifexordinis.lt/apie/): Sauliaus patirtis — gamyba, užsakymų valdymas, techninis darbas, automatizacija
-- [Kontaktai](https://artifexordinis.lt/kontaktai/): užklausos forma nemokamam 30 min. pokalbiui arba nemokamai demonstracijai, el. paštas
+- [Kontaktai](https://artifexordinis.lt/kontaktai/): užklausos forma nemokamam 30 min. pokalbiui ir demonstracijai, el. paštas
 - [Privatumo politika](https://artifexordinis.lt/privatumo-politika/): kaip tvarkomi užklausų duomenys
 
 ## Paslaugos

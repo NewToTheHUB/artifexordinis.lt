@@ -58,7 +58,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
       <li><span class="num"><?= $i + 1 ?></span><h3><?= e($s['name']) ?></h3><p><?= e($s['desc']) ?></p></li>
 <?php endforeach; ?>
     </ol>
-    <p class="aside">Kartais užtenka patarimo. Jei problemą išspręs paprastas pakeitimas, kurį galite padaryti patys, rekomenduosiu jį, o ne naują sistemą.</p>
+    <p class="aside">Tai bendras darbas. Kalbuosi su keliais jūsų žmonėmis, ne tik su vadovu. Kiekvienas parodo, kaip iš tikrųjų atlieka savo darbą. Taip randu vietas, kur darbas stringa ar kartojasi. Jūs paskiriate atsakingą žmogų ir skiriate laiko. Sistema nėra vienkartinis pirkinys: ji auga kartu su jūsų verslu.</p>
   </div>
 </section>
 

@@ -12,7 +12,7 @@ ao_head('Apie — Saulius, Artifex Ordinis',
       <img src="/assets/img/saulius.webp" width="720" height="1165" alt="Saulius Elinskas">
     </figure>
     <div>
-      <p class="label"><b>Apie</b> Saulius</p>
+      <p class="label"><b>Apie</b> mane</p>
       <h1>Nuo fizinio darbo iki procesų tvarkos.</h1>
       <p class="lead">Baigęs mokyklą ieškojau savęs: dirbau ir keliavau po pasaulį. Išbandžiau statybas, logistiką, klientų aptarnavimą, elektrotechniką ir techninį konsultavimą. Visur mane domino tas pats: kaip veikia procesai, kodėl jie veikia būtent taip ir kaip juos galima pagerinti.</p>
       <p>Po kelerių metų kelionių, sukaupęs gyvenimo patirties, grįžau į Lietuvą. Dirbdamas samdomą darbą dažnai mačiau, kad užduotis galima atlikti lanksčiau ir paprasčiau: atimti iš žmogaus monotonišką darbą ir palikti jam laiko tam, kas iš tikrųjų naudinga.</p>
@@ -27,7 +27,8 @@ ao_head('Apie — Saulius, Artifex Ordinis',
     <div>
       <div class="section-head">
         <p class="label"><b>I</b> Patirtis</p>
-        <h2>Kur mokiausi tvarkos.</h2>
+        <h2>Kur pamačiau netvarką.</h2>
+        <p>Šiose vietose mačiau, kaip darbas stringa. Tvarką sugalvojau pats.</p>
       </div>
       <ul class="cols one">
         <li>Užsakymų valdymas 3D spausdinimo gamyboje<small>B2B užsakymų srautas nuo gavimo iki išsiuntimo, gamybos sekimo sistema, kainos skaičiuoklė, skriptai rankiniam darbui panaikinti</small></li>
@@ -59,7 +60,7 @@ ao_head('Apie — Saulius, Artifex Ordinis',
     </div>
     <ul class="chips">
       <li>Šokiai: bachata, salsa, tango</li><li>Sportas ir kovos menai</li><li>Kūno kalba ir psichologija</li>
-      <li>Sugedusių daiktų taisymas</li><li>Naujų daiktų projektavimas</li><li>Važinėjimas elektriniu vienaračiu</li>
+      <li>Naujų daiktų projektavimas</li><li>Važinėjimas elektriniu vienaračiu</li>
     </ul>
     <p class="aside">Baldus projektuoju iš reikmės: butas nuomojamas, o drabužius kažkur reikia sukabinti. Norisi ne griozdiškos spintos, o jaukaus medinio daikto, kurį galima pastatyti bet kur ir pasiimti persikraustant. Principas tas pats kaip versle: pirma suprasti poreikį ir vietą, tik tada kurti.</p>
     <div class="actions"><a class="btn" href="<?= e(ao_cta()) ?>">Užsisakyti pokalbį</a></div>

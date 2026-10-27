@@ -30,9 +30,8 @@ if (($_POST['svetaine'] ?? '') !== '' || ($t > 0 && time() - $t < 3)) { ao_back(
 
 if ($vardas === '' || $zinute === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) { ao_back('trukumas'); }
 
-// Ko klientas nori: pokalbio ar demonstracijos. Įrašoma žinutės pradžioje, kad matytųsi ir Docs, ir laiške.
-$norai = ['pokalbis' => 'Nemokamas 30 min. pokalbis', 'demonstracija' => 'Nemokama vieno proceso demonstracija'];
-$noras = $norai[(string)($_POST['noras'] ?? '')] ?? $norai['pokalbis'];
+// Ko klientas nori: tik pokalbio ar ir demonstracijos. Įrašoma žinutės pradžioje, kad matytųsi ir Docs, ir laiške.
+$noras = !empty($_POST['demonstracija']) ? 'Pokalbis ir nemokama vieno proceso demonstracija' : 'Nemokamas 30 min. pokalbis';
 $zinute = "Pageidauja: $noras\n\n" . $zinute;
 
 // Ribojimas: ne daugiau 5 užklausų per valandą iš vieno IP.
