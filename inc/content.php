@@ -38,11 +38,11 @@ $AO_CASES = [
         'tag' => 'Paslaugos · darbų aktai ir sąskaitos',
         'title' => 'Nuo atlikto darbo iki išsiųstos sąskaitos — keli paspaudimai.',
         'rows' => [
-            ['Prieš', 'Darbų aktai ir sąskaitos pildomi rankomis ir siunčiami po vieną.'],
-            ['Sprendimas', 'Darbai fiksuojami lentelėje, suma apskaičiuojama automatiškai, PDF aktas ir sąskaita sugeneruojami ir išsiunčiami klientui. Klientas mato savo statistiką.'],
-            ['Po', 'Visada aišku, kas išsiųsta, kas dar ne ir kiek uždirbta per mėnesį.'],
+            ['Prieš', 'Darbų aktai ir sąskaitos pildomi rankomis, o kliento rekvizitai kaskart perrašomi iš naujo.'],
+            ['Sprendimas', 'Darbai įvedami vieną kartą. Suma apskaičiuojama automatiškai, o aktas ir sąskaita užsipildo patys pagal pasirinktą klientą.'],
+            ['Po', 'Visada aišku, kas išrašyta, kas apmokėta ir kuri sąskaita vėluoja.'],
         ],
-        'demo' => '',
+        'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos',
     ],
     [
         'tag' => 'Šokių mokyklos · Danc’in',
@@ -128,6 +128,7 @@ function ao_markdown_home(): string
     foreach ($AO_CASES as $c) {
         $md .= "### {$c['title']}\n{$c['tag']}\n\n";
         foreach ($c['rows'] as $r) { $md .= "- {$r[0]}: {$r[1]}\n"; }
+        if (!empty($c['demo'])) { $md .= "- Peržiūra: {$c['demo']}\n"; }
         $md .= "\n";
     }
     $md .= "## Dažni klausimai\n\n";

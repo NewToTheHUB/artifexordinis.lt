@@ -37,7 +37,7 @@ Gamyba, kavinės ir kebabinės, klinikos ir salonai, renginiai, statyba ir remon
 
 - Gamyba: užsakymų ir gamybos sekimas — užklausa, kainos skaičiavimas, gamyba, kokybės patikra, pakavimas
 - Optikos salonai: vizitų registracija — laisvi laikai generuojami pagal filialų darbo laiką
-- Paslaugos: darbų aktai ir sąskaitos — nuo atlikto darbo iki išsiųsto PDF
+- Paslaugos: darbų aktai ir sąskaitos — darbai įvedami vieną kartą, aktas ir sąskaita užsipildo pagal klientą, matomos neapmokėtos sąskaitos. Peržiūra: https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos
 - Šokių mokyklos: Danc’in — QR registracija, abonementų likučiai, priminimai mokiniams, mažiau administravimo mokytojams
 - Automatizacija: failų atpažinimas ir duomenų išgavimas iš PDF ir ZIP
 
