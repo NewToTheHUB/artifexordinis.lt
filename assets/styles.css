@@ -212,6 +212,10 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .case img { width: 100%; aspect-ratio: 1.618 / 1; object-fit: cover; border: 1px solid var(--line); }
 .case figcaption { color: var(--muted); font-size: var(--t-1); margin-top: var(--s-2); }
 .demo-note { margin-top: var(--s2); color: var(--muted); font-size: var(--t-1); }
+.process { margin-top: var(--s2); padding: var(--s1) var(--s2); border-left: 2px solid var(--accent); max-width: 38.2rem; }
+.process h3 { margin: 0 0 var(--s-1); }
+.process p { margin: 0 0 var(--s-2); }
+.process p:last-child { margin-bottom: 0; }
 
 /* ---------- prices ---------- */
 .prices { width: 100%; border-collapse: collapse; max-width: var(--measure); }

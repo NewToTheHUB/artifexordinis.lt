@@ -3,8 +3,8 @@
 // Markdown versijoje agentams ir struktūruotuose duomenyse (JSON-LD).
 
 $AO_SERVICES = [
-    ['id' => 'pokalbis', 'name' => 'Pokalbis ir demonstracija', 'note' => '30 min. pokalbis ir vieno proceso demonstracija',
-     'desc' => 'Išsiaiškiname, ar pagalba reikalinga ir įmanoma. Jei norite, parodau vieno jūsų proceso demonstraciją.', 'price' => 'Nemokamai', 'free' => true],
+    ['id' => 'pokalbis', 'name' => 'Pokalbis ir gyva peržiūra', 'note' => '30 min. pokalbis su veikiančių sistemų peržiūra',
+     'desc' => 'Išsiaiškiname, ar pagalba reikalinga ir įmanoma. Pokalbio metu gyvai parodau, kaip panašus darbas atrodo sistemoje.', 'price' => 'Nemokamai', 'free' => true],
     ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir aiški įdiegimo kaina.',
      'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
     ['id' => 'idiegimas', 'name' => 'Sistemos įdiegimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
@@ -15,28 +15,28 @@ $AO_SERVICES = [
 
 $AO_CASES = [
     [
-        'tag' => 'Gamyba · užsakymų ir gamybos sekimas',
-        'title' => 'Kiekvienas užsakymas matomas nuo užklausos iki išsiuntimo.',
+        'tag' => 'Užsakymų valdymas · gamyba, spauda, prekyba',
+        'title' => 'Kiekvienas užsakymas matomas nuo užklausos iki pristatymo.',
         'rows' => [
-            ['Prieš', 'Užklausos, kainos ir gamybos būsenos išmėtytos po skirtingus failus ir laiškus.'],
-            ['Sprendimas', 'Viena sistema visam keliui: užklausa → kainos skaičiavimas → gamyba → kokybės patikra → pakavimas. Kiekvienas darbuotojas mato tik savo darbo vaizdą.'],
-            ['Po', 'Užsakymo būsena matoma iš karto, be skambučių ir perrašinėjimo.'],
+            ['Prieš', 'Užklausos, kainos ir būsenos išmėtytos po laiškus, failus ir žinutes.'],
+            ['Sprendimas', 'Viena užsakymo eilutė sujungia kainą, etapą, terminą ir atsakingą žmogų.'],
+            ['Po', 'Kiekvienas darbuotojas mato, ką daryti toliau, be skambučių ir perrašinėjimo.'],
         ],
-        'demo' => '', // nuoroda į peržiūrimą Docs versiją; tuščia = „Peržiūra kuriama“
+        'demo' => '', // nuoroda į viešą Docs versiją; tuščia = parodoma pokalbio metu
     ],
     [
-        'tag' => 'Optikos salonai · vizitų registracija',
-        'title' => 'Laisvi vizitų laikai susidaro patys pagal kiekvieno filialo darbo laiką.',
+        'tag' => 'Registracija ir grafikas · klinikos, salonai, servisai',
+        'title' => 'Klientas mato tik tikrai laisvus laikus.',
         'rows' => [
-            ['Iššūkis', 'Keli filialai, skirtingas darbo laikas ir specialistų grafikai, o klientas turi matyti tik tikrai laisvus laikus.'],
-            ['Sprendimas', 'Filialų darbo laikas ir specialistų grafikai vienoje vietoje. Sistema sugeneruoja laisvus laikus, o užregistruoti vizitai patenka į bendrą sąrašą.'],
-            ['Po', 'Visi filialai ir jų užimtumas matomi viename lange.'],
+            ['Prieš', 'Vizitai derinami telefonu, o specialistų grafikai saugomi atskirai.'],
+            ['Sprendimas', 'Sistema iš darbo grafikų sugeneruoja laisvus laikus. Registracijos patenka į bendrą sąrašą.'],
+            ['Po', 'Visų specialistų užimtumas matomas viename lange.'],
         ],
         'demo' => '',
     ],
     [
-        'tag' => 'Paslaugos · darbų aktai ir sąskaitos',
-        'title' => 'Nuo atlikto darbo iki išsiųstos sąskaitos — keli paspaudimai.',
+        'tag' => 'Paslaugos → aktai → sąskaitos',
+        'title' => 'Nuo atlikto darbo iki išrašytos sąskaitos — keli paspaudimai.',
         'rows' => [
             ['Prieš', 'Darbų aktai ir sąskaitos pildomi rankomis, o kliento rekvizitai kaskart perrašomi iš naujo.'],
             ['Sprendimas', 'Darbai įvedami vieną kartą. Suma apskaičiuojama automatiškai, o aktas ir sąskaita užsipildo patys pagal pasirinktą klientą.'],
@@ -45,22 +45,22 @@ $AO_CASES = [
         'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos',
     ],
     [
-        'tag' => 'Šokių mokyklos · Danc’in',
-        'title' => 'Mokytojai moko, o ne pildo lenteles.',
+        'tag' => 'Sąmatos ir skaičiuoklės · statyba, apželdinimas, gamyba',
+        'title' => 'Sąmata susidaro iš kainyno, o ne iš atminties.',
         'rows' => [
-            ['Prieš', 'Lankomumas ir abonementai sekami rankomis, o mokytojai administravimui skiria laiką, kurio reikia pamokoms.'],
-            ['Sprendimas', 'Registracija į pamoką QR kodu, abonementų likučiai tikruoju laiku, priminimai mokiniams apie likusias pamokas ir abonemento galiojimą, administravimo langas.'],
-            ['Po', 'Mokytojai sutaupo laiko, mokiniai žino, kiek pamokų liko, o mokykla mato, kas atėjo, nieko neperrašinėdama.'],
+            ['Prieš', 'Sąmatos skaičiuojamos Excel faile, o kainos kopijuojamos ranka.'],
+            ['Sprendimas', 'Prekes ir paslaugas pasirenkate iš kainyno. Sistema suskaičiuoja sumą ir paruošia dokumentą klientui.'],
+            ['Po', 'Sąmata paruošiama per kelias minutes, o kainos visada tos pačios.'],
         ],
         'demo' => '',
     ],
     [
-        'tag' => 'Automatizacija · kai darbas kartojasi',
-        'title' => 'Jei tas pats veiksmas kartojasi kasdien, jį atlieka skriptas.',
+        'tag' => 'Servisas · remontas ir aptarnavimas',
+        'title' => 'Klientas, darbas, dalys ir sąskaita — vienoje vietoje.',
         'rows' => [
-            ['Prieš', 'Šimtai failų rūšiuojami ir lyginami rankomis, duomenys iš PDF perrašomi į lentelę.'],
-            ['Sprendimas', 'Skriptas atpažįsta susijusius failus, ištraukia duomenis iš PDF ir ZIP archyvų ir sudeda juos į lentelę.'],
-            ['Po', 'Žmogus tikrina tik išimtis, o ne kiekvieną eilutę.'],
+            ['Prieš', 'Darbai, panaudotos dalys ir klientų kontaktai užrašomi skirtingose vietose.'],
+            ['Sprendimas', 'Darbų kalendorius susietas su klientais, atliktais darbais ir panaudotomis prekėmis.'],
+            ['Po', 'Vadovas mato dienos darbus ir mėnesio pajamas be atskirų ataskaitų.'],
         ],
         'demo' => '',
     ],
@@ -78,9 +78,9 @@ $AO_FAQ = [
     ['Kas atsako už mūsų duomenis?',
      'Jūs esate duomenų valdytojas, aš — duomenų tvarkytojas, o platforma (Superhuman Docs) duomenis saugo pagal savo sutartį su jumis. Duomenis tvarkau tik pagal jūsų rašytinius nurodymus, apie bet kokį saugumo incidentą pranešu per 24 valandas, o baigus darbus duomenis grąžinu arba ištrinu per 30 dienų. Visa tai įrašoma į duomenų tvarkymo sutartį pagal BDAR 28 straipsnį.'],
     ['Kiek kainuoja?',
-     'Priklauso nuo apimties: kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Pokalbis ir vieno proceso demonstracija nemokami. Po audito gaunate fiksuotą kainą sutartai darbų apimčiai — dar prieš pradedant darbus. Priežiūrai siūlau mėnesio paketus pagal sistemos dydį.'],
+     'Priklauso nuo apimties: kartais užtenka kelių valandų darbo, kartais reikia kelių savaičių sistemos. Pirmas pokalbis nemokamas. Po audito gaunate fiksuotą kainą sutartai darbų apimčiai — dar prieš pradedant darbus. Priežiūrai siūlau mėnesio paketus pagal sistemos dydį.'],
     ['Ar galiu pamatyti, kaip sistema atrodytų, prieš mokėdamas?',
-     'Taip. Savo paskyroje nemokamai sukuriu vieną pagrindinį jūsų procesą su netikrais duomenimis ir jį parodau. Užsiregistruoti demonstracijai galite užklausos formoje.'],
+     'Taip. Savo paskyroje nemokamai sukuriu vieną pagrindinį jūsų procesą su netikrais duomenimis ir jį parodau. Apie tai susitariame pokalbio metu.'],
     ['Kiek kainuoja Superhuman Docs licencijos?',
      'Mokama tik už kūrėjus (Doc Makers), t. y. žmones, kurie kuria naujus dokumentus. Darbuotojai, kurie sistema tik naudojasi ir ją pildo, nemoka. Tinkamiausią planą parinksime pokalbio metu.',
      ['https://superhuman.com/plans', 'Superhuman planai ir kainos →']],
@@ -128,12 +128,12 @@ function ao_markdown_home(): string
     foreach ($AO_CASES as $c) {
         $md .= "### {$c['title']}\n{$c['tag']}\n\n";
         foreach ($c['rows'] as $r) { $md .= "- {$r[0]}: {$r[1]}\n"; }
-        if (!empty($c['demo'])) { $md .= "- Peržiūra: {$c['demo']}\n"; }
+        $md .= !empty($c['demo']) ? "- Peržiūra: {$c['demo']}\n" : "- Peržiūra: parodoma pokalbio metu\n";
         $md .= "\n";
     }
     $md .= "## Dažni klausimai\n\n";
     foreach ($AO_FAQ as $q) { $md .= "**{$q[0]}**\n{$q[1]}" . (!empty($q[2]) ? " {$q[2][0]}" : '') . "\n\n"; }
-    $md .= "## Kontaktai\n\n- El. paštas: " . AO_EMAIL . "\n- Telefonas: " . AO_PHONE_DISPLAY . "\n- Užklausos forma: " . AO_SITE . "/kontaktai/\n- Apie: " . AO_SITE . "/apie/\n";
+    $md .= "## Kontaktai\n\n- El. paštas: " . AO_EMAIL . "\n- Telefonas: " . AO_PHONE_DISPLAY . "\n- Užklausos forma: " . AO_SITE . "/#kontaktai\n- Apie: " . AO_SITE . "/apie/\n";
     return $md;
 }
 
@@ -175,7 +175,7 @@ function ao_jsonld(bool $withFaq = false): string
             'founder' => ['@type' => 'Person', 'name' => 'Saulius', 'jobTitle' => 'Procesų konsultantas',
                           'knowsAbout' => ['Verslo procesų optimizavimas', 'Užsakymų valdymas', 'Superhuman Docs', 'Coda', 'Automatizacija', 'Gamybos procesai']],
             'contactPoint' => ['@type' => 'ContactPoint', 'contactType' => 'customer service', 'email' => AO_EMAIL, 'telephone' => AO_PHONE,
-                               'url' => AO_SITE . '/kontaktai/', 'availableLanguage' => ['lt', 'en']],
+                               'url' => AO_SITE . '/#kontaktai', 'availableLanguage' => ['lt', 'en']],
             'hasOfferCatalog' => ['@type' => 'OfferCatalog', 'name' => 'Paslaugos', 'itemListElement' => $offers],
             'sameAs' => $linkedin !== '' ? [$linkedin] : null,
         ]),

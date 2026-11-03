@@ -8,15 +8,15 @@ require __DIR__ . '/inc/bootstrap.php';
 function ao_back(string $status): void
 {
     $ref = $_SERVER['HTTP_REFERER'] ?? '';
-    $path = parse_url($ref, PHP_URL_PATH) ?: '/kontaktai/';
+    $path = parse_url($ref, PHP_URL_PATH) ?: '/';
     $host = parse_url($ref, PHP_URL_HOST);
     $self = explode(':', (string)($_SERVER['HTTP_HOST'] ?? ''))[0];
-    if ($host && $host !== $self) { $path = '/kontaktai/'; }
+    if ($host && $host !== $self) { $path = '/'; }
     header('Location: ' . $path . '?forma=' . $status . '#forma', true, 303);
     exit;
 }
 
-if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') { header('Location: /kontaktai/', true, 303); exit; }
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') { header('Location: /#kontaktai', true, 303); exit; }
 
 $clean = fn(string $k, int $max) => trim(mb_substr(str_replace(["\r", "\0"], '', (string)($_POST[$k] ?? '')), 0, $max));
 $vardas = $clean('vardas', 120);
@@ -30,8 +30,8 @@ if (($_POST['svetaine'] ?? '') !== '' || ($t > 0 && time() - $t < 3)) { ao_back(
 
 if ($vardas === '' || $zinute === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) { ao_back('trukumas'); }
 
-// Ko klientas nori: tik pokalbio ar ir demonstracijos. Įrašoma žinutės pradžioje, kad matytųsi ir Docs, ir laiške.
-$noras = !empty($_POST['demonstracija']) ? 'Pokalbis ir nemokama vieno proceso demonstracija' : 'Nemokamas 30 min. pokalbis';
+// Ko klientas nori. Įrašoma žinutės pradžioje, kad matytųsi ir Docs, ir laiške.
+$noras = 'Nemokamas 30 min. pokalbis su gyva peržiūra';
 $zinute = "Pageidauja: $noras\n\n" . $zinute;
 
 // Ribojimas: ne daugiau 5 užklausų per valandą iš vieno IP.

@@ -20,7 +20,7 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
         <a class="btn" href="<?= e(ao_cta()) ?>">Užsisakyti 30 min. pokalbį</a>
         <a class="btn ghost" href="#pavyzdziai">Pažiūrėti pavyzdžius</a>
       </div>
-      <p class="note">Pirmas pokalbis ir vieno proceso demonstracija nemokami.</p>
+      <p class="note">Pirmas pokalbis nemokamas. Jo metu gyvai parodau veikiančias sistemas.</p>
     </div>
     <div>
       <svg class="hero-figure" viewBox="0 -10.17 200 200" role="img" aria-label="Artifex Ordinis ženklas: arka iš penkių akmenų su variniu raktiniu akmeniu">
@@ -96,8 +96,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
   <div class="wrap">
     <div class="section-head">
       <p class="label"><b>V</b> Pavyzdžiai</p>
-      <h2>Kas jau sukurta.</h2>
-      <p>Skirtingos sritys, tas pats principas: visi duomenys vienoje vietoje, o rankinio darbo lieka kuo mažiau.</p>
+      <h2>Ką galiu parodyti.</h2>
+      <p>Tai ne šablonai. Kiekviena sistema kuriama pagal konkretų darbą, o pavyzdžiai parodo kryptį.</p>
     </div>
     <div class="cases">
 <?php foreach ($AO_CASES as $c): ?>
@@ -112,12 +112,17 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
 <?php if (!empty($c['demo'])): ?>
         <a class="btn ghost case-link" href="<?= e($c['demo']) ?>" target="_blank" rel="noopener">Išbandyti sistemą →</a>
 <?php else: ?>
-        <span class="btn ghost case-link soon">Peržiūra kuriama</span>
+        <a class="btn ghost case-link" href="<?= e(ao_cta()) ?>">Pamatyti pokalbio metu →</a>
 <?php endif; ?>
       </article>
 <?php endforeach; ?>
     </div>
-    <p class="demo-note">Peržiūros versijose — netikri duomenys, todėl sistemą galite drąsiai spaudinėti patys.</p>
+    <div class="process">
+      <h3>Kaip vyksta kūrimas</h3>
+      <p>Sistemą kuriame etapais. Po kiekvieno etapo jūs ją išbandote, o aš pataisau.</p>
+      <p>Tam reikia ir mano, ir jūsų komandos laiko. Jūs paskiriate žmogų, kuris atsako į klausimus ir išbando sprendimus.</p>
+    </div>
+    <p class="demo-note">Viešose peržiūrose — netikri duomenys, todėl sistemą galite drąsiai spaudinėti patys. Kitus pavyzdžius gyvai parodau pokalbio metu.</p>
   </div>
 </section>
 
@@ -180,13 +185,12 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
       <div class="section-head">
         <p class="label"><b>IX</b> Kontaktai</p>
         <h2>Papasakokite, kas vyksta.</h2>
-        <p>Paprastai atsakau per vieną darbo dieną.</p>
+        <p>Per 30 min. pokalbį gyvai parodau, kaip panašus darbas atrodo veikiančioje sistemoje. Atsakau per vieną darbo dieną ir pasiūlau laiką.</p>
       </div>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span>Telefonas</span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
         <li><span>Darbas</span>Nuotoliu, visoje Lietuvoje</li>
-        <li><span>Daugiau</span><a href="/kontaktai/">Kontaktų puslapis</a></li>
       </ul>
     </div>
     <div class="contact-box">

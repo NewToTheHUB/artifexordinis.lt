@@ -61,7 +61,7 @@ function ao_head(string $title, string $desc, string $path = '/', bool $faqLd = 
 function ao_cta(): string
 {
     $b = (string)cfg('booking_url');
-    return $b !== '' ? $b : '/kontaktai/#forma';
+    return $b !== '' ? $b : '/#kontaktai';
 }
 
 function ao_footer(): void
@@ -73,7 +73,7 @@ function ao_footer(): void
     <span>© <?= date('Y') ?> Artifex Ordinis</span>
     <nav class="foot-nav" aria-label="Poraštės navigacija">
       <a href="/apie/">Apie</a>
-      <a href="/kontaktai/">Kontaktai</a>
+      <a href="/#kontaktai">Kontaktai</a>
       <a href="/privatumo-politika/">Privatumo politika</a>
       <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a>
       <a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a>
@@ -102,7 +102,7 @@ function ao_contact_form(): void
     ?>
 <form class="inquiry" id="forma" method="post" action="/uzklausa.php"
       toolname="uzsakyti_pokalbi"
-      tooldescription="Užsakyti nemokamą 30 min. pokalbį arba nemokamą vieno proceso demonstraciją su Artifex Ordinis (Saulius, nuotoliu visoje Lietuvoje) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
+      tooldescription="Užsiregistruoti nemokamam 30 min. pokalbiui su gyva sistemų peržiūra su Artifex Ordinis (Saulius, nuotoliu visoje Lietuvoje) apie verslo procesų tvarką. Reikia vardo, el. pašto ir trumpo aprašymo, kokią problemą norima išspręsti.">
 <?php if ($status === 'gauta'): ?>
   <p class="form-msg ok" role="status">Ačiū! Užklausą gavau ir atsakysiu per vieną darbo dieną.</p>
 <?php elseif ($status === 'klaida'): ?>
@@ -114,10 +114,9 @@ function ao_contact_form(): void
   <label><span>El. paštas</span><input name="el_pastas" type="email" autocomplete="email" required maxlength="200"></label>
   <label><span>Įmonė <small>(nebūtina)</small></span><input name="imone" autocomplete="organization" maxlength="200"></label>
   <label><span>Kas jūsų versle užima daugiausia laiko?</span><textarea name="zinute" rows="5" required maxlength="4000"></textarea></label>
-  <label class="check"><input type="checkbox" name="demonstracija" value="1"> Norėčiau ir nemokamos vieno proceso demonstracijos<small>Demonstracijai reikės daugiau informacijos apie jūsų procesą, todėl ją aptarsime pokalbio metu.</small></label>
   <div class="hp" aria-hidden="true"><label><span>Svetainė</span><input name="svetaine" tabindex="-1" autocomplete="off"></label></div>
   <input type="hidden" name="t" value="<?= time() ?>">
-  <button class="btn" type="submit">Siųsti užklausą</button>
+  <button class="btn" type="submit">Užsiregistruoti pokalbiui</button>
   <p class="note">Duomenis naudosiu tik atsakyti į jūsų užklausą. Daugiau — <a href="/privatumo-politika/">privatumo politikoje</a>.</p>
   <p class="note agent-note"><b>Turite AI asistentą?</b> Ši forma pažymėta kaip WebMCP įrankis <code>uzsakyti_pokalbi</code>, todėl asistentas naršyklėje gali ją užpildyti už jus.</p>
 </form>
