@@ -26,7 +26,6 @@
 - Vadovo suvestinė tikruoju laiku
 - PDF dokumentai: sąskaitos, pasiūlymai, darbų aktai
 - AI pagalbininkas (Superhuman Go) kliento paskyroje, jei jo reikia
-- Naršyklės plėtiniai ir skriptai duomenims surinkti ir įkelti
 - Nebrangios svetainės, kurias klientas prižiūri pats
 
 ## Kam tinka

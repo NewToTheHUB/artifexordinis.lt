@@ -106,7 +106,6 @@ $AO_BUILDS = [
     ['Vadovo suvestinė', 'svarbiausi skaičiai tikruoju laiku'],
     ['PDF dokumentai', 'sąskaitos, pasiūlymai ir darbų aktai per minutę'],
     ['AI pagalbininkas', 'Superhuman Go jūsų paskyroje, jei jo reikia'],
-    ['Naršyklės plėtiniai ir skriptai', 'kai neužtenka lentelių: duomenų surinkimas ir įkėlimas'],
     ['Svetainės', 'nekainuoja tūkstančių, o prižiūrėti mokėsite patys: jei mokate dirbti su Word, mokėsite ir čia'],
 ];
 
