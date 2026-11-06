@@ -184,8 +184,8 @@ ao_head('Artifex Ordinis — verslo procesų tvarka',
     <div>
       <div class="section-head">
         <p class="label"><b>IX</b> Kontaktai</p>
-        <h2>Papasakokite, kas vyksta.</h2>
-        <p>Per 30 min. pokalbį gyvai parodau, kaip panašus darbas atrodo veikiančioje sistemoje. Atsakau per vieną darbo dieną ir pasiūlau laiką.</p>
+        <h2>Kuri vieta jūsų darbe stringa?</h2>
+        <p>Papasakokite apie ją. Aš paruošiu demo, kuris tą problemą sprendžia. 30 min. pokalbio metu jūs išbandysite demo gyvai.</p>
       </div>
       <ul class="contact-list">
         <li><span>El. paštas</span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>

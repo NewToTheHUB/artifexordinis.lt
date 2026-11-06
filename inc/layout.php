@@ -113,7 +113,7 @@ function ao_contact_form(): void
   <label><span>Vardas</span><input name="vardas" autocomplete="name" required maxlength="120"></label>
   <label><span>El. paštas</span><input name="el_pastas" type="email" autocomplete="email" required maxlength="200"></label>
   <label><span>Įmonė <small>(nebūtina)</small></span><input name="imone" autocomplete="organization" maxlength="200"></label>
-  <label><span>Kas jūsų versle užima daugiausia laiko?</span><textarea name="zinute" rows="5" required maxlength="4000"></textarea></label>
+  <label><span>Kuri vieta jūsų darbe stringa?</span><textarea name="zinute" rows="5" required maxlength="4000"></textarea></label>
   <div class="hp" aria-hidden="true"><label><span>Svetainė</span><input name="svetaine" tabindex="-1" autocomplete="off"></label></div>
   <input type="hidden" name="t" value="<?= time() ?>">
   <button class="btn" type="submit">Užsiregistruoti pokalbiui</button>
