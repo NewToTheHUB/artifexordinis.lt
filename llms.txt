@@ -40,7 +40,7 @@ Kiekviena sistema kuriama pagal konkretų darbą; pavyzdžiai parodo kryptį, ne
 - Registracija ir grafikas: laisvi laikai generuojami iš darbo grafikų (parodoma pokalbio metu)
 - Paslaugos → aktai → sąskaitos: darbai įvedami vieną kartą, aktas ir sąskaita užsipildo pagal klientą, matomos neapmokėtos sąskaitos. Peržiūra: https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos
 - Sąmatos ir skaičiuoklės: kainynas → sąmata → dokumentas klientui (parodoma pokalbio metu)
-- Servisas: klientas → darbas → panaudotos dalys → ataskaita (parodoma pokalbio metu)
+- Servisas: klientas → vizitas → darbai ir dalys → aktas → ataskaita. Peržiūra: https://docs.superhuman.com/@artifexordinis/servisas
 
 ## Duomenų apsauga
 

@@ -62,7 +62,7 @@ $AO_CASES = [
             ['Sprendimas', 'Darbų kalendorius susietas su klientais, atliktais darbais ir panaudotomis prekėmis.'],
             ['Po', 'Vadovas mato dienos darbus ir mėnesio pajamas be atskirų ataskaitų.'],
         ],
-        'demo' => '',
+        'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas',
     ],
 ];
 
