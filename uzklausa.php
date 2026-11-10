@@ -32,6 +32,7 @@ if ($vardas === '' || $zinute === '' || !filter_var($email, FILTER_VALIDATE_EMAI
 
 // Ko klientas nori. Įrašoma žinutės pradžioje, kad matytųsi ir Docs, ir laiške.
 $noras = 'Nemokamas 30 min. pokalbis su gyva peržiūra';
+if (($_POST['kalba'] ?? '') === 'en') { $noras .= ' (anglų kalba, užklausa iš /en/)'; }
 $zinute = "Pageidauja: $noras\n\n" . $zinute;
 
 // Ribojimas: ne daugiau 5 užklausų per valandą iš vieno IP.

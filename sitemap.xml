@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://artifexordinis.lt/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://artifexordinis.lt/apie/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://artifexordinis.lt/privatumo-politika/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://artifexordinis.lt/llms.txt</loc><lastmod>2026-10-21</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://artifexordinis.lt/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/"/></url>
+  <url><loc>https://artifexordinis.lt/en/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/"/></url>
+  <url><loc>https://artifexordinis.lt/kainos/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/kainos/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/pricing/"/></url>
+  <url><loc>https://artifexordinis.lt/en/pricing/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/kainos/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/pricing/"/></url>
+  <url><loc>https://artifexordinis.lt/apie/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/apie/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/about/"/></url>
+  <url><loc>https://artifexordinis.lt/en/about/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/apie/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/about/"/></url>
+  <url><loc>https://artifexordinis.lt/privatumo-politika/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/privatumo-politika/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/privacy/"/></url>
+  <url><loc>https://artifexordinis.lt/en/privacy/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/privatumo-politika/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/privacy/"/></url>
+  <url><loc>https://artifexordinis.lt/llms.txt</loc><lastmod>2026-11-10</lastmod></url>
 </urlset>

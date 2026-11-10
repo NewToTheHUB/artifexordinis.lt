@@ -3,7 +3,7 @@ require dirname(__DIR__) . '/inc/bootstrap.php';
 
 ao_head('Privatumo politika — Artifex Ordinis',
         'Kaip artifexordinis.lt tvarko užklausos formoje pateiktus asmens duomenis: kokie duomenys, kam, kiek laiko ir kokias teises turite.',
-        '/privatumo-politika/');
+        'privacy');
 ?>
 <main id="turinys" class="page">
 <section>

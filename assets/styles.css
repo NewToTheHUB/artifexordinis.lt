@@ -112,7 +112,9 @@ html { scroll-padding-top: 5rem; }
 .nav { display: flex; align-items: center; gap: var(--s1); }
 .nav a { color: var(--muted); text-decoration: none; font-size: var(--t-1); letter-spacing: 0.08em; text-transform: uppercase; }
 .nav a:hover { color: var(--ink); }
-@media (max-width: 760px) { .nav a:not(.btn) { display: none; } }
+@media (max-width: 760px) { .nav a:not(.btn):not(.lang) { display: none; } }
+.nav .lang { color: var(--ink); border: 1px solid var(--line); padding: var(--s-2) var(--s-1); }
+.nav .lang:hover { border-color: var(--ink); }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -313,3 +315,16 @@ footer a { color: var(--muted); }
 .docs-form { width: 100%; min-height: 42rem; border: 0; display: block; }
 .agent-note { border-top: 1px solid var(--line); padding-top: var(--s-1); }
 .agent-note code { font-size: 0.9em; color: var(--accent); }
+
+/* ---------- ką sistema daro, kainodara, skaičiuoklė ---------- */
+.jobs { display: grid; gap: var(--s1); list-style: none; margin: 0; padding: 0; }
+@media (min-width: 760px) { .jobs { grid-template-columns: repeat(3, 1fr); } }
+.jobs li { border-top: 1px solid var(--ink); padding-top: var(--s0); }
+.jobs h3 { margin-bottom: var(--s-2); }
+.jobs p { color: var(--muted); margin: 0; }
+@media (min-width: 760px) { .steps.three { grid-template-columns: repeat(3, 1fr); } }
+.pricing { margin: 0 0 var(--s1); max-width: var(--measure); }
+.pricing dt { font-family: var(--serif); font-size: var(--t1); padding-top: var(--s0); border-top: 1px solid var(--line); }
+.pricing dd { margin: var(--s-2) 0 var(--s0); color: var(--muted); }
+.calc { width: 100%; min-height: 48rem; border: 1px solid var(--line); display: block; background: var(--bg); }
+.steps.three { margin-bottom: var(--s1); }
