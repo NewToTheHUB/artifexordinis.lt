@@ -28,11 +28,15 @@ $zinute = $clean('zinute', 4000);
 $t = (int)($_POST['t'] ?? 0);
 if (($_POST['svetaine'] ?? '') !== '' || ($t > 0 && time() - $t < 3)) { ao_back('gauta'); }
 
-if ($vardas === '' || $zinute === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) { ao_back('trukumas'); }
+// Pažymėti darbai: priimami tik žinomi raktai, laiške rašomi lietuviškai.
+$sritys = array_values(array_intersect_key($AO_FORM_AREAS, array_flip(array_filter((array)($_POST['sritys'] ?? []), 'is_string'))));
+
+if ($vardas === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || ($zinute === '' && !$sritys)) { ao_back('trukumas'); }
 
 // Ko klientas nori. Įrašoma žinutės pradžioje, kad matytųsi ir Docs, ir laiške.
 $noras = 'Nemokamas 30 min. pokalbis su gyva peržiūra';
-$zinute = "Pageidauja: $noras\n\n" . $zinute;
+if (($_POST['kalba'] ?? '') === 'en') { $noras .= ' (anglų kalba, užklausa iš /en/)'; }
+$zinute = "Pageidauja: $noras\n" . ($sritys ? 'Daugiausia laiko užima: ' . implode(', ', $sritys) . "\n" : '') . "\n" . ($zinute !== '' ? $zinute : '(aprašymo nėra)');
 
 // Ribojimas: ne daugiau 5 užklausų per valandą iš vieno IP.
 $rlDir = ao_private_dir() . '/cache';
