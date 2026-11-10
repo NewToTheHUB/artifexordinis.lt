@@ -13,18 +13,18 @@ $AO_SERVICES = [
 ];
 
 $AO_FLOW = [
-    ['Inquiry',  'Inquiries arrive by email, phone and messages. Some of them get lost.',
-                 'All inquiries land in one list. You see which ones you have not answered yet.'],
-    ['Quote',    'A quote takes you an hour: you look up prices, copy them and check the totals.',
-                 'The system takes prices from your price list. You prepare a quote in a few minutes.'],
-    ['Order',    'You retype an approved quote into an order. Sometimes with a mistake.',
-                 'A quote becomes an order in one click. Goods are deducted from stock by themselves.'],
-    ['Tasks',    'Only the person who assigned a task knows who is doing what. You ask for status by phone.',
-                 'Everyone sees their own tasks and deadlines. The manager does not need to call.'],
-    ['Documents','You fill in invoices and work reports in Word. You search for the latest version.',
-                 'The invoice and work report fill in from the order by themselves. All documents are in one place.'],
-    ['Report',   'You collect the monthly report from several files. By the time you finish, it is out of date.',
-                 'Key numbers update by themselves. You do not wait for a report.'],
+    ['Inquiry',  'Inquiries and prices are scattered across emails. Nobody knows which price went to whom. A colleague taking over has to search for everything again.',
+                 'Every inquiry has one card with its full history and quoted prices. Your colleague does not need to search. You see which inquiries you have not answered yet.'],
+    ['Quote',    'A quote takes you an hour: you look up prices, check totals and fix client details. Or you wait for the office administrator to do it.',
+                 'The system takes prices from your price list, and the template is ready. You pick the client, and their details fill in by themselves.'],
+    ['Order',    'You enter the same order several times. Only one person knows the status of past orders, so you have to ask.',
+                 'A quote becomes an order in one click. Ordered goods are deducted from stock. When stock runs low, the system can email the supplier.'],
+    ['Tasks',    'Only the person who assigned a task knows who is doing what. You ask for status by phone or go and check yourself.',
+                 'Everyone sees their own tasks and deadlines. All work is in its place, so the manager does not need to call.'],
+    ['Documents','You fill in invoices and work reports in Word. You search for the latest version, and that takes time.',
+                 'The invoice and work report fill in from the order in a minute. Documents are stored with the order, so you do not search for them.'],
+    ['Report',   'You collect the monthly report from several files. Or you wait for an analyst to present it at a meeting. By then the numbers are out of date.',
+                 'The most current numbers are visible in real time, so you do not wait for a report. If needed, you can save the same report as a template.'],
 ];
 
 $AO_CASES = [
