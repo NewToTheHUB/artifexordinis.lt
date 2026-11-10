@@ -15,9 +15,9 @@ $AO_SERVICES = [
 
 // Darbo eiga: žingsnis, kaip yra dabar, kaip bus su sistema.
 $AO_FLOW = [
-    ['Užklausa',   'Užklausos ir kainos išbarstytos po laiškus. Neaišku, kam kokią kainą siūlėte. Kolega, perėmęs darbą, viską ieško iš naujo.',
+    ['Užklausa',   'Užklausos ir kainos išbarstytos po laiškus. Neaišku, kam kokią kainą siūlėte. Kolega, perėmęs darbą, visko ieško iš naujo.',
                    'Kiekviena užklausa turi vieną kortelę su visa istorija ir siūlytomis kainomis. Kolegai nieko ieškoti nereikia. Matote, į kurią dar neatsakėte.'],
-    ['Pasiūlymas', 'Pasiūlymą ruošiate valandą: ieškote kainų, tikrinate sumas, taisote kliento duomenis. Arba laukiate, kol tai padarys administratorė.',
+    ['Pasiūlymas', 'Pasiūlymą ruošiate valandą: ieškote kainų, tikrinate sumas, taisote kliento duomenis arba laukiate, kol tai padarys administratorė.',
                    'Kainas sistema ima iš kainyno, o šablonas jau paruoštas. Pasirenkate klientą, ir jo duomenys užsipildo patys.'],
     ['Užsakymas',  'Tą patį užsakymą įrašote kelis kartus. Senų užsakymų būseną žino tik vienas žmogus, todėl tenka klausti.',
                    'Pasiūlymas tampa užsakymu vienu paspaudimu. Užsakytos prekės nusirašo iš likučio. Kai likutis mažėja, sistema gali išsiųsti laišką tiekėjui.'],
