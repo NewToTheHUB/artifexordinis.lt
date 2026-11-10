@@ -15,18 +15,18 @@ $AO_SERVICES = [
 
 // Darbo eiga: žingsnis, kaip yra dabar, kaip bus su sistema.
 $AO_FLOW = [
-    ['Užklausa',   'Užklausos ateina el. paštu, telefonu ir žinutėmis. Dalis jų pasimeta.',
-                   'Visos užklausos patenka į vieną sąrašą. Matote, į kurią dar neatsakėte.'],
-    ['Pasiūlymas', 'Pasiūlymą ruošiate valandą: ieškote kainų, kopijuojate ir tikrinate sumas.',
-                   'Sistema ima kainas iš kainyno. Pasiūlymą paruošiate per kelias minutes.'],
-    ['Užsakymas',  'Patvirtintą pasiūlymą perrašote į užsakymą. Kartais su klaida.',
-                   'Pasiūlymas tampa užsakymu vienu paspaudimu. Prekės nusirašo iš likučio pačios.'],
-    ['Užduotys',   'Kas ką daro, žino tik tas, kuris paskyrė. Būseną klausiate telefonu.',
-                   'Kiekvienas mato savo užduotis ir terminus. Vadovui nereikia skambinti.'],
-    ['Dokumentai', 'Sąskaitas ir aktus pildote Word faile. Ieškote, kuri versija naujausia.',
-                   'Sąskaita ir aktas užsipildo patys iš užsakymo. Visi dokumentai vienoje vietoje.'],
-    ['Ataskaita',  'Mėnesio ataskaitą renkate iš kelių failų. Kol baigiate, ji jau pasenusi.',
-                   'Svarbiausi skaičiai atsinaujina patys. Ataskaitos laukti nereikia.'],
+    ['Užklausa',   'Užklausos ir kainos išbarstytos po laiškus. Neaišku, kam kokią kainą siūlėte. Kolega, perėmęs darbą, visko ieško iš naujo.',
+                   'Kiekviena užklausa turi vieną kortelę su visa istorija ir siūlytomis kainomis. Kolegai nieko ieškoti nereikia. Matote, į kurią dar neatsakėte.'],
+    ['Pasiūlymas', 'Pasiūlymą ruošiate valandą: ieškote kainų, tikrinate sumas, taisote kliento duomenis arba laukiate, kol tai padarys administratorė.',
+                   'Kainas sistema ima iš kainyno, o šablonas jau paruoštas. Pasirenkate klientą, ir jo duomenys užsipildo patys.'],
+    ['Užsakymas',  'Tą patį užsakymą įrašote kelis kartus. Senų užsakymų būseną žino tik vienas žmogus, todėl tenka klausti.',
+                   'Pasiūlymas tampa užsakymu vienu paspaudimu. Užsakytos prekės nusirašo iš likučio. Kai likutis mažėja, sistema gali išsiųsti laišką tiekėjui.'],
+    ['Užduotys',   'Kas ką daro, žino tik tas, kuris paskyrė. Būseną klausiate telefonu arba einate pasitikrinti patys.',
+                   'Kiekvienas mato savo užduotis ir terminus. Visi darbai savo vietose, todėl vadovui nereikia skambinti.'],
+    ['Dokumentai', 'Sąskaitas ir aktus pildote Word faile. Ieškote, kuri versija naujausia, ir tai užtrunka.',
+                   'Sąskaita ir aktas užsipildo patys iš užsakymo per minutę. Dokumentai saugomi prie užsakymo, todėl jų ieškoti nereikia.'],
+    ['Ataskaita',  'Mėnesio ataskaitą renkate iš kelių failų. Arba laukiate, kol analitikas ją parodys susirinkime. Tada skaičiai jau pasenę.',
+                   'Aktualiausi skaičiai matomi realiu laiku, todėl ataskaitos laukti nereikia. Jei reikia, tą pačią ataskaitą galima išsaugoti kaip šabloną.'],
 ];
 
 // Pavyzdžiai: problema, senas ir naujas būdas, rezultatas.
