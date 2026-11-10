@@ -16,6 +16,7 @@ ao_head('Apie — Saulius, Artifex Ordinis',
       <h1>Nuo fizinio darbo iki procesų tvarkos.</h1>
       <p class="lead">Baigęs mokyklą ieškojau savęs: dirbau ir keliavau po pasaulį. Išbandžiau statybas, logistiką, klientų aptarnavimą, elektrotechniką ir techninį konsultavimą. Visur mane domino tas pats: kaip veikia procesai, kodėl jie veikia būtent taip ir kaip juos galima pagerinti.</p>
       <p>Po kelerių metų kelionių, sukaupęs gyvenimo patirties, grįžau į Lietuvą. Dirbdamas samdomą darbą dažnai mačiau, kad užduotis galima atlikti lanksčiau ir paprasčiau: atimti iš žmogaus monotonišką darbą ir palikti jam laiko tam, kas iš tikrųjų naudinga.</p>
+      <p>Darbo vis daugėdavo, o laiko vis mažėdavo. Nuo to kentėdavo kokybė. Todėl anksčiau ar vėliau įmonėje turi atsirasti sistema. Ji turi būti aiški, paprasta ir padėti, o ne stabdyti.</p>
       <p>Kasdien besikeičiantis pasaulis su begale technologijų, programų ir informacijos šaltinių perkrauna net analitiškai mąstantį žmogų. Man reikėjo metodo ir įrankio tvarkai mintyse. Juo tapo Coda, dabar — Superhuman Docs.</p>
       <p>Jau trečius metus jame sudėlioti mano tikslai ir prioritetai, matyti finansai ir suplanuotas laikas. Valdomas laikas yra sutaupytas laikas, o jo lieka ir gyvenimui su mylima drauge. Tokią pačią tvarką dabar kuriu verslams.</p>
     </div>

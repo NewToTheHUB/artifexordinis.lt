@@ -61,9 +61,7 @@ $calc = (string)cfg('calc_embed_url');
       <h2><?= e(t('pr_faq_h2')) ?></h2>
     </div>
     <div class="faq">
-<?php foreach (t('pr_faq_ids') as $i): $q = $AO_FAQ[$i]; ?>
-      <details><summary><?= e($q[0]) ?></summary><p><?= e($q[1]) ?><?php if (!empty($q[2])): ?> <a href="<?= e($q[2][0]) ?>" rel="noopener"><?= e($q[2][1]) ?></a><?php endif; ?></p></details>
-<?php endforeach; ?>
+<?php foreach ($AO_FAQ as $q) { if ($q['g'] === 'kaina' && ($q['link'][0] ?? '') !== 'kainos') { ao_faq_item($q); } } ?>
     </div>
   </div>
 </section>

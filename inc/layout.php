@@ -22,6 +22,10 @@ function ao_head(string $title, string $desc, string $page = 'home', bool $faqLd
 <link rel="alternate" hreflang="x-default" href="<?= e(AO_SITE . ao_url($page, 'lt')) ?>">
 <link rel="alternate" type="text/markdown" href="/llms.txt" title="<?= e(t('md_title')) ?>">
 <meta name="color-scheme" content="light dark">
+<script>
+// Tema: lankytojo pasirinkimas (jei yra) svarbiau už sistemos nustatymą. Vykdoma prieš CSS, kad ekranas nemirgėtų.
+try { var t = localStorage.getItem('tema'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15110D" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg?v=<?= (int)@filemtime(dirname(__DIR__) . '/favicon.svg') ?>" type="image/svg+xml">
@@ -42,10 +46,11 @@ function ao_head(string $title, string $desc, string $page = 'home', bool $faqLd
   <div class="wrap">
     <a class="brand" href="<?= e(ao_url('home')) ?>" aria-label="<?= e(t('brand_home')) ?>"><?= AO_MARK ?><span>Artifex Ordinis</span></a>
     <nav class="nav" aria-label="<?= e(t('nav_label')) ?>">
-      <a href="<?= e(ao_url('home')) ?>#ka-daro"><?= e(t('nav_jobs')) ?></a>
-      <a href="<?= e(ao_url('home')) ?>#pavyzdziai"><?= e(t('nav_cases')) ?></a>
+      <a href="<?= e(ao_url('home')) ?>#kaip-veikia"><?= e(t('nav_flow')) ?></a>
+      <a href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('nav_cases')) ?></a>
       <a href="<?= e(ao_url('kainos')) ?>"><?= e(t('nav_prices')) ?></a>
       <a href="<?= e(ao_url('apie')) ?>"><?= e(t('nav_about')) ?></a>
+      <button class="theme" type="button" aria-label="<?= e(t('theme_label')) ?>" title="<?= e(t('theme_label')) ?>"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></svg></button>
       <a class="lang" href="<?= e(ao_url($page, $other)) ?>" hreflang="<?= e($other) ?>" lang="<?= e($other) ?>" aria-label="<?= e(t('lang_other_label')) ?>"><?= e(t('lang_other')) ?></a>
       <a class="btn" href="<?= e(ao_cta()) ?>"><?= e(t('nav_cta')) ?></a>
     </nav>
@@ -60,6 +65,14 @@ function ao_head(string $title, string $desc, string $page = 'home', bool $faqLd
     top.classList.toggle('hide', y > last && y > 120);
     last = y;
   }, { passive: true });
+  // Temos jungiklis: perjungia tarp šviesios ir tamsios, pasirinkimą įsimena šiame įrenginyje.
+  var btn = document.querySelector('.theme'), root = document.documentElement;
+  btn.addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('tema', next); } catch (e) {}
+  });
 })();
 </script>
 <?php
@@ -80,6 +93,8 @@ function ao_footer(): void
     <span>© <?= date('Y') ?> Artifex Ordinis</span>
     <nav class="foot-nav" aria-label="<?= e(t('foot_label')) ?>">
       <a href="<?= e(ao_url('apie')) ?>"><?= e(t('f_about')) ?></a>
+      <a href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('f_cases')) ?></a>
+      <a href="<?= e(ao_url('duk')) ?>"><?= e(t('f_faq')) ?></a>
       <a href="<?= e(ao_url('home')) ?>#kontaktai"><?= e(t('f_contacts')) ?></a>
       <a href="<?= e(ao_url('privacy')) ?>"><?= e(t('f_privacy')) ?></a>
       <a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a>
@@ -121,7 +136,12 @@ function ao_contact_form(): void
   <label><span><?= e(t('form_name')) ?></span><input name="vardas" autocomplete="name" required maxlength="120"></label>
   <label><span><?= e(t('form_email')) ?></span><input name="el_pastas" type="email" autocomplete="email" required maxlength="200"></label>
   <label><span><?= e(t('form_company')) ?> <small><?= e(t('form_optional')) ?></small></span><input name="imone" autocomplete="organization" maxlength="200"></label>
-  <label><span><?= e(t('form_msg')) ?></span><textarea name="zinute" rows="5" required maxlength="4000"></textarea></label>
+  <fieldset class="areas"><legend><?= e(t('form_areas')) ?></legend>
+<?php foreach ($GLOBALS['AO_FORM_AREAS'] as $k => $label): ?>
+    <label class="check"><input type="checkbox" name="sritys[]" value="<?= e($k) ?>"> <?= e($label) ?></label>
+<?php endforeach; ?>
+  </fieldset>
+  <label><span><?= e(t('form_msg')) ?> <small><?= e(t('form_optional')) ?></small></span><textarea name="zinute" rows="4" maxlength="4000" placeholder="<?= e(t('form_msg_ph')) ?>"></textarea></label>
   <div class="hp" aria-hidden="true"><label><span><?= e(t('form_site')) ?></span><input name="svetaine" tabindex="-1" autocomplete="off"></label></div>
   <input type="hidden" name="t" value="<?= time() ?>">
   <button class="btn" type="submit"><?= e(t('form_submit')) ?></button>

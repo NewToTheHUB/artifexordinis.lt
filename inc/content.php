@@ -12,12 +12,30 @@ const AO_PATHS = [
     'kainos'  => ['lt' => '/kainos/',             'en' => '/en/pricing/'],
     'apie'    => ['lt' => '/apie/',               'en' => '/en/about/'],
     'privacy' => ['lt' => '/privatumo-politika/', 'en' => '/en/privacy/'],
+    'pavyzdziai' => ['lt' => '/pavyzdziai/',      'en' => '/en/examples/'],
+    'duk'     => ['lt' => '/duk/',                'en' => '/en/faq/'],
 ];
 
 function t(string $key)
 {
     global $AO_T;
     return $AO_T[$key] ?? $key;
+}
+
+// Nuoroda: pilnas URL lieka toks pat, puslapio ID virsta adresu dabartine kalba.
+function ao_href(string $target): string
+{
+    return str_starts_with($target, 'http') ? $target : ao_url($target);
+}
+
+// Vienas DUK klausimas kaip <details>.
+function ao_faq_item(array $q): void
+{
+    echo '      <details><summary>' . e($q['q']) . '</summary><p>' . e($q['a']);
+    if (!empty($q['link'])) {
+        echo ' <a href="' . e(ao_href($q['link'][0])) . '">' . e($q['link'][1]) . '</a>';
+    }
+    echo "</p></details>\n";
 }
 
 // Puslapio adresas dabartine (arba nurodyta) kalba.
@@ -29,35 +47,39 @@ function ao_url(string $page, ?string $lang = null): string
 // Markdown versija agentams (Accept: text/markdown)
 function ao_markdown_home(): string
 {
-    global $AO_SERVICES, $AO_CASES, $AO_FAQ, $AO_JOBS, $AO_EXTRAS, $AO_SECTORS, $AO_PRICING, $AO_PRICING_WHY;
+    global $AO_SERVICES, $AO_CASES, $AO_FAQ, $AO_FAQ_GROUPS, $AO_FLOW, $AO_SECTORS, $AO_PRICING, $AO_PRICING_WHY;
     $en = AO_LANG === 'en';
     $L = $en
-        ? ['Artifex Ordinis — one place for your business', 'Saulius, remote, across Lithuania. I study how work moves in a company and join orders, quotes, stock, clients and reports into one live system built on Superhuman Docs. The system stays in the client\'s account. Goal: less manual work and a faster process.',
-           'Who it is for', 'From a single person to a company of several hundred employees.', 'What the system does', 'Also', 'Pricing', 'How I work', 'Examples', 'Preview', 'shown during the call', 'FAQ', 'Contact', 'Email', 'Phone', 'Inquiry form', 'About', 'Lietuviškai']
-        : ['Artifex Ordinis — viena vieta jūsų verslui', 'Saulius, nuotoliu visoje Lietuvoje. Išanalizuoju, kaip įmonėje juda darbas, ir užsakymus, pasiūlymus, sandėlį, klientus ir ataskaitas sujungiu į vieną gyvą sistemą Superhuman Docs platformoje. Sistema lieka kliento paskyroje. Tikslas: mažiau rankinio darbo, greitesnis procesas.',
-           'Kam tinka', 'Nuo vieno žmogaus iki kelių šimtų darbuotojų įmonės.', 'Ką sistema daro', 'Papildomai', 'Kainos', 'Kaip dirbu', 'Pavyzdžiai', 'Peržiūra', 'parodoma pokalbio metu', 'Dažni klausimai', 'Kontaktai', 'El. paštas', 'Telefonas', 'Užklausos forma', 'Apie', 'In English'];
-    $md  = "# {$L[0]}\n\n> {$L[1]}\n\n";
-    $md .= "## {$L[2]}\n\n" . implode(', ', $AO_SECTORS) . ". {$L[3]}\n\n";
-    $md .= "## {$L[4]}\n\n";
-    foreach ($AO_JOBS as $j) { $md .= "- {$j[0]}: {$j[1]}\n"; }
-    $md .= "\n### {$L[5]}\n\n";
-    foreach ($AO_EXTRAS as $x) { $md .= "- {$x[0]}: {$x[1]}\n"; }
-    $md .= "\n## {$L[6]}\n\n**" . t('price_h2') . "**\n\n";
+        ? ['Saulius, remote, across Lithuania. I study how work moves in a company and join inquiries, quotes, orders, tasks, documents and reports into one live system built on Superhuman Docs. The system stays in the client\'s account.',
+           'Who it is for', 'From a single person to a company of several hundred employees.', 'Preview', 'shown during the call', 'Contact', 'Email', 'Phone', 'Inquiry form', 'About', 'Lietuviškai']
+        : ['Saulius, nuotoliu visoje Lietuvoje. Išanalizuoju, kaip įmonėje juda darbas, ir užklausas, pasiūlymus, užsakymus, užduotis, dokumentus ir ataskaitas sujungiu į vieną gyvą sistemą Superhuman Docs platformoje. Sistema lieka kliento paskyroje.',
+           'Kam tinka', 'Nuo vieno žmogaus iki kelių šimtų darbuotojų įmonės.', 'Peržiūra', 'parodoma pokalbio metu', 'Kontaktai', 'El. paštas', 'Telefonas', 'Užklausos forma', 'Apie', 'In English'];
+    $md  = '# ' . t('home_title') . "\n\n> {$L[0]}\n\n";
+    $md .= '## ' . t('pain_h2') . "\n\n" . t('pain_p') . "\n\n";
+    $md .= '## ' . t('flow_h2') . "\n\n" . t('flow_p') . "\n\n";
+    foreach ($AO_FLOW as $f) { $md .= "- **{$f[0]}** — " . t('flow_now') . ": {$f[1]} " . t('flow_new') . ": {$f[2]}\n"; }
+    $md .= "\n## {$L[1]}\n\n" . implode(', ', $AO_SECTORS) . ". {$L[2]}\n\n";
+    $md .= '## ' . t('cases_label') . "\n\n";
+    foreach ($AO_CASES as $c) {
+        $md .= "### {$c['problem']}\n{$c['tag']}\n\n- " . t('case_old') . ": {$c['old']}\n- " . t('case_new') . ": {$c['new']}\n- " . t('case_result') . ": {$c['result']}\n";
+        $md .= "- {$L[3]}: " . (!empty($c['demo']) ? $c['demo'] : $L[4]) . "\n\n";
+    }
+    $md .= '## ' . t('how_label') . "\n\n";
+    foreach ($AO_SERVICES as $s) { $md .= "- **{$s['name']}** — {$s['price']}. {$s['desc']}\n"; }
+    $md .= "\n## " . t('price_label') . "\n\n**" . t('price_h2') . "**\n\n";
     foreach ($AO_PRICING as $p) { $md .= "- {$p[0]}: {$p[1]}\n"; }
     $md .= "\n";
     foreach ($AO_PRICING_WHY as $w) { $md .= "**{$w[0]}** {$w[1]}\n\n"; }
-    $md .= AO_SITE . ao_url('kainos') . "\n\n## {$L[7]}\n\n";
-    foreach ($AO_SERVICES as $s) { $md .= "- **{$s['name']}** — {$s['price']}. {$s['desc']}\n"; }
-    $md .= "\n## {$L[8]}\n\n";
-    foreach ($AO_CASES as $c) {
-        $md .= "### {$c['title']}\n{$c['tag']}\n\n";
-        foreach ($c['rows'] as $r) { $md .= "- {$r[0]}: {$r[1]}\n"; }
-        $md .= "- {$L[9]}: " . (!empty($c['demo']) ? $c['demo'] : $L[10]) . "\n\n";
+    $md .= AO_SITE . ao_url('kainos') . "\n\n## " . t('faq_label') . "\n\n";
+    foreach ($AO_FAQ_GROUPS as $g => $gName) {
+        $md .= "### {$gName}\n\n";
+        foreach ($AO_FAQ as $q) {
+            if ($q['g'] !== $g) continue;
+            $md .= "**{$q['q']}**\n{$q['a']}" . (!empty($q['link']) ? ' ' . (str_starts_with($q['link'][0], 'http') ? $q['link'][0] : AO_SITE . ao_url($q['link'][0])) : '') . "\n\n";
+        }
     }
-    $md .= "## {$L[11]}\n\n";
-    foreach ($AO_FAQ as $q) { $md .= "**{$q[0]}**\n{$q[1]}" . (!empty($q[2]) ? " {$q[2][0]}" : '') . "\n\n"; }
     $home = AO_SITE . ao_url('home');
-    $md .= "## {$L[12]}\n\n- {$L[13]}: " . AO_EMAIL . "\n- {$L[14]}: " . AO_PHONE_DISPLAY . "\n- {$L[15]}: {$home}#kontaktai\n- {$L[16]}: " . AO_SITE . ao_url('apie') . "\n- {$L[17]}: " . AO_SITE . ao_url('home', $en ? 'lt' : 'en') . "\n";
+    $md .= "## {$L[5]}\n\n- {$L[6]}: " . AO_EMAIL . "\n- {$L[7]}: " . AO_PHONE_DISPLAY . "\n- {$L[8]}: {$home}#kontaktai\n- {$L[9]}: " . AO_SITE . ao_url('apie') . "\n- {$L[10]}: " . AO_SITE . ao_url('home', $en ? 'lt' : 'en') . "\n";
     return $md;
 }
 
@@ -108,8 +130,8 @@ function ao_jsonld(bool $withFaq = false): string
         $graph[] = [
             '@type' => 'FAQPage',
             'inLanguage' => AO_LANG,
-            'mainEntity' => array_map(fn($q) => ['@type' => 'Question', 'name' => $q[0],
-                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q[1]]], $AO_FAQ),
+            'mainEntity' => array_map(fn($q) => ['@type' => 'Question', 'name' => $q['q'],
+                'acceptedAnswer' => ['@type' => 'Answer', 'text' => $q['a']]], $AO_FAQ),
         ];
     }
     return json_encode(['@context' => 'https://schema.org', '@graph' => $graph], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);

@@ -7,9 +7,11 @@
 - [Pradžia](https://artifexordinis.lt/): paslaugos, pavyzdžiai, kainos, dažni klausimai
 - [Apie](https://artifexordinis.lt/apie/): Sauliaus patirtis — gamyba, užsakymų valdymas, techninis darbas, automatizacija
 - [Kontaktai](https://artifexordinis.lt/#kontaktai): registracija nemokamam 30 min. pokalbiui su gyva sistemų peržiūra, el. paštas
+- [Pavyzdžiai](https://artifexordinis.lt/pavyzdziai/): senas ir naujas darbo būdas, vieši demo
+- [Dažni klausimai](https://artifexordinis.lt/duk/): darbas, kaina, platforma ir duomenys, ko nedaroma
 - [Kainos](https://artifexordinis.lt/kainos/): kaip skaičiuojama kaina ir kodėl ne valandinis įkainis ar mokestis už žmogų
 - [Privatumo politika](https://artifexordinis.lt/privatumo-politika/): kaip tvarkomi užklausų duomenys
-- [English version](https://artifexordinis.lt/en/): full copy of the site in English ([Pricing](https://artifexordinis.lt/en/pricing/), [About](https://artifexordinis.lt/en/about/), [Privacy](https://artifexordinis.lt/en/privacy/))
+- [English version](https://artifexordinis.lt/en/): full copy of the site in English ([Examples](https://artifexordinis.lt/en/examples/), [FAQ](https://artifexordinis.lt/en/faq/), [Pricing](https://artifexordinis.lt/en/pricing/), [About](https://artifexordinis.lt/en/about/), [Privacy](https://artifexordinis.lt/en/privacy/))
 
 ## Paslaugos
 

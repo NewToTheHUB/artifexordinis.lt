@@ -17,6 +17,7 @@ ao_head('About — Saulius, Artifex Ordinis',
       <h1>From physical work to process order.</h1>
       <p class="lead">After school I was looking for my path: I worked and travelled around the world. I tried construction, logistics, customer service, electrical engineering and technical consulting. Everywhere I was curious about the same thing: how processes work, why they work that way and how they can be improved.</p>
       <p>After several years of travel and life experience, I came back to Lithuania. In employed work I often saw that tasks could be done in a more flexible and simpler way: take monotonous work away from people and leave them time for what is really useful.</p>
+      <p>There was always more work and less time. Quality suffered. So sooner or later, a company needs a system. It must be clear, simple and helpful, not something that slows work down.</p>
       <p>A world that changes every day, with endless technologies, apps and sources of information, overloads even an analytical mind. I needed a method and a tool to keep my thoughts in order. That tool became Coda, now Superhuman Docs.</p>
       <p>For the third year now it has held my goals and priorities, my finances and my planned time. Managed time is saved time, and it leaves time for life with my dear partner. Now I build the same kind of order for businesses.</p>
     </div>

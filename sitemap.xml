@@ -16,5 +16,13 @@
     <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/privatumo-politika/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/privacy/"/></url>
   <url><loc>https://artifexordinis.lt/en/privacy/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/privatumo-politika/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/privacy/"/></url>
+  <url><loc>https://artifexordinis.lt/pavyzdziai/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/pavyzdziai/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/examples/"/></url>
+  <url><loc>https://artifexordinis.lt/en/examples/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/pavyzdziai/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/examples/"/></url>
+  <url><loc>https://artifexordinis.lt/duk/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/duk/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/faq/"/></url>
+  <url><loc>https://artifexordinis.lt/en/faq/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="lt" href="https://artifexordinis.lt/duk/"/><xhtml:link rel="alternate" hreflang="en" href="https://artifexordinis.lt/en/faq/"/></url>
   <url><loc>https://artifexordinis.lt/llms.txt</loc><lastmod>2026-11-10</lastmod></url>
 </urlset>
