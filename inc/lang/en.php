@@ -270,6 +270,7 @@ $AO_T = [
     'f_about' => 'About', 'f_cases' => 'Examples', 'f_faq' => 'FAQ', 'f_contacts' => 'Contact', 'f_privacy' => 'Privacy policy',
 
     'form_frame' => 'Inquiry form',
+    'form_open' => 'Form not loading? Open it in a new window →',
     'form_toolname' => 'book_call',
     'form_tool' => 'Book a free 30-minute call with a live walkthrough of working systems with Artifex Ordinis (Saulius, remote). Requires a name, an email address and either the tasks that take the most time or a short description of the workflow.',
     'form_ok' => 'Thank you! I received your inquiry and will reply within one business day.',

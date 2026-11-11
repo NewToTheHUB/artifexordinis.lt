@@ -128,7 +128,10 @@ function ao_contact_form(): void
 {
     $docsForm = ao_docs_form_url();
     if ($docsForm !== '') {
-        echo '<iframe id="forma" class="docs-form" src="' . e($docsForm) . '" title="' . e(t('form_frame')) . '" loading="lazy" allow="fullscreen"></iframe>';
+        echo '<iframe id="forma" class="docs-form" src="' . e($docsForm) . '" title="' . e(t('form_frame')) . '" allow="fullscreen"></iframe>';
+        // Atsarginis kelias: ta pati forma naujame lange (veikia ir tada, kai naršyklė blokuoja rėmelį).
+        $openUrl = str_replace('/embed/PODHplSJE1', '/form/Registracija_dPODHplSJE1', $docsForm);
+        echo '<p class="note form-open"><a href="' . e($openUrl) . '" target="_blank" rel="noopener">' . e(t('form_open')) . '</a></p>';
         return;
     }
     $status = $_GET['forma'] ?? '';
