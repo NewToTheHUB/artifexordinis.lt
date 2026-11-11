@@ -250,8 +250,8 @@ $AO_T = [
     'faq_lead' => 'Čia rasite ir tai, ko nedarau. Geriau sužinoti dabar nei po metų.',
 
     'contact_label' => 'Kontaktai',
-    'contact_h2' => 'Papasakokite, kaip vyksta jūsų darbas.',
-    'contact_p' => 'Problemos ieškoti nereikia. Pažymėkite, kas užima daugiausia laiko, arba aprašykite savo įprastą dieną. Problemas surasime kartu.',
+    'contact_h2' => 'Pasirinkite pokalbio laiką.',
+    'contact_p' => 'Registracija vyksta mano paties sistemoje. Pasirinktas laikas iškart patenka į mano darbo sistemą ir kalendorių, o jūs gaunate kvietimą. Tokią pat registraciją galiu sukurti ir jūsų verslui.',
     'contact_cases' => 'Dar nežinote, ko norite? Pažiūrėkite pavyzdžius →',
     'c_email' => 'El. paštas', 'c_phone' => 'Telefonas', 'c_work' => 'Darbas', 'c_work_val' => 'Nuotoliu, visoje Lietuvoje',
 
@@ -293,5 +293,4 @@ $AO_T = [
     'form_submit' => 'Užsiregistruoti pokalbiui',
     'form_privacy' => 'Duomenis naudosiu tik atsakyti į jūsų užklausą. Daugiau —',
     'form_privacy_link' => 'privatumo politikoje',
-    'form_agent' => '<b>Turite AI asistentą?</b> Ši forma pažymėta kaip WebMCP įrankis <code>uzsakyti_pokalbi</code>, todėl asistentas naršyklėje gali ją užpildyti už jus.',
 ];

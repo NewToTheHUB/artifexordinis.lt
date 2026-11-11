@@ -114,8 +114,12 @@ function ao_footer(): void
 // naršyklės AI agentas mato šią formą kaip įrankį „užsakyti pokalbį“ ir gali ją užpildyti vartotojo prašymu.
 function ao_contact_form(): void
 {
-    // Alternatyva: Superhuman Docs forma (iframe). Įjungiama config.php 'form_url' reikšme.
+    // Lietuviškame puslapyje — registracija Business OS (Superhuman Docs forma, iframe).
+    // config.php 'form_url' reikšmė, jei nustatyta, turi pirmenybę.
     $docsForm = (string)cfg('form_url');
+    if ($docsForm === '' && AO_LANG === 'lt') {
+        $docsForm = 'https://docs.superhuman.com/form/Registracija_dPODHplSJE1';
+    }
     if ($docsForm !== '') {
         echo '<iframe id="forma" class="docs-form" src="' . e($docsForm) . '" title="' . e(t('form_frame')) . '" loading="lazy"></iframe>';
         return;
@@ -146,7 +150,6 @@ function ao_contact_form(): void
   <input type="hidden" name="t" value="<?= time() ?>">
   <button class="btn" type="submit"><?= e(t('form_submit')) ?></button>
   <p class="note"><?= e(t('form_privacy')) ?> <a href="<?= e(ao_url('privacy')) ?>"><?= e(t('form_privacy_link')) ?></a>.</p>
-  <p class="note agent-note"><?= t('form_agent') ?></p>
 </form>
 <?php
 }

@@ -283,5 +283,4 @@ $AO_T = [
     'form_submit' => 'Book the call',
     'form_privacy' => 'I will use your data only to reply to your inquiry. More in the',
     'form_privacy_link' => 'privacy policy',
-    'form_agent' => '<b>Have an AI assistant?</b> This form is marked as the WebMCP tool <code>book_call</code>, so an assistant in your browser can fill it in for you.',
 ];
