@@ -168,7 +168,8 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) {
   .split { grid-template-columns: 1.618fr 1fr; gap: var(--s3); align-items: center; }
   .split.rev { grid-template-columns: 1fr 1.618fr; }
-  .split.split-form { grid-template-columns: minmax(0, 1fr) minmax(0, 50rem); align-items: start; }
+  .wrap.split-form { max-width: 92rem; }
+  .split.split-form { grid-template-columns: minmax(18rem, 1fr) minmax(0, 60rem); align-items: start; }
 }
 
 /* ---------- hero ---------- */
