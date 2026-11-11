@@ -93,12 +93,12 @@ $AO_FAQ = [
      'a' => 'We agree on the build price in advance. We calculate it from how much the system will save you each month, not from hours. The first call is free. You get the support price in a personal proposal.',
      'link' => ['kainos', 'How the price is calculated →']],
     ['g' => 'darbas', 'top' => true, 'q' => 'Can I see what the system would look like before I pay?',
-     'a' => 'Yes. I build one of your main processes in my account with sample data, free of charge, and show it to you. We agree on this during the call.'],
+     'a' => 'Yes, and not only see it. After the first call, I build one core process of yours for free, with sample data. You get a link and try it like a real user: fill it in, change it, press the buttons. It is a first version, so your feedback shows what to improve next.'],
     ['g' => 'darbas', 'top' => true, 'q' => 'Will we have to replace the programs we already use?',
      'a' => 'Usually not. The system connects what you already have: email, calendar, spreadsheets. We change only what really gets in the way.'],
     ['g' => 'platforma', 'top' => true, 'q' => 'Whose account will the system be in?',
      'a' => 'Yours. Superhuman Docs is not my platform: I build a system in it that fits your work. While I build, I hold a builder (Doc Maker) license in your account. You can switch it off when the work is done and switch it on again when you need changes. So you pay only for the time I work. If it suits you better, I can build the system in my account and hand it over to you, paid for.'],
-    ['g' => 'nedarau', 'top' => true, 'q' => 'Do you handle bookkeeping and tax returns?',
+    ['g' => 'nedarau', 'q' => 'Do you handle bookkeeping and tax returns?',
      'a' => 'No. VAT returns, i.SAF, SAF-T and payroll are handled by your accounting software or bookkeeper. The system handles what happens next to accounting: inquiries, orders, tasks. It can prepare data for your bookkeeper.'],
 
     ['g' => 'darbas', 'q' => 'Do you work only with small companies?',
@@ -237,7 +237,7 @@ $AO_T = [
 
     'faq_label' => 'FAQ',
     'faq_h2' => 'What people ask most.',
-    'faq_all' => 'All questions, including what I do not do →',
+    'faq_all' => 'All FAQ →',
     'faq_title' => 'FAQ — Artifex Ordinis',
     'faq_desc' => 'Answers about work, price, platform and data. And honestly: what I do not do and when this solution does not fit.',
     'faq_lead' => 'Here you will also find what I do not do. Better to know now than in a year.',

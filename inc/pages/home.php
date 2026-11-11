@@ -120,11 +120,13 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
         <dt><?= e($p[0]) ?></dt><dd><?= e($p[1]) ?></dd>
 <?php endforeach; ?>
       </dl>
-      <p><a class="btn ghost" href="<?= e(ao_url('kainos')) ?>"><?= e(t('price_more')) ?></a></p>
     </div>
     <div>
       <p class="note"><?= e(t('price_note')) ?> <a href="https://superhuman.com/plans" rel="noopener"><?= e(t('price_plans')) ?></a></p>
     </div>
+  </div>
+  <div class="wrap">
+    <p class="center-cta"><a class="btn" href="<?= e(ao_url('kainos')) ?>"><?= e(t('price_more')) ?></a></p>
   </div>
 </section>
 
@@ -154,7 +156,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
     <div class="faq">
 <?php foreach ($AO_FAQ as $q) { if (!empty($q['top'])) { ao_faq_item($q); } } ?>
     </div>
-    <p><a class="btn ghost" href="<?= e(ao_url('duk')) ?>"><?= e(t('faq_all')) ?></a></p>
+    <p class="center-cta"><a class="btn" href="<?= e(ao_url('duk')) ?>"><?= e(t('faq_all')) ?></a></p>
   </div>
 </section>
 
