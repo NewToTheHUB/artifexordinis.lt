@@ -159,7 +159,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 </section>
 
 <section id="kontaktai">
-  <div class="wrap split">
+  <div class="wrap split<?= ao_docs_form_url() !== '' ? ' split-form' : '' ?>">
     <div>
       <div class="section-head">
         <p class="label"><b>IX</b> <?= e(t('contact_label')) ?></p>

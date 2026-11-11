@@ -112,16 +112,23 @@ function ao_footer(): void
 
 // Sava užklausos forma. toolname / tooldescription — WebMCP deklaratyvūs atributai:
 // naršyklės AI agentas mato šią formą kaip įrankį „užsakyti pokalbį“ ir gali ją užpildyti vartotojo prašymu.
+// Lietuviškame puslapyje — registracija Business OS (Superhuman Docs forma, iframe).
+// Rėmeliui tinka tik /embed/ nuoroda; /form/ nuoroda iframe viduje atmetama.
+// config.php 'form_url' reikšmė, jei nustatyta, turi pirmenybę.
+function ao_docs_form_url(): string
+{
+    $url = (string)cfg('form_url');
+    if ($url === '' && AO_LANG === 'lt') {
+        $url = 'https://docs.superhuman.com/embed/PODHplSJE1';
+    }
+    return $url;
+}
+
 function ao_contact_form(): void
 {
-    // Lietuviškame puslapyje — registracija Business OS (Superhuman Docs forma, iframe).
-    // config.php 'form_url' reikšmė, jei nustatyta, turi pirmenybę.
-    $docsForm = (string)cfg('form_url');
-    if ($docsForm === '' && AO_LANG === 'lt') {
-        $docsForm = 'https://docs.superhuman.com/form/Registracija_dPODHplSJE1';
-    }
+    $docsForm = ao_docs_form_url();
     if ($docsForm !== '') {
-        echo '<iframe id="forma" class="docs-form" src="' . e($docsForm) . '" title="' . e(t('form_frame')) . '" loading="lazy"></iframe>';
+        echo '<iframe id="forma" class="docs-form" src="' . e($docsForm) . '" title="' . e(t('form_frame')) . '" loading="lazy" allow="fullscreen"></iframe>';
         return;
     }
     $status = $_GET['forma'] ?? '';
