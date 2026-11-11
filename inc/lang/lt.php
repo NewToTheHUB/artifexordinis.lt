@@ -98,12 +98,12 @@ $AO_FAQ = [
      'a' => 'Sistemos sukūrimo kainą sutariame iš anksto. Ją skaičiuojame iš to, kiek sistema sutaupys per mėnesį, o ne iš valandų. Pirmas pokalbis nemokamas. Priežiūros kainą gaunate individualiame pasiūlyme.',
      'link' => ['kainos', 'Kaip skaičiuojama kaina →']],
     ['g' => 'darbas', 'top' => true, 'q' => 'Ar galiu pamatyti, kaip sistema atrodytų, prieš mokėdamas?',
-     'a' => 'Taip. Savo paskyroje nemokamai sukuriu vieną pagrindinį jūsų procesą su netikrais duomenimis ir jį parodau. Apie tai susitariame pokalbio metu.'],
+     'a' => 'Taip, ir ne tik pamatyti. Po pirmo pokalbio nemokamai sukuriu vieną pagrindinį jūsų procesą su netikrais duomenimis. Gaunate nuorodą ir išbandote jį kaip tikras vartotojas: pildote, keičiate, spaudžiate mygtukus. Tai pradinė versija, todėl jūsų pastabos parodo, ką tobulinti toliau.'],
     ['g' => 'darbas', 'top' => true, 'q' => 'Ar reikės keisti programas, kurias jau naudojame?',
      'a' => 'Dažniausiai ne. Sistema sujungia tai, ką jau turite: el. paštą, kalendorių, skaičiuokles. Keičiame tik tai, kas iš tikrųjų trukdo.'],
     ['g' => 'platforma', 'top' => true, 'q' => 'Kieno paskyroje bus sistema?',
      'a' => 'Jūsų. Superhuman Docs — ne mano platforma: aš joje sukuriu sistemą, pritaikytą jūsų darbui. Kol kuriu, jūsų paskyroje turiu kūrėjo (Doc Maker) licenciją. Baigus darbus ją galima išjungti, o prireikus pakeitimų – vėl įjungti. Todėl mokate tik už tą laiką, kol dirbu. Jei patogiau, sistemą galiu sukurti savo paskyroje ir apmokėtą perduoti jums.'],
-    ['g' => 'nedarau', 'top' => true, 'q' => 'Ar tvarkote buhalteriją ir mokesčių deklaracijas?',
+    ['g' => 'nedarau', 'q' => 'Ar tvarkote buhalteriją ir mokesčių deklaracijas?',
      'a' => 'Ne. PVM deklaracijas, i.SAF, SAF-T ir darbo užmokestį tvarko apskaitos programa arba buhalteris. Sistema tvarko tai, kas vyksta šalia apskaitos: užklausas, užsakymus, užduotis. Ji gali paruošti duomenis buhalteriui.'],
 
     ['g' => 'darbas', 'q' => 'Ar dirbate tik su mažomis įmonėmis?',
@@ -244,7 +244,7 @@ $AO_T = [
 
     'faq_label' => 'Dažni klausimai',
     'faq_h2' => 'Ko dažniausiai klausiama.',
-    'faq_all' => 'Visi klausimai, taip pat ko nedarau →',
+    'faq_all' => 'Visi DUK →',
     'faq_title' => 'Dažni klausimai — Artifex Ordinis',
     'faq_desc' => 'Atsakymai apie darbą, kainą, platformą ir duomenis. Taip pat sąžiningai: ko nedarau ir kada šis sprendimas netinka.',
     'faq_lead' => 'Čia rasite ir tai, ko nedarau. Geriau sužinoti dabar nei po metų.',
