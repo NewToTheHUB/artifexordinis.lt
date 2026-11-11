@@ -206,6 +206,8 @@ $AO_T = [
     'case_old' => 'Old way', 'case_new' => 'New way', 'case_result' => 'Result',
     'case_try' => 'Try the system →',
     'case_call' => 'See it during the call →',
+    'docs_intro' => 'New to Superhuman Docs?',
+    'docs_intro_link' => 'See a short example of what it can do (in Lithuanian) →',
     'case_frame' => 'Sample system',
     'demo_note' => 'Public previews use sample data, so feel free to click around. The demos are in Lithuanian. I show other examples live during the call.',
     'ex_title' => 'Examples — Artifex Ordinis',

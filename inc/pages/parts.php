@@ -1,6 +1,9 @@
 <?php
 // Bendros dalys keliems puslapiams.
 
+// Minimalus Superhuman Docs galimybių pavyzdys.
+const AO_DOCS_INTRO = 'https://docs.superhuman.com/@artifexordinis/docs-kas-tai';
+
 // Pavyzdžio kortelė. $full = true rodo seną/naują būdą ir įterptą demo (jei yra).
 function ao_case(array $c, bool $full = false): void
 {
