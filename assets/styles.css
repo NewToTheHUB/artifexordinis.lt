@@ -168,6 +168,7 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) {
   .split { grid-template-columns: 1.618fr 1fr; gap: var(--s3); align-items: center; }
   .split.rev { grid-template-columns: 1fr 1.618fr; }
+  .split.split-form { grid-template-columns: 1fr; }
 }
 
 /* ---------- hero ---------- */
@@ -279,7 +280,8 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 
 /* ---------- contact ---------- */
 .contact-box { border: 1px solid var(--line); background: var(--surface); }
-.contact-box iframe { width: 100%; min-height: 42rem; border: 0; display: block; }
+.contact-box iframe { width: 100%; min-height: 62rem; border: 0; display: block; }
+.split-form .contact-box { max-width: 56rem; width: 100%; margin: 0 auto; }
 .contact-fallback { padding: var(--s2); }
 .contact-list { list-style: none; margin: var(--s1) 0 0; padding: 0; }
 .contact-list li { padding: var(--s-1) 0; border-bottom: 1px solid var(--line); }
@@ -332,7 +334,6 @@ footer a { color: var(--muted); }
 
 /* kainų lentelė be skaičių: tekstinės reikšmės */
 .prices td { font-size: var(--t0); white-space: normal; max-width: 12rem; }
-.docs-form { width: 100%; min-height: 54rem; border: 0; display: block; }
 
 /* ---------- ką sistema daro, kainodara, skaičiuoklė ---------- */
 .jobs { display: grid; gap: var(--s1); list-style: none; margin: 0; padding: 0; }
