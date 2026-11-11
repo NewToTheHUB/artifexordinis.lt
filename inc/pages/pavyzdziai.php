@@ -13,6 +13,7 @@ ao_head(t('ex_title'), t('ex_desc'), 'pavyzdziai');
     <div class="cases one">
 <?php foreach ($AO_CASES as $c) { ao_case($c, true); } ?>
     </div>
+    <p class="docs-intro"><?= e(t('docs_intro')) ?> <a href="<?= e(AO_DOCS_INTRO) ?>" target="_blank" rel="noopener"><?= e(t('docs_intro_link')) ?></a></p>
     <p class="demo-note"><?= e(t('demo_note')) ?></p>
     <div class="process">
       <h3><?= e(t('process_h3')) ?></h3>

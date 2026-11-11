@@ -222,6 +222,12 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .case dt { color: var(--accent); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
 .case dd { margin: 0 0 var(--s-2); }
 .case .case-link { margin-top: auto; align-self: flex-start; }
+/* Kortelės mygtukas: akcento rėmelis ir tekstas, kad būtų aišku, jog tai mygtukas. */
+.case .btn.ghost.case-link { border-color: var(--accent); color: var(--accent) !important; font-weight: 600; }
+.case .btn.ghost.case-link:hover { background: var(--accent); color: var(--accent-ink) !important; }
+.center-cta { text-align: center; margin: var(--s2) auto 0; max-width: none; }
+.docs-intro { margin: var(--s1) auto 0; max-width: none; text-align: center; color: var(--muted); }
+.docs-intro a { color: var(--accent); }
 .case .soon { cursor: default; color: var(--muted) !important; border-style: dashed; }
 .case .soon:hover { border-color: var(--line); }
 .case figure { margin: var(--s0) 0 0; }

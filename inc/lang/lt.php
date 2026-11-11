@@ -213,6 +213,8 @@ $AO_T = [
     'case_old' => 'Senas būdas', 'case_new' => 'Naujas būdas', 'case_result' => 'Rezultatas',
     'case_try' => 'Išbandyti sistemą →',
     'case_call' => 'Pamatyti pokalbio metu →',
+    'docs_intro' => 'Pirmą kartą girdite apie Superhuman Docs?',
+    'docs_intro_link' => 'Pažiūrėkite trumpą galimybių pavyzdį →',
     'case_frame' => 'Pavyzdinė sistema',
     'demo_note' => 'Viešose peržiūrose — netikri duomenys, todėl sistemą galite drąsiai spaudinėti patys. Kitus pavyzdžius gyvai parodau pokalbio metu.',
     'ex_title' => 'Pavyzdžiai — Artifex Ordinis',

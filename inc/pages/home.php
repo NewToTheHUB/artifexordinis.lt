@@ -88,7 +88,8 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
     <div class="cases two">
 <?php foreach (array_slice($AO_CASES, 0, 2) as $c) { ao_case($c); } ?>
     </div>
-    <p><a class="btn ghost" href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('cases_all')) ?></a></p>
+    <p class="docs-intro"><?= e(t('docs_intro')) ?> <a href="<?= e(AO_DOCS_INTRO) ?>" target="_blank" rel="noopener"><?= e(t('docs_intro_link')) ?></a></p>
+    <p class="center-cta"><a class="btn" href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('cases_all')) ?></a></p>
   </div>
 </section>
 
