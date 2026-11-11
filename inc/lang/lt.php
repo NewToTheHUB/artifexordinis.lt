@@ -279,7 +279,8 @@ $AO_T = [
     'f_about' => 'Apie', 'f_cases' => 'Pavyzdžiai', 'f_faq' => 'DUK', 'f_contacts' => 'Kontaktai', 'f_privacy' => 'Privatumo politika',
 
     // Forma
-    'form_frame' => 'Užklausos forma',
+    'form_frame' => 'Registracijos forma',
+    'form_open' => 'Forma neatsidaro? Atidarykite ją naujame lange →',
     'form_toolname' => 'uzsakyti_pokalbi',
     'form_tool' => 'Užsiregistruoti nemokamam 30 min. pokalbiui su gyva sistemų peržiūra su Artifex Ordinis (Saulius, nuotoliu visoje Lietuvoje). Reikia vardo, el. pašto ir pažymėtų darbų, kurie užima daugiausia laiko, arba trumpo darbo eigos aprašymo.',
     'form_ok' => 'Ačiū! Užklausą gavau ir atsakysiu per vieną darbo dieną.',
