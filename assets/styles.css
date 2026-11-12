@@ -281,7 +281,7 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 
 /* ---------- contact ---------- */
 .contact-box { border: 1px solid var(--line); background: var(--surface); }
-.contact-box iframe { width: 100%; min-height: 56rem; border: 0; display: block; }
+.contact-box iframe { width: 100%; min-height: 50rem; border: 0; display: block; }
 .form-open { padding: var(--s-1) var(--s0); margin: 0; }
 .contact-fallback { padding: var(--s2); }
 .contact-list { list-style: none; margin: var(--s1) 0 0; padding: 0; }
