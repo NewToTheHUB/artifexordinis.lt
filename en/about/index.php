@@ -49,6 +49,7 @@ ao_head('About — Saulius, Artifex Ordinis',
         <li>Superhuman Docs (formerly Coda)<small>tables, formulas, automations, system design</small></li>
         <li>Superhuman Go and AI<small>summaries, drafts, work with documents</small></li>
         <li>Scripts<small>PowerShell, JavaScript, Python — file processing, data extraction from PDF, ZIP, DOCX, XML</small></li>
+        <li>Custom solutions<small>when the whole flow must work end to end: from getting the data to putting it in order</small></li>
       </ul>
     </div>
   </div>

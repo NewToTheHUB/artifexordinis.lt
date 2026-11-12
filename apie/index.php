@@ -48,6 +48,7 @@ ao_head('Apie — Saulius, Artifex Ordinis',
         <li>Superhuman Docs (buvęs Coda)<small>lentelės, formulės, automatizacijos, sistemų projektavimas</small></li>
         <li>Superhuman Go ir AI<small>santraukos, juodraščiai, darbas su dokumentais</small></li>
         <li>Skriptai<small>PowerShell, JavaScript, Python — failų apdorojimas, duomenų išgavimas iš PDF, ZIP, DOCX, XML</small></li>
+        <li>Individualūs sprendimai<small>kai reikia, kad visa eiga veiktų nuo pradžios iki galo: nuo duomenų išgavimo iki jų sutvarkymo</small></li>
       </ul>
     </div>
   </div>
