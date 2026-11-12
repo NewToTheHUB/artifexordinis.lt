@@ -168,8 +168,8 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) {
   .split { grid-template-columns: 1.618fr 1fr; gap: var(--s3); align-items: center; }
   .split.rev { grid-template-columns: 1fr 1.618fr; }
-  .wrap.split-form { max-width: 92rem; }
-  .split.split-form { grid-template-columns: minmax(18rem, 1fr) minmax(0, 60rem); align-items: start; }
+  .wrap.split-form { max-width: 80rem; }
+  .split.split-form { grid-template-columns: minmax(18rem, 1fr) minmax(0, 46rem); align-items: start; }
 }
 
 /* ---------- hero ---------- */
@@ -235,7 +235,17 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .case figure { margin: var(--s0) 0 0; }
 .case img { width: 100%; aspect-ratio: 1.618 / 1; object-fit: cover; border: 1px solid var(--line); }
 .case figcaption { color: var(--muted); font-size: var(--t-1); margin-top: var(--s-2); }
-.demo-note { margin-top: var(--s2); color: var(--muted); font-size: var(--t-1); }
+.vs { display: grid; gap: var(--s0); flex: 1; }
+.vs > div { padding: var(--s0); }
+.vs p { margin: 0 0 var(--s-1); }
+.vs-label { font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
+.vs-old { border-left: 2px solid var(--line); color: var(--muted); }
+.vs-old .vs-label { color: var(--muted); }
+.vs-new { display: flex; flex-direction: column; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.vs-new .vs-label { color: var(--accent); }
+.vs-result { font-weight: 600; }
+.vs-new .case-link { margin-top: auto; align-self: flex-start; }
+@media (min-width: 760px) { .case.full .vs { grid-template-columns: 1fr 1.618fr; } }
 .process { margin-top: var(--s2); padding: var(--s1) var(--s2); border-left: 2px solid var(--accent); max-width: 38.2rem; }
 .process h3 { margin: 0 0 var(--s-1); }
 .process p { margin: 0 0 var(--s-2); }
@@ -281,7 +291,7 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 
 /* ---------- contact ---------- */
 .contact-box { border: 1px solid var(--line); background: var(--surface); }
-.contact-box iframe { width: 100%; min-height: 56rem; border: 0; display: block; }
+.contact-box iframe { width: 100%; min-height: 44rem; border: 0; display: block; }
 .form-open { padding: var(--s-1) var(--s0); margin: 0; }
 .contact-fallback { padding: var(--s2); }
 .contact-list { list-style: none; margin: var(--s1) 0 0; padding: 0; }
