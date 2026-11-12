@@ -43,9 +43,9 @@ $AO_CASES = [
     [
         'tag' => 'Registracija ir grafikas',
         'problem' => 'Vizitus derinate telefonu.',
-        'old' => 'Klientas skambina, jūs tikrinate kelis grafikus ir siūlote laiką. Kartais tas pats laikas užimamas du kartus.',
+        'old' => 'Vizitus užrašote ant popieriaus lapo. Atšaukti ir perrašyti laikai susilieja, ir sunku suprasti, kuris dar galioja.',
         'new' => 'Klientas pats renkasi iš laisvų laikų. Registracija iškart patenka į jūsų sąrašą.',
-        'result' => 'Užimtas laikas dingsta iš pasirinkimų. Dublių nebelieka.',
+        'result' => 'Kiekvienas vizitas iškart atsiranda jūsų Google kalendoriuje.',
         'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'embed' => '',
     ],
     [
