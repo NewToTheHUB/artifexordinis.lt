@@ -4,8 +4,8 @@
 $AO_SERVICES = [
     ['id' => 'pokalbis', 'name' => 'Call and live walkthrough', 'note' => 'A 30-min call with a look at working systems',
      'desc' => 'We find out whether help is needed and possible. During the call I show you live how similar work looks in a system.', 'price' => 'Free', 'free' => true],
-    ['id' => 'auditas', 'name' => 'Process audit', 'note' => 'Process map, numbers, priorities and a clear build price.',
-     'desc' => 'I look at how work moves, calculate what the disorder costs and tell you what to change first.', 'price' => 'Fixed, agreed in advance'],
+    ['id' => 'demo', 'name' => 'Tailored demo', 'note' => 'One of your processes with sample data',
+     'desc' => 'If we both see that working together makes sense, I build a small demo for one of your processes. After it you get a proposal with scope and price.', 'price' => 'Free', 'free' => true],
     ['id' => 'idiegimas', 'name' => 'System build', 'note' => 'From a few hours of work to a system built over a few weeks',
      'desc' => 'I build only what your work needs. We build larger systems in stages, so you can use the first parts sooner.', 'price' => 'One-time, agreed in advance'],
     ['id' => 'prieziura', 'name' => 'Support', 'note' => 'Changes, questions, one contact',
@@ -71,8 +71,8 @@ $AO_CASES = [
 ];
 
 $AO_PRICING = [
-    ['System build', 'You pay once. We agree on the price in advance. We calculate it from how much the system will save you each month.'],
-    ['Platform license', 'You pay Superhuman only for the people who build the structure. Employees who use the system pay nothing.'],
+    ['System build', 'You pay once. We agree on the price in advance. We calculate it from the scope and from the benefit the system gives you.'],
+    ['Platform license', 'You pay Superhuman only for the people who build the structure. Employees who only fill in and use the system pay no builder license.'],
     ['Support', 'It is optional. It is paid monthly.'],
 ];
 
@@ -90,7 +90,7 @@ $AO_FAQ_GROUPS = [
 
 $AO_FAQ = [
     ['g' => 'kaina', 'top' => true, 'q' => 'How much does it cost?',
-     'a' => 'We agree on the build price in advance. We calculate it from how much the system will save you each month, not from hours. The first call is free. You get the support price in a personal proposal.',
+     'a' => 'We agree on the build price in advance. We calculate it from the scope and from the benefit the system gives you, not from hours. The first call is free. You get the support price in a personal proposal.',
      'link' => ['kainos', 'How the price is calculated →']],
     ['g' => 'darbas', 'top' => true, 'q' => 'Can I see how the system would work in my business?',
      'a' => 'Yes. You can try the public examples yourself right now. During the first call I show working systems, and together we assess how a similar solution would look in your company. If we both see a reason to work together, we agree on a small demo adapted to your process.'],
@@ -104,11 +104,11 @@ $AO_FAQ = [
     ['g' => 'darbas', 'q' => 'Do you work only with small companies?',
      'a' => 'No. Size and legal form matter less than repeating work: inquiries, calculations, quotes, orders, reports. I work both with a single person and with companies of several hundred employees.'],
     ['g' => 'darbas', 'q' => 'Can you only advise, without building a system?',
-     'a' => 'Yes. The process audit ends with a clear list of what to change. Sometimes simple changes you can make yourself are enough. Then I will say so.'],
+     'a' => 'Yes. After the first call I tell you what is worth changing. Sometimes simple changes you can make yourself are enough. Then I will say so.'],
     ['g' => 'darbas', 'q' => 'Do you also handle small daily tasks?',
      'a' => 'Yes. Often the most time goes not to big processes, but to small tasks you do several times a day. For example, you copy contacts, retype amounts or search for a file. Over a year, such tasks add up to weeks.'],
     ['g' => 'darbas', 'q' => 'How long does it all take?',
-     'a' => 'It depends on the scope, team size and requirements. A simple system can sometimes be built in a few hours, a larger one in a few weeks. An audit usually takes 1–2 weeks, and we build larger systems in stages.'],
+     'a' => 'It depends on the scope, team size and requirements. A simple system can sometimes be built in a few hours, a larger one in a few weeks. We build larger systems in stages.'],
     ['g' => 'darbas', 'q' => 'Where do you work?',
      'a' => 'Remotely, with clients across Lithuania: over video calls and a shared document where you see the system being built. I work in Lithuanian and English.'],
     ['g' => 'darbas', 'q' => 'Do you build websites?',
@@ -118,7 +118,7 @@ $AO_FAQ = [
      'a' => 'You pay only for builders (Doc Makers), the people who create new documents. Employees who only use and fill in the system pay nothing. We will choose the right plan during the call.',
      'link' => ['https://superhuman.com/plans', 'Superhuman plans and pricing →']],
     ['g' => 'kaina', 'q' => 'Will the price change when we hire new people?',
-     'a' => 'No. People who use the system pay no license. A license is needed only for those who build the structure: new tables, pages and rules.'],
+     'a' => 'Usually not. People who only fill in and use the system pay no builder license. A license is needed only for those who build the structure: new tables, pages and rules. The exception is described under “When does this model get expensive?”.'],
     ['g' => 'kaina', 'q' => 'Why is this often cheaper than popular platforms?',
      'a' => 'Every program has its own meter, called a value metric. Many platforms count every person who logs in, every record or every automation step. When the business grows, that bill grows by itself. Superhuman Docs counts only those who build (Doc Makers). Over a few years the difference is often several times. I show the exact comparison with your headcount during the call.'],
 
@@ -193,7 +193,7 @@ $AO_T = [
     'flow_h2' => 'From inquiry to report — without retyping.',
     'flow_p' => 'The system covers the whole workflow. It also removes the small tasks you do several times a day.',
     'flow_now' => 'Now', 'flow_new' => 'With the system',
-    'flow_sectors' => 'It fits manufacturing, trade, services, service shops and any business where work repeats.',
+    'flow_sectors' => 'It fits manufacturing, trade, services, service shops and any business where work repeats. The same logic fits bookings, schedules, quotes and inventory.',
 
     'stmt_label' => 'Principle',
     'stmt_quote' => 'A good system does not add work. It <em>removes what is not needed</em>.',

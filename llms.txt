@@ -16,15 +16,15 @@
 ## Paslaugos
 
 - Pokalbis ir gyva peržiūra: nemokamai — išsiaiškinama, ar pagalba reikalinga ir įmanoma; pokalbio metu gyvai parodomos veikiančios sistemos
-- Tvarkos auditas: proceso žemėlapis, kiek kainuoja netvarka, prioritetai; kaina fiksuota ir sutariama iš anksto
-- Sistemos sukūrimas: nuo kelių valandų darbo iki kelių savaičių sistemos; vienkartinė kaina, sutariama iš anksto ir skaičiuojama iš to, kiek sistema sutaupys per mėnesį
+- Pritaikytas demo: nemokamai — vienas kliento procesas su pavyzdiniais duomenimis, jei abi pusės mato, kad verta dirbti kartu; po jo pateikiamas pasiūlymas su apimtimi ir kaina
+- Sistemos sukūrimas: nuo kelių valandų darbo iki kelių savaičių sistemos; vienkartinė kaina, sutariama iš anksto ir skaičiuojama iš apimties ir iš naudos, kurią sistema duoda
 - Priežiūra: pasirinktinai, mokama kas mėnesį; kaina individualiame pasiūlyme
 - Konsultacija be kūrimo: rekomendacijos, kurias įmonė įgyvendina pati
 
 ## Kainodara
 
 - Sistemos sukūrimas: mokama vieną kartą, kaina pagal naudą, ne pagal valandas
-- Platformos licencija: klientas moka Superhuman tik už žmones, kurie kuria struktūrą (Doc Makers); darbuotojai, kurie sistema naudojasi, nemoka
+- Platformos licencija: klientas moka Superhuman tik už žmones, kurie kuria struktūrą (Doc Makers); darbuotojai, kurie sistemą tik pildo ir naudoja, kūrėjo licencijos nemoka
 - Priežiūra: pasirinktinai, kas mėnesį
 
 ## Ką sukuria

@@ -5,8 +5,8 @@
 $AO_SERVICES = [
     ['id' => 'pokalbis', 'name' => 'Pokalbis ir gyva peržiūra', 'note' => '30 min. pokalbis su veikiančių sistemų peržiūra',
      'desc' => 'Išsiaiškiname, ar pagalba reikalinga ir įmanoma. Pokalbio metu gyvai parodau, kaip panašus darbas atrodo sistemoje.', 'price' => 'Nemokamai', 'free' => true],
-    ['id' => 'auditas', 'name' => 'Tvarkos auditas', 'note' => 'Proceso žemėlapis, skaičiai, prioritetai ir aiški kūrimo kaina.',
-     'desc' => 'Pažiūriu, kaip juda darbas, suskaičiuoju, kiek kainuoja netvarka, ir pasakau, ką keisti pirmiausia.', 'price' => 'Fiksuota, sutariama iš anksto'],
+    ['id' => 'demo', 'name' => 'Pritaikytas demo', 'note' => 'Vienas jūsų procesas su pavyzdiniais duomenimis',
+     'desc' => 'Jei abu matome, kad verta dirbti kartu, sukuriu nedidelį demo vienam jūsų procesui. Po jo gaunate pasiūlymą su apimtimi ir kaina.', 'price' => 'Nemokamai', 'free' => true],
     ['id' => 'idiegimas', 'name' => 'Sistemos sukūrimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
      'desc' => 'Kuriu tik tai, ko reikia jūsų darbui. Didesnes sistemas kuriame etapais, todėl pirmąsias dalis galite naudoti anksčiau.', 'price' => 'Vienkartinė, sutariama iš anksto'],
     ['id' => 'prieziura', 'name' => 'Priežiūra', 'note' => 'Pakeitimai, klausimai, vienas kontaktas',
@@ -75,8 +75,8 @@ $AO_CASES = [
 ];
 
 $AO_PRICING = [
-    ['Sistemos sukūrimas', 'Mokate vieną kartą. Kainą sutariame iš anksto. Ją skaičiuojame iš to, kiek sistema sutaupys per mėnesį.'],
-    ['Platformos licencija', 'Ją mokate Superhuman tik už žmones, kurie kuria struktūrą. Darbuotojai, kurie sistema naudojasi, nemoka.'],
+    ['Sistemos sukūrimas', 'Mokate vieną kartą. Kainą sutariame iš anksto. Ją skaičiuojame iš apimties ir iš naudos, kurią sistema duoda.'],
+    ['Platformos licencija', 'Ją mokate Superhuman tik už žmones, kurie kuria struktūrą. Darbuotojai, kurie sistemą tik pildo ir naudoja, kūrėjo licencijos nemoka.'],
     ['Priežiūra', 'Ją galite pasirinkti. Ji mokama kas mėnesį.'],
 ];
 
@@ -95,7 +95,7 @@ $AO_FAQ_GROUPS = [
 
 $AO_FAQ = [
     ['g' => 'kaina', 'top' => true, 'q' => 'Kiek kainuoja?',
-     'a' => 'Sistemos sukūrimo kainą sutariame iš anksto. Ją skaičiuojame iš to, kiek sistema sutaupys per mėnesį, o ne iš valandų. Pirmas pokalbis nemokamas. Priežiūros kainą gaunate individualiame pasiūlyme.',
+     'a' => 'Sistemos sukūrimo kainą sutariame iš anksto. Ją skaičiuojame iš apimties ir iš naudos, kurią sistema duoda, o ne iš valandų. Pirmas pokalbis nemokamas. Priežiūros kainą gaunate individualiame pasiūlyme.',
      'link' => ['kainos', 'Kaip skaičiuojama kaina →']],
     ['g' => 'darbas', 'top' => true, 'q' => 'Ar galiu pamatyti, kaip sistema veiktų mano versle?',
      'a' => 'Taip. Viešus pavyzdžius galite išbandyti patys jau dabar. Pirmo pokalbio metu parodau veikiančias sistemas, ir kartu įvertiname, kaip panašus sprendimas atrodytų jūsų įmonėje. Jei abu matome, kad verta dirbti kartu, susitariame dėl nedidelio demo, pritaikyto jūsų procesui.'],
@@ -109,11 +109,11 @@ $AO_FAQ = [
     ['g' => 'darbas', 'q' => 'Ar dirbate tik su mažomis įmonėmis?',
      'a' => 'Ne. Svarbu ne dydis ar teisinė forma, o tai, kad darbas kartojasi: užklausos, skaičiavimai, pasiūlymai, užsakymai, ataskaitos. Dirbu ir su vienu žmogumi, ir su kelių šimtų darbuotojų įmone.'],
     ['g' => 'darbas', 'q' => 'Ar galite tik patarti, nekurdamas sistemos?',
-     'a' => 'Taip. Tvarkos auditas baigiasi aiškiu sąrašu, ką pakeisti. Kartais užtenka paprastų pakeitimų, kuriuos galite padaryti patys. Tada taip ir pasakysiu.'],
+     'a' => 'Taip. Po pirmo pokalbio pasakau, ką verta pakeisti. Kartais užtenka paprastų pakeitimų, kuriuos galite padaryti patys. Tada taip ir pasakysiu.'],
     ['g' => 'darbas', 'q' => 'Ar tvarkote ir mažus kasdienius darbus?',
      'a' => 'Taip. Dažnai daugiausia laiko atima ne dideli procesai, o maži darbai, kuriuos darote kelis kartus per dieną. Pavyzdžiui, kopijuojate kontaktus, perrašote sumas ar ieškote failo. Per metus tokie darbai virsta savaitėmis.'],
     ['g' => 'darbas', 'q' => 'Kiek laiko visa tai užtrunka?',
-     'a' => 'Priklauso nuo apimties, komandos dydžio ir reikalavimų. Paprastą sistemą kartais galima sukurti per kelias valandas, didesnę — per kelias savaites. Auditas dažniausiai užtrunka 1–2 savaites, o didesnes sistemas kuriame etapais.'],
+     'a' => 'Priklauso nuo apimties, komandos dydžio ir reikalavimų. Paprastą sistemą kartais galima sukurti per kelias valandas, didesnę — per kelias savaites. Didesnes sistemas kuriame etapais.'],
     ['g' => 'darbas', 'q' => 'Kur dirbate?',
      'a' => 'Nuotoliu, su klientais visoje Lietuvoje: per vaizdo skambučius ir bendrą dokumentą, kuriame matote, kaip sistema kuriama. Dirbu lietuvių ir anglų kalbomis.'],
     ['g' => 'darbas', 'q' => 'Ar kuriate svetaines?',
@@ -123,7 +123,7 @@ $AO_FAQ = [
      'a' => 'Mokama tik už kūrėjus (Doc Makers), t. y. žmones, kurie kuria naujus dokumentus. Darbuotojai, kurie sistema tik naudojasi ir ją pildo, nemoka. Tinkamiausią planą parinksime pokalbio metu.',
      'link' => ['https://superhuman.com/plans', 'Superhuman planai ir kainos →']],
     ['g' => 'kaina', 'q' => 'Ar kaina pasikeis, kai pasamdysime naujų žmonių?',
-     'a' => 'Ne. Žmonės, kurie sistema naudojasi, licencijos nemoka. Licencija reikalinga tik tiems, kurie kuria struktūrą: naujas lenteles, puslapius ir taisykles.'],
+     'a' => 'Dažniausiai ne. Žmonės, kurie sistemą tik pildo ir naudoja, kūrėjo licencijos nemoka. Licencija reikalinga tik tiems, kurie kuria struktūrą: naujas lenteles, puslapius ir taisykles. Išimtį aprašo klausimas „Kada šis modelis brangsta?“.'],
     ['g' => 'kaina', 'q' => 'Kodėl tai dažnai pigiau nei populiarios platformos?',
      'a' => 'Kiekviena programa turi savo skaitliuką, vadinamą value metric. Daugelis platformų skaičiuoja kiekvieną prisijungusį žmogų, įrašą ar automatizacijos veiksmą. Kai verslas auga, tokia sąskaita auga pati. Superhuman Docs skaičiuoja tik tuos, kurie kuria (Doc Makers). Todėl per kelerius metus skirtumas dažnai būna kelis kartus. Tikslų palyginimą su jūsų žmonių skaičiumi parodau pokalbio metu.'],
 
@@ -200,7 +200,7 @@ $AO_T = [
     'flow_h2' => 'Nuo užklausos iki ataskaitos — be perrašinėjimo.',
     'flow_p' => 'Sistema apima visą darbo eigą. Ji taip pat pašalina mažus darbus, kuriuos darote kelis kartus per dieną.',
     'flow_now' => 'Dabar', 'flow_new' => 'Su sistema',
-    'flow_sectors' => 'Tinka gamybai, prekybai, paslaugoms, servisams ir kiekvienam verslui, kuriame darbas kartojasi.',
+    'flow_sectors' => 'Tinka gamybai, prekybai, paslaugoms, servisams ir kiekvienam verslui, kuriame darbas kartojasi. Ta pati logika tinka registracijoms, grafikams, sąmatoms ir inventoriui.',
 
     'stmt_label' => 'Principas',
     'stmt_quote' => 'Gera sistema ne prideda darbo. Ji <em>pašalina nereikalingą</em>.',
