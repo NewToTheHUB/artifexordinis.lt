@@ -39,9 +39,9 @@ $AO_CASES = [
     [
         'tag' => 'Booking and schedules',
         'problem' => 'You arrange visits by phone.',
-        'old' => 'A client calls, you check several schedules and offer a time. Sometimes the same slot gets booked twice.',
+        'old' => 'You write visits on a sheet of paper. Cancelled and rewritten times blur together, and it is hard to tell which one still stands.',
         'new' => 'Clients pick a free slot themselves. The booking goes straight into your list.',
-        'result' => 'A booked slot disappears from the choices. No more double bookings.',
+        'result' => 'Every visit appears in your Google Calendar right away.',
         'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'embed' => '',
     ],
     [
