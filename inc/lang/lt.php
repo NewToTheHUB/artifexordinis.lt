@@ -33,6 +33,14 @@ $AO_FLOW = [
 // 'demo' — vieša nuoroda. 'embed' — Superhuman Docs įterpimo (Share → Embed) nuoroda; tuščia = rodoma tik nuoroda.
 $AO_CASES = [
     [
+        'tag' => 'Užsakymų valdymas',
+        'problem' => 'Užsakymo būseną žino tik vienas žmogus.',
+        'old' => 'Užklausos, kainos ir būsenos išmėtytos po laiškus, failus ir žinutes. Kai žmogus atostogauja, darbas stoja.',
+        'new' => 'Viena užsakymo eilutė sujungia kainą, etapą, terminą ir atsakingą žmogų.',
+        'result' => 'Kiekvienas mato, ką daryti toliau, be skambučių.',
+        'demo' => AO_ORDERS_DEMO, 'embed' => '',
+    ],
+    [
         'tag' => 'Paslaugos, aktai, sąskaitos',
         'problem' => 'Sąskaitą pildote Word faile, o kliento rekvizitus kaskart perrašote.',
         'old' => 'Darbus užsirašote atskirai, o sąskaitą pildote iš senos kopijos. Datas, sumas ir rekvizitus keičiate ranka.',
@@ -62,14 +70,6 @@ $AO_CASES = [
         'old' => 'Atidarote Excel failą, ieškote naujausių kainų ir kopijuojate jas ranka. Sumas tikrinate dar kartą.',
         'new' => 'Prekes ir paslaugas pasirenkate iš kainyno. Sistema suskaičiuoja sumą ir paruošia dokumentą klientui.',
         'result' => 'Sąmata per kelias minutes, kainos visada tos pačios.',
-        'demo' => '', 'embed' => '',
-    ],
-    [
-        'tag' => 'Užsakymų valdymas',
-        'problem' => 'Užsakymo būseną žino tik vienas žmogus.',
-        'old' => 'Užklausos, kainos ir būsenos išmėtytos po laiškus, failus ir žinutes. Kai žmogus atostogauja, darbas stoja.',
-        'new' => 'Viena užsakymo eilutė sujungia kainą, etapą, terminą ir atsakingą žmogų.',
-        'result' => 'Kiekvienas mato, ką daryti toliau, be skambučių.',
         'demo' => '', 'embed' => '',
     ],
 ];
@@ -180,21 +180,12 @@ $AO_T = [
     'home_desc' => 'Užklausos, pasiūlymai, užsakymai, užduotys, dokumentai ir ataskaitos vienoje gyvoje sistemoje, sukurtoje pagal jūsų darbą. Pirmas pokalbis nemokamas.',
     'hero_eyebrow' => 'Tvarkos architektas',
     'hero_h1' => 'Tvarka, kuri dirba jums.',
-    'hero_lead' => 'Viena vieta jūsų verslui, kuri auga kartu su jumis. Užklausos, pasiūlymai, užsakymai, užduotys, dokumentai ir ataskaitos sujungti į vieną gyvą sistemą. Ją kuriu pagal tai, kaip jūsų versle jau juda darbas.',
+    'hero_lead' => 'Užsakymai nuo užklausos iki sąskaitos – vienoje vietoje. Sistemą kuriu pagal tai, kaip jūsų darbas juda dabar. Pirmas procesas veikia per savaitę.',
     'hero_cta' => 'Užsisakyti 30 min. pokalbį',
-    'hero_cases' => 'Pažiūrėti pavyzdžius',
-    'hero_note' => 'Pirmas pokalbis nemokamas. Jo metu gyvai parodau veikiančias sistemas.',
+    'hero_demo' => 'Išbandyti užsakymų valdymą',
+    'hero_note' => 'Demo naudoja pavyzdinius duomenis. Galite spausti viską.',
     'hero_fig' => 'Artifex Ordinis ženklas: arka iš penkių akmenų su variniu raktiniu akmeniu',
 
-    'pain_label' => 'Ar atpažįstate?',
-    'pain_h2' => 'Netvarkos nesimato, kai joje gyveni.',
-    'pain_p' => 'Iš vidaus ji atrodo kaip „pas mus taip įprasta“. Todėl sunku įsivaizduoti, kaip galėtų būti kitaip.',
-    'pain_items' => [
-        'Informacija išbarstyta: Excel, el. paštas, „Messenger“ ir kažkieno atmintis.',
-        '„Paklausk Rasos, tik ji žino.“',
-        'Tą patį įvedate du ar tris kartus — ir kartais su klaida.',
-        'Apie problemą pirmas praneša klientas, o ne jūsų sistema.',
-    ],
 
     'flow_label' => 'Kaip veikia',
     'flow_h2' => 'Nuo užklausos iki ataskaitos — be perrašinėjimo.',
@@ -249,8 +240,8 @@ $AO_T = [
     'faq_lead' => 'Čia rasite ir tai, ko nedarau. Geriau sužinoti dabar nei po metų.',
 
     'contact_label' => 'Kontaktai',
-    'contact_h2' => 'Pasirinkite pokalbio laiką.',
-    'contact_p' => 'Registracija vyksta mano paties sistemoje. Pasirinktas laikas iškart patenka į mano darbo sistemą ir kalendorių, o jūs gaunate kvietimą. Tokią pat registraciją galiu sukurti ir jūsų verslui.',
+    'contact_h2' => 'Registruokitės, kaip jums patogu.',
+    'contact_p' => 'Pasirinkite pokalbio laiką formoje arba tiesiog paskambinkite.',
     'contact_cases' => 'Dar nežinote, ko norite? Pažiūrėkite pavyzdžius →',
     'c_email' => 'El. paštas', 'c_phone' => 'Telefonas', 'c_work' => 'Darbas', 'c_work_val' => 'Nuotoliu, visoje Lietuvoje',
 

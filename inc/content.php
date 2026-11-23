@@ -55,7 +55,6 @@ function ao_markdown_home(): string
         : ['Saulius, nuotoliu visoje Lietuvoje. Išanalizuoju, kaip įmonėje juda darbas, ir užklausas, pasiūlymus, užsakymus, užduotis, dokumentus ir ataskaitas sujungiu į vieną gyvą sistemą Superhuman Docs platformoje. Sistema lieka kliento paskyroje.',
            'Kam tinka', 'Nuo vieno žmogaus iki kelių šimtų darbuotojų įmonės.', 'Peržiūra', 'parodoma pokalbio metu', 'Kontaktai', 'El. paštas', 'Telefonas', 'Užklausos forma', 'Apie', 'In English'];
     $md  = '# ' . t('home_title') . "\n\n> {$L[0]}\n\n";
-    $md .= '## ' . t('pain_h2') . "\n\n" . t('pain_p') . "\n\n";
     $md .= '## ' . t('flow_h2') . "\n\n" . t('flow_p') . "\n\n";
     foreach ($AO_FLOW as $f) { $md .= "- **{$f[0]}** — " . t('flow_now') . ": {$f[1]} " . t('flow_new') . ": {$f[2]}\n"; }
     $md .= "\n## {$L[1]}\n\n" . implode(', ', $AO_SECTORS) . ". {$L[2]}\n\n";
