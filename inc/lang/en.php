@@ -9,7 +9,7 @@ $AO_SERVICES = [
     ['id' => 'idiegimas', 'name' => 'System build', 'note' => 'From a few hours of work to a system built over a few weeks',
      'desc' => 'I build only what your work needs. We build larger systems in stages, so you can use the first parts sooner.', 'price' => 'One-time, agreed in advance'],
     ['id' => 'prieziura', 'name' => 'Support', 'note' => 'Changes, questions, one contact',
-     'desc' => 'Your business changes, so the system changes too. Support is optional. It is paid monthly.', 'price' => 'Optional, monthly'],
+     'desc' => 'Your business changes, so the system changes too. Support is optional: each month you buy a package of hours, for example 3 or 10.', 'price' => 'Optional, monthly package of hours'],
 ];
 
 $AO_FLOW = [
@@ -72,17 +72,17 @@ $AO_CASES = [
 
 $AO_BUILD = [
     ['name' => 'Order management', 'desc' => 'From inquiry to invoice in one place. Stock is deducted automatically.', 'demo' => AO_ORDERS_DEMO, 'wide' => true, 'product' => false],
-    ['name' => 'Estimates and calculators', 'desc' => 'A price from your price list in a few minutes. No copying from Excel.', 'demo' => '', 'wide' => false, 'product' => false],
+    ['name' => 'Estimates and calculators', 'desc' => 'A price from your price list in a few minutes. No copying from Excel.', 'demo' => '', 'wide' => false, 'product' => false, 'status' => 'In progress'],
     ['name' => 'Booking and schedule', 'desc' => 'Clients pick a free slot themselves. No more double bookings.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'wide' => false, 'product' => false],
     ['name' => 'Services, reports, invoices', 'desc' => 'You enter the work once. The work report and invoice fill in themselves.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos', 'wide' => false, 'product' => false],
     ['name' => 'Service work', 'desc' => 'Visits, completed work, parts and clients linked in one system.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas', 'wide' => false, 'product' => false],
-    ['name' => 'Dance Check-in', 'desc' => 'QR check-in for dance classes and live pass balances.', 'demo' => '', 'wide' => false, 'product' => true],
+    ['name' => 'Danc\'in', 'desc' => 'QR check-in for dance classes and live pass balances.', 'demo' => '', 'wide' => false, 'product' => true, 'status' => 'Presentation in progress'],
 ];
 
 $AO_PRICING = [
     ['System build', 'You pay once. We agree on the price in advance. We calculate it from the scope and from the benefit the system gives you.'],
     ['Platform license', 'You pay Superhuman only for the people who build the structure. Employees who only fill in and use the system pay no builder license.'],
-    ['Support', 'It is optional. It is paid monthly.'],
+    ['Support', 'It is optional. Each month you buy a package of hours, for example 3 or 10. You decide how many hours you need.'],
 ];
 
 $AO_PRICING_WHY = [
@@ -187,6 +187,14 @@ $AO_T = [
     'hero_demo' => 'Try order management',
     'hero_note' => 'The demo uses sample data. Feel free to click everything.',
     'mock' => [
+        'tabs' => ['Orders', 'Invoices', 'Report'],
+        'inv_cols' => ['Invoice', 'Order', 'Amount', 'Payment'],
+        'inv_rows' => [['AO-0142', 'Bracket A-12', '€840'], ['AO-0141', 'Frame R-2', '€610'], ['AO-0139', 'Housing K-3', '€1,260'], ['AO-0137', 'Cap D-7', '€450']],
+        'pay' => ['Pending', 'Paid', 'Overdue'],
+        'inv_toast' => 'Payment marked, balance updated',
+        'kpi' => [['Revenue this month', '€12,480'], ['Open orders', '7'], ['Overdue', '1']],
+        'weeks' => ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+        'rep_toast' => 'Numbers update in real time',
         'title' => 'Orders',
         'sample' => 'Sample data',
         'cols' => ['Order', 'Qty', 'Amount', 'Status'],

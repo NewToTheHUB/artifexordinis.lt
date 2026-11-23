@@ -1,6 +1,6 @@
 <?php
 // Pagrindinio puslapio šablonas. Kalbą nustato failas, kuris jį įtraukia (/index.php arba /en/index.php).
-// Struktūra: darbo eiga (dabar / su sistema) → pavyzdžiai → kaip dirbu → kaina → kodėl → DUK → kontaktai.
+// Struktūra: produktas → darbo eiga → ką galima sukurti → kaip dirbu → principas → kaina → apie → DUK → kontaktai. Buvo: darbo eiga (dabar / su sistema) → pavyzdžiai → kaip dirbu → kaina → kodėl → DUK → kontaktai.
 
 if (ao_wants_markdown()) { ao_send_markdown(ao_markdown_home()); }
 require __DIR__ . '/parts.php';
@@ -61,28 +61,14 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
       <p><?= e(t('build_p')) ?></p>
     </div>
 <?php ao_build_grid($AO_BUILD); ?>
-  </div>
-</section>
-
-<section id="pavyzdziai">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="label"><b>III</b> <?= e(t('cases_label')) ?></p>
-      <h2><?= e(t('cases_h2')) ?></h2>
-      <p><?= e(t('cases_p')) ?></p>
-    </div>
-    <div class="cases two">
-<?php foreach (array_slice($AO_CASES, 0, 2) as $c) { ao_case($c); } ?>
-    </div>
     <p class="docs-intro"><?= e(t('docs_intro')) ?> <a href="<?= e(AO_DOCS_INTRO) ?>" target="_blank" rel="noopener"><?= e(t('docs_intro_link')) ?></a></p>
-    <p class="center-cta"><a class="btn" href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('cases_all')) ?></a></p>
   </div>
 </section>
 
 <section id="kaip">
   <div class="wrap">
     <div class="section-head">
-      <p class="label"><b>IV</b> <?= e(t('how_label')) ?></p>
+      <p class="label"><b>III</b> <?= e(t('how_label')) ?></p>
       <h2><?= e(t('how_h2')) ?></h2>
     </div>
     <ol class="steps">
@@ -91,6 +77,14 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 <?php endforeach; ?>
     </ol>
     <p class="aside"><?= e(t('how_aside')) ?></p>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap">
+    <p class="label"><b>IV</b> <?= e(t('stmt_label')) ?></p>
+    <blockquote><?= t('stmt_quote') ?></blockquote>
+    <p><?= e(t('stmt_p')) ?></p>
   </div>
 </section>
 
@@ -167,23 +161,41 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 
 </main>
 <script>
-// Hero pavyzdys: užsakymas keliauja per žingsnius. Jei lankytojas išjungė animacijas, lieka galutinė būsena.
+// Hero pavyzdys: užsakymas keliauja per žingsnius, tada rodomos sąskaitos ir ataskaita.
+// Jei lankytojas išjungė animacijas, lieka užsakymų vaizdas galutinėje būsenoje.
 (function () {
   var m = document.querySelector('.mock');
   if (!m || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var steps = JSON.parse(m.dataset.steps), btn = JSON.parse(m.dataset.btn), toast = JSON.parse(m.dataset.toast);
-  var li = m.querySelectorAll('.mock-steps li'), chip = m.querySelector('.chip.live');
-  var b = m.querySelector('.mock-btn'), tt = m.querySelector('.mock-toast'), i = 0;
-  function show() {
-    li.forEach(function (el, k) { el.classList.toggle('on', k <= i); el.classList.toggle('now', k === i); });
-    chip.textContent = steps[i];
-    b.textContent = btn[i];
-    b.classList.remove('press'); void b.offsetWidth; b.classList.add('press');
-    tt.textContent = i > 0 ? toast[i - 1] : '';
-    tt.classList.toggle('show', i > 0);
-    i = (i + 1) % steps.length;
+  var steps = JSON.parse(m.dataset.steps), btn = JSON.parse(m.dataset.btn), toast = JSON.parse(m.dataset.toast), pay = JSON.parse(m.dataset.pay);
+  var views = m.querySelectorAll('.view'), tabs = m.querySelectorAll('.mock-tabs span');
+  var li = m.querySelectorAll('.mock-steps li'), chip = m.querySelector('[data-view="0"] .chip.live');
+  var payChip = m.querySelector('[data-view="1"] .chip.live');
+  var b = m.querySelector('.mock-btn'), tt = m.querySelector('.mock-toast'), n = 0;
+  function view(v) {
+    views.forEach(function (el, k) { el.classList.toggle('on', k === v); });
+    tabs.forEach(function (el, k) { el.classList.toggle('on', k === v); });
   }
-  show(); setInterval(show, 2200);
+  function say(text, btnText) {
+    b.textContent = btnText; b.classList.remove('press'); void b.offsetWidth; b.classList.add('press');
+    tt.textContent = text; tt.classList.toggle('show', text !== '');
+  }
+  function tick() {
+    var len = steps.length;
+    if (n < len) {
+      view(0);
+      li.forEach(function (el, k) { el.classList.toggle('on', k <= n); el.classList.toggle('now', k === n); });
+      chip.textContent = steps[n];
+      say(n > 0 ? toast[n - 1] : '', btn[n]);
+    } else if (n === len) {
+      view(1); payChip.textContent = pay[0]; payChip.className = 'chip pay-0 live'; say('', btn[len - 1]);
+    } else if (n === len + 1) {
+      payChip.textContent = pay[1]; payChip.className = 'chip pay-1 live'; say(tt.dataset.inv, pay[1]);
+    } else {
+      view(2); m.classList.remove('grow'); void m.offsetWidth; m.classList.add('grow'); say(tt.dataset.rep, tabs[2].textContent);
+    }
+    n = (n + 1) % (len + 3);
+  }
+  tick(); setInterval(tick, 2200);
 })();
 </script>
 <?php ao_footer();

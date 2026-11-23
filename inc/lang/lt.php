@@ -10,7 +10,7 @@ $AO_SERVICES = [
     ['id' => 'idiegimas', 'name' => 'Sistemos sukūrimas', 'note' => 'Nuo kelių valandų darbo iki kelių savaičių sistemos',
      'desc' => 'Kuriu tik tai, ko reikia jūsų darbui. Didesnes sistemas kuriame etapais, todėl pirmąsias dalis galite naudoti anksčiau.', 'price' => 'Vienkartinė, sutariama iš anksto'],
     ['id' => 'prieziura', 'name' => 'Priežiūra', 'note' => 'Pakeitimai, klausimai, vienas kontaktas',
-     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Priežiūrą galite pasirinkti. Ji mokama kas mėnesį.', 'price' => 'Pasirinktinai, kas mėnesį'],
+     'desc' => 'Keičiasi verslas, keičiasi ir sistema. Priežiūrą galite pasirinkti: kas mėnesį perkate valandų paketą, pavyzdžiui, 3 ar 10 valandų.', 'price' => 'Pasirinktinai, valandų paketas kas mėnesį'],
 ];
 
 // Darbo eiga: žingsnis, kaip yra dabar, kaip bus su sistema.
@@ -76,17 +76,17 @@ $AO_CASES = [
 
 $AO_BUILD = [
     ['name' => 'Užsakymų valdymas', 'desc' => 'Nuo užklausos iki sąskaitos vienoje vietoje. Likučiai nusirašo patys.', 'demo' => AO_ORDERS_DEMO, 'wide' => true, 'product' => false],
-    ['name' => 'Sąmatos ir skaičiuoklės', 'desc' => 'Kaina iš kainyno per kelias minutes. Be kopijavimo iš Excel.', 'demo' => '', 'wide' => false, 'product' => false],
+    ['name' => 'Sąmatos ir skaičiuoklės', 'desc' => 'Kaina iš kainyno per kelias minutes. Be kopijavimo iš Excel.', 'demo' => '', 'wide' => false, 'product' => false, 'status' => 'Kuriama'],
     ['name' => 'Registracija ir grafikas', 'desc' => 'Klientas pats renkasi laisvą laiką. Dublių nebelieka.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'wide' => false, 'product' => false],
     ['name' => 'Paslaugos, aktai, sąskaitos', 'desc' => 'Darbus įvedate vieną kartą. Aktas ir sąskaita užsipildo patys.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos', 'wide' => false, 'product' => false],
     ['name' => 'Servisas', 'desc' => 'Vizitai, atlikti darbai, dalys ir klientai susieti vienoje sistemoje.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas', 'wide' => false, 'product' => false],
-    ['name' => 'Dance Check-in', 'desc' => 'QR registracija į šokių pamokas ir abonementų likučiai realiu laiku.', 'demo' => '', 'wide' => false, 'product' => true],
+    ['name' => 'Danc\'in', 'desc' => 'QR registracija į šokių pamokas ir abonementų likučiai realiu laiku.', 'demo' => '', 'wide' => false, 'product' => true, 'status' => 'Prezentacija kuriama'],
 ];
 
 $AO_PRICING = [
     ['Sistemos sukūrimas', 'Mokate vieną kartą. Kainą sutariame iš anksto. Ją skaičiuojame iš apimties ir iš naudos, kurią sistema duoda.'],
     ['Platformos licencija', 'Ją mokate Superhuman tik už žmones, kurie kuria struktūrą. Darbuotojai, kurie sistemą tik pildo ir naudoja, kūrėjo licencijos nemoka.'],
-    ['Priežiūra', 'Ją galite pasirinkti. Ji mokama kas mėnesį.'],
+    ['Priežiūra', 'Ją galite pasirinkti. Kas mėnesį perkate valandų paketą, pavyzdžiui, 3 ar 10 valandų. Kiek valandų reikia, sprendžiate jūs.'],
 ];
 
 $AO_PRICING_WHY = [
@@ -194,6 +194,14 @@ $AO_T = [
     'hero_demo' => 'Išbandyti užsakymų valdymą',
     'hero_note' => 'Demo naudoja pavyzdinius duomenis. Galite spausti viską.',
     'mock' => [
+        'tabs' => ['Užsakymai', 'Sąskaitos', 'Ataskaita'],
+        'inv_cols' => ['Sąskaita', 'Užsakymas', 'Suma', 'Apmokėjimas'],
+        'inv_rows' => [['AO-0142', 'Laikiklis A-12', '840 €'], ['AO-0141', 'Rėmelis R-2', '610 €'], ['AO-0139', 'Korpusas K-3', '1 260 €'], ['AO-0137', 'Dangtelis D-7', '450 €']],
+        'pay' => ['Laukia', 'Apmokėta', 'Vėluoja'],
+        'inv_toast' => 'Apmokėjimas pažymėtas, likutis atnaujintas',
+        'kpi' => [['Pajamos šį mėnesį', '12 480 €'], ['Atviri užsakymai', '7'], ['Vėluoja', '1']],
+        'weeks' => ['1 sav.', '2 sav.', '3 sav.', '4 sav.'],
+        'rep_toast' => 'Skaičiai atsinaujina realiu laiku',
         'title' => 'Užsakymai',
         'sample' => 'Pavyzdiniai duomenys',
         'cols' => ['Užsakymas', 'Kiekis', 'Suma', 'Būsena'],
