@@ -70,6 +70,15 @@ $AO_CASES = [
     ],
 ];
 
+$AO_BUILD = [
+    ['name' => 'Order management', 'desc' => 'From inquiry to invoice in one place. Stock is deducted automatically.', 'demo' => AO_ORDERS_DEMO, 'wide' => true, 'product' => false],
+    ['name' => 'Estimates and calculators', 'desc' => 'A price from your price list in a few minutes. No copying from Excel.', 'demo' => '', 'wide' => false, 'product' => false],
+    ['name' => 'Booking and schedule', 'desc' => 'Clients pick a free slot themselves. No more double bookings.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'wide' => false, 'product' => false],
+    ['name' => 'Services, reports, invoices', 'desc' => 'You enter the work once. The work report and invoice fill in themselves.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos', 'wide' => false, 'product' => false],
+    ['name' => 'Service work', 'desc' => 'Visits, completed work, parts and clients linked in one system.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas', 'wide' => false, 'product' => false],
+    ['name' => 'Dance Check-in', 'desc' => 'QR check-in for dance classes and live pass balances.', 'demo' => '', 'wide' => false, 'product' => true],
+];
+
 $AO_PRICING = [
     ['System build', 'You pay once. We agree on the price in advance. We calculate it from the scope and from the benefit the system gives you.'],
     ['Platform license', 'You pay Superhuman only for the people who build the structure. Employees who only fill in and use the system pay no builder license.'],
@@ -177,6 +186,24 @@ $AO_T = [
     'hero_cta' => 'Book a 30-min call',
     'hero_demo' => 'Try order management',
     'hero_note' => 'The demo uses sample data. Feel free to click everything.',
+    'mock' => [
+        'title' => 'Orders',
+        'sample' => 'Sample data',
+        'cols' => ['Order', 'Qty', 'Amount', 'Status'],
+        'steps' => ['Inquiry', 'Quote', 'Order', 'Production', 'Invoice'],
+        'rows' => [['Bracket A-12', '120 pcs', '€840'], ['Housing K-3', '40 pcs', '€1,260'], ['Cap D-7', '300 pcs', '€450'], ['Frame R-2', '25 pcs', '€610']],
+        'done' => ['Ruth', 'Tom', 'Ruth'],
+        'btn' => ['Prepare quote', 'Confirm order', 'Send to production', 'Issue invoice', 'Sent'],
+        'toast' => ['Quote built from the price list', 'Stock deducted automatically', 'Task assigned to production', 'Invoice PDF sent to the client'],
+        'aria' => 'Animated example: an order moves from inquiry to invoice in one table',
+    ],
+    'build_label' => 'What you can build',
+    'build_h2' => 'Not only orders.',
+    'build_p' => 'The same platform works for calculators, bookings, service work and products. You can try some of the examples yourself.',
+    'build_own_h' => 'Not seeing your work?',
+    'build_own_p' => 'Tell me what you do every day. During the call I will show you how it could look.',
+    'build_own_cta' => 'Book a call →',
+    'build_product' => 'Our product',
     'hero_fig' => 'Artifex Ordinis mark: an arch of five stones with a copper keystone',
 
 

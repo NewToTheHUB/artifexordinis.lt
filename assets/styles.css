@@ -405,3 +405,47 @@ footer a { color: var(--muted); }
 .brand span { white-space: nowrap; }
 @media (max-width: 760px) { .nav { gap: var(--s-1); } .top .wrap { gap: var(--s-1); } }
 @media (max-width: 380px) { .brand span { display: none; } }
+
+/* ---------- hero: produkto pavyzdys ---------- */
+.mock { margin: 0; border: 1px solid var(--line); background: var(--surface); font-size: var(--t-1); box-shadow: 0 1.618rem 4.236rem -2.618rem rgba(35, 27, 20, 0.35); }
+.mock-bar { display: flex; align-items: center; gap: var(--s-1); padding: var(--s-1) var(--s0); border-bottom: 1px solid var(--line); }
+.mock-bar b { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: var(--t0); }
+.mock-bar .dots { display: flex; gap: 0.3rem; }
+.mock-bar .dots i { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--line); }
+.mock-tag { margin-left: auto; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.7rem; }
+.mock-steps { list-style: none; margin: 0; padding: var(--s0); display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.25rem; counter-reset: st; }
+.mock-steps li { position: relative; padding-top: 0.7rem; color: var(--muted); font-size: 0.72rem; text-align: center; transition: color 0.4s; }
+.mock-steps li::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--line); transition: background 0.4s; }
+.mock-steps li.on { color: var(--ink); }
+.mock-steps li.on::before { background: var(--accent); }
+.mock-steps li.now { font-weight: 600; }
+.mock-table { width: 100%; border-collapse: collapse; }
+.mock-table th { text-align: left; font-weight: 400; color: var(--muted); padding: var(--s-2) var(--s0); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.mock-table td { padding: var(--s-1) var(--s0); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.mock-table tr.active td { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.mock-table tr.active td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.chip { display: inline-block; padding: 0.1rem 0.5rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 0.72rem; }
+.chip.live { border-color: var(--accent); color: var(--accent); }
+.mock-foot { display: flex; align-items: center; gap: var(--s0); padding: var(--s0); min-height: 3.6rem; }
+.mock-btn { flex: none; white-space: nowrap; background: var(--accent); color: var(--accent-ink); padding: 0.35rem 0.8rem; font-size: 0.78rem; }
+.mock-btn.press { animation: press 0.5s ease; }
+@keyframes press { 0% { transform: scale(1); } 40% { transform: scale(0.94); } 100% { transform: scale(1); } }
+.mock-toast { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); opacity: 1; transition: opacity 0.4s, transform 0.4s; }
+.mock-toast::before { content: "✓ "; color: var(--accent); }
+.mock-toast:empty::before { content: ""; }
+@media (prefers-reduced-motion: no-preference) { .mock-toast:not(.show) { opacity: 0; transform: translateY(0.3rem); } }
+@media (max-width: 480px) { .mock-table th:nth-child(2), .mock-table td:nth-child(2) { display: none; } .mock-steps li { font-size: 0.62rem; } }
+
+/* ---------- ką galima sukurti ---------- */
+.bento { display: grid; gap: var(--s0); margin-top: var(--s2); }
+@media (min-width: 700px) { .bento { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .bento { grid-template-columns: repeat(3, 1fr); } .tile.wide, .tile.own { grid-column: span 2; } }
+.tile { position: relative; display: flex; flex-direction: column; gap: var(--s-1); padding: var(--s1); border: 1px solid var(--line); background: var(--surface); transition: border-color 0.25s, transform 0.25s; }
+.tile:hover { border-color: var(--accent); transform: translateY(-2px); }
+.tile h3 { font-size: var(--t2); }
+.tile p { color: var(--muted); }
+.tile .tag { align-self: flex-start; color: var(--accent); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
+.tile-link { margin-top: auto; padding-top: var(--s-1); }
+.tile.wide { background: color-mix(in srgb, var(--accent) 6%, var(--surface)); }
+.tile.own { background: transparent; border-style: dashed; }
+@media (prefers-reduced-motion: reduce) { .tile, .tile:hover { transition: none; transform: none; } }

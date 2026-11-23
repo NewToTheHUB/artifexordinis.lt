@@ -22,9 +22,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
       <p class="note"><?= e(t('hero_note')) ?></p>
     </div>
     <div>
-      <svg class="hero-figure" viewBox="0 -10.17 200 200" role="img" aria-label="<?= e(t('hero_fig')) ?>">
-<g class="arch"><path d="M0.00 100.00A100 100 0 0 1 21.39 38.19L59.12 67.86A52 52 0 0 0 48.00 100.00Z" class="v"/><path d="M23.15 36.02A100 100 0 0 1 77.77 2.50L88.44 49.30A52 52 0 0 0 60.04 66.73Z" class="v"/><path d="M122.23 2.50A100 100 0 0 1 176.85 36.02L139.96 66.73A52 52 0 0 0 111.56 49.30Z" class="v"/><path d="M178.61 38.19A100 100 0 0 1 200.00 100.00L152.00 100.00A52 52 0 0 0 140.88 67.86Z" class="v"/><path d="M0 102H48V179.67H0Z" class="v"/><path d="M152 102H200V179.67H152Z" class="v"/><path d="M80.50 1.92A100 100 0 0 1 119.50 1.92L110.14 49.00A52 52 0 0 0 89.86 49.00Z" class="ks"/></g>
-</svg>
+<?php ao_hero_demo(); ?>
     </div>
   </div>
 </section>
@@ -55,11 +53,14 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
   </div>
 </section>
 
-<section class="statement">
+<section id="galimybes">
   <div class="wrap">
-    <p class="label"><b>II</b> <?= e(t('stmt_label')) ?></p>
-    <blockquote><?= t('stmt_quote') ?></blockquote>
-    <p><?= e(t('stmt_p')) ?></p>
+    <div class="section-head">
+      <p class="label"><b>II</b> <?= e(t('build_label')) ?></p>
+      <h2><?= e(t('build_h2')) ?></h2>
+      <p><?= e(t('build_p')) ?></p>
+    </div>
+<?php ao_build_grid($AO_BUILD); ?>
   </div>
 </section>
 
@@ -165,4 +166,24 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 </section>
 
 </main>
+<script>
+// Hero pavyzdys: užsakymas keliauja per žingsnius. Jei lankytojas išjungė animacijas, lieka galutinė būsena.
+(function () {
+  var m = document.querySelector('.mock');
+  if (!m || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var steps = JSON.parse(m.dataset.steps), btn = JSON.parse(m.dataset.btn), toast = JSON.parse(m.dataset.toast);
+  var li = m.querySelectorAll('.mock-steps li'), chip = m.querySelector('.chip.live');
+  var b = m.querySelector('.mock-btn'), tt = m.querySelector('.mock-toast'), i = 0;
+  function show() {
+    li.forEach(function (el, k) { el.classList.toggle('on', k <= i); el.classList.toggle('now', k === i); });
+    chip.textContent = steps[i];
+    b.textContent = btn[i];
+    b.classList.remove('press'); void b.offsetWidth; b.classList.add('press');
+    tt.textContent = i > 0 ? toast[i - 1] : '';
+    tt.classList.toggle('show', i > 0);
+    i = (i + 1) % steps.length;
+  }
+  show(); setInterval(show, 2200);
+})();
+</script>
 <?php ao_footer();
