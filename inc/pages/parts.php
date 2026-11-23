@@ -35,28 +35,59 @@ function ao_case(array $c, bool $full = false): void
 <?php
 }
 
-// Hero: animuotas užsakymų lentelės pavyzdys. Be JS rodoma galutinė būsena; JS tik suka ciklą.
+// Hero: animuotas sistemos pavyzdys su trimis vaizdais (užsakymai, sąskaitos, ataskaita).
+// Be JS rodomas užsakymų vaizdas galutinėje būsenoje; JS tik suka ciklą.
 function ao_hero_demo(): void
 {
     $m = t('mock');
     $last = count($m['steps']) - 1;
+    $bars = [42, 58, 51, 78];
     ?>
-      <figure class="mock" aria-label="<?= e($m['aria']) ?>" data-steps="<?= e(json_encode($m['steps'], JSON_UNESCAPED_UNICODE)) ?>" data-btn="<?= e(json_encode($m['btn'], JSON_UNESCAPED_UNICODE)) ?>" data-toast="<?= e(json_encode($m['toast'], JSON_UNESCAPED_UNICODE)) ?>">
-        <div class="mock-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><b><?= e($m['title']) ?></b><span class="mock-tag"><?= e($m['sample']) ?></span></div>
-        <ol class="mock-steps" aria-hidden="true">
-<?php foreach ($m['steps'] as $i => $s): ?>
-          <li class="<?= $i <= $last ? 'on' : '' ?>"><?= e($s) ?></li>
+      <figure class="mock" aria-label="<?= e($m['aria']) ?>" data-steps="<?= e(json_encode($m['steps'], JSON_UNESCAPED_UNICODE)) ?>" data-btn="<?= e(json_encode($m['btn'], JSON_UNESCAPED_UNICODE)) ?>" data-toast="<?= e(json_encode($m['toast'], JSON_UNESCAPED_UNICODE)) ?>" data-pay="<?= e(json_encode($m['pay'], JSON_UNESCAPED_UNICODE)) ?>">
+        <div class="mock-bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="mock-tabs" aria-hidden="true"><?php foreach ($m['tabs'] as $i => $tb): ?><span class="<?= $i === 0 ? 'on' : '' ?>"><?= e($tb) ?></span><?php endforeach; ?></span>
+        </div>
+        <div class="mock-views">
+          <div class="view on" data-view="0">
+            <ol class="mock-steps" aria-hidden="true">
+<?php foreach ($m['steps'] as $s): ?>
+              <li class="on"><?= e($s) ?></li>
 <?php endforeach; ?>
-        </ol>
-        <table class="mock-table">
-          <thead><tr><?php foreach ($m['cols'] as $c): ?><th><?= e($c) ?></th><?php endforeach; ?></tr></thead>
-          <tbody>
+            </ol>
+            <table class="mock-table">
+              <thead><tr><?php foreach ($m['cols'] as $c): ?><th><?= e($c) ?></th><?php endforeach; ?></tr></thead>
+              <tbody>
 <?php foreach ($m['rows'] as $i => $r): ?>
-            <tr class="<?= $i === 0 ? 'active' : '' ?>"><td><?= e($r[0]) ?></td><td><?= e($r[1]) ?></td><td><?= e($r[2]) ?></td><td><span class="chip<?= $i === 0 ? ' live' : '' ?>"><?= e($i === 0 ? $m['steps'][$last] : $m['steps'][min($i, $last - 1)]) ?></span></td></tr>
+                <tr class="<?= $i === 0 ? 'active' : '' ?>"><td><?= e($r[0]) ?></td><td><?= e($r[1]) ?></td><td><?= e($r[2]) ?></td><td><span class="chip<?= $i === 0 ? ' live' : '' ?>"><?= e($i === 0 ? $m['steps'][$last] : $m['steps'][min($i, $last - 1)]) ?></span></td></tr>
 <?php endforeach; ?>
-          </tbody>
-        </table>
-        <div class="mock-foot"><span class="mock-btn"><?= e($m['btn'][$last]) ?></span><span class="mock-toast" role="status"><?= e($m['toast'][$last - 1]) ?></span></div>
+              </tbody>
+            </table>
+          </div>
+          <div class="view" data-view="1" aria-hidden="true">
+            <table class="mock-table">
+              <thead><tr><?php foreach ($m['inv_cols'] as $c): ?><th><?= e($c) ?></th><?php endforeach; ?></tr></thead>
+              <tbody>
+<?php foreach ($m['inv_rows'] as $i => $r): $st = [0, 1, 1, 2][$i]; ?>
+                <tr class="<?= $i === 0 ? 'active' : '' ?>"><td><?= e($r[0]) ?></td><td><?= e($r[1]) ?></td><td><?= e($r[2]) ?></td><td><span class="chip pay-<?= $st ?><?= $i === 0 ? ' live' : '' ?>"><?= e($m['pay'][$st]) ?></span></td></tr>
+<?php endforeach; ?>
+              </tbody>
+            </table>
+          </div>
+          <div class="view" data-view="2" aria-hidden="true">
+            <div class="kpis">
+<?php foreach ($m['kpi'] as $k): ?>
+              <div><span><?= e($k[0]) ?></span><b><?= e($k[1]) ?></b></div>
+<?php endforeach; ?>
+            </div>
+            <div class="bars">
+<?php foreach ($m['weeks'] as $i => $w): ?>
+              <div><i style="--h: <?= $bars[$i] ?>%"></i><span><?= e($w) ?></span></div>
+<?php endforeach; ?>
+            </div>
+          </div>
+        </div>
+        <div class="mock-foot"><span class="mock-btn"><?= e($m['btn'][$last]) ?></span><span class="mock-toast show" role="status" data-inv="<?= e($m['inv_toast']) ?>" data-rep="<?= e($m['rep_toast']) ?>"><?= e($m['toast'][$last - 1]) ?></span></div>
       </figure>
 <?php
 }
