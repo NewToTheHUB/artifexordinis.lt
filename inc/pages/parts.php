@@ -103,6 +103,8 @@ function ao_build_grid(array $items): void
         <p><?= e($b['desc']) ?></p>
 <?php if ($b['demo'] !== ''): ?>
         <a class="tile-link" href="<?= e($b['demo']) ?>" target="_blank" rel="noopener"><?= e(t('case_try')) ?></a>
+<?php elseif (!empty($b['status'])): ?>
+        <span class="tile-link tile-status"><?= e($b['status']) ?></span>
 <?php endif; ?>
       </article>
 <?php endforeach; ?>

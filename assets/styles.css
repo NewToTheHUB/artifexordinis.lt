@@ -407,7 +407,7 @@ footer a { color: var(--muted); }
 @media (max-width: 380px) { .brand span { display: none; } }
 
 /* ---------- hero: produkto pavyzdys ---------- */
-.mock { margin: 0; border: 1px solid var(--line); background: var(--surface); font-size: var(--t-1); box-shadow: 0 1.618rem 4.236rem -2.618rem rgba(35, 27, 20, 0.35); }
+.mock { cursor: default; user-select: none; -webkit-user-select: none; margin: 0; border: 1px solid var(--line); background: var(--surface); font-size: var(--t-1); box-shadow: 0 1.618rem 4.236rem -2.618rem rgba(35, 27, 20, 0.35); }
 .mock-bar { display: flex; align-items: center; gap: var(--s-1); padding: var(--s-1) var(--s0); border-bottom: 1px solid var(--line); }
 .mock-tabs { display: flex; gap: var(--s0); }
 .mock-tabs span { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: var(--t0); color: var(--muted); padding-bottom: 0.15rem; border-bottom: 2px solid transparent; transition: color 0.3s, border-color 0.3s; }
@@ -481,3 +481,4 @@ footer a { color: var(--muted); }
   .mock-table td, .mock-table th { padding-left: var(--s-1); padding-right: var(--s-1); }
   .mock-foot { gap: var(--s-1); padding: var(--s-1); }
 }
+.tile-status { color: var(--muted); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }

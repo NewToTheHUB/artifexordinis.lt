@@ -72,11 +72,11 @@ $AO_CASES = [
 
 $AO_BUILD = [
     ['name' => 'Order management', 'desc' => 'From inquiry to invoice in one place. Stock is deducted automatically.', 'demo' => AO_ORDERS_DEMO, 'wide' => true, 'product' => false],
-    ['name' => 'Estimates and calculators', 'desc' => 'A price from your price list in a few minutes. No copying from Excel.', 'demo' => '', 'wide' => false, 'product' => false],
+    ['name' => 'Estimates and calculators', 'desc' => 'A price from your price list in a few minutes. No copying from Excel.', 'demo' => '', 'wide' => false, 'product' => false, 'status' => 'In progress'],
     ['name' => 'Booking and schedule', 'desc' => 'Clients pick a free slot themselves. No more double bookings.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'wide' => false, 'product' => false],
     ['name' => 'Services, reports, invoices', 'desc' => 'You enter the work once. The work report and invoice fill in themselves.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos', 'wide' => false, 'product' => false],
     ['name' => 'Service work', 'desc' => 'Visits, completed work, parts and clients linked in one system.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas', 'wide' => false, 'product' => false],
-    ['name' => 'Dance Check-in', 'desc' => 'QR check-in for dance classes and live pass balances.', 'demo' => '', 'wide' => false, 'product' => true],
+    ['name' => 'Danc\'in', 'desc' => 'QR check-in for dance classes and live pass balances.', 'demo' => '', 'wide' => false, 'product' => true, 'status' => 'Presentation in progress'],
 ];
 
 $AO_PRICING = [

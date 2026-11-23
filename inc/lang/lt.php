@@ -76,11 +76,11 @@ $AO_CASES = [
 
 $AO_BUILD = [
     ['name' => 'Užsakymų valdymas', 'desc' => 'Nuo užklausos iki sąskaitos vienoje vietoje. Likučiai nusirašo patys.', 'demo' => AO_ORDERS_DEMO, 'wide' => true, 'product' => false],
-    ['name' => 'Sąmatos ir skaičiuoklės', 'desc' => 'Kaina iš kainyno per kelias minutes. Be kopijavimo iš Excel.', 'demo' => '', 'wide' => false, 'product' => false],
+    ['name' => 'Sąmatos ir skaičiuoklės', 'desc' => 'Kaina iš kainyno per kelias minutes. Be kopijavimo iš Excel.', 'demo' => '', 'wide' => false, 'product' => false, 'status' => 'Kuriama'],
     ['name' => 'Registracija ir grafikas', 'desc' => 'Klientas pats renkasi laisvą laiką. Dublių nebelieka.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'wide' => false, 'product' => false],
     ['name' => 'Paslaugos, aktai, sąskaitos', 'desc' => 'Darbus įvedate vieną kartą. Aktas ir sąskaita užsipildo patys.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos', 'wide' => false, 'product' => false],
     ['name' => 'Servisas', 'desc' => 'Vizitai, atlikti darbai, dalys ir klientai susieti vienoje sistemoje.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas', 'wide' => false, 'product' => false],
-    ['name' => 'Dance Check-in', 'desc' => 'QR registracija į šokių pamokas ir abonementų likučiai realiu laiku.', 'demo' => '', 'wide' => false, 'product' => true],
+    ['name' => 'Danc\'in', 'desc' => 'QR registracija į šokių pamokas ir abonementų likučiai realiu laiku.', 'demo' => '', 'wide' => false, 'product' => true, 'status' => 'Prezentacija kuriama'],
 ];
 
 $AO_PRICING = [
