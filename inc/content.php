@@ -47,7 +47,7 @@ function ao_url(string $page, ?string $lang = null): string
 // Markdown versija agentams (Accept: text/markdown)
 function ao_markdown_home(): string
 {
-    global $AO_SERVICES, $AO_CASES, $AO_FAQ, $AO_FAQ_GROUPS, $AO_FLOW, $AO_SECTORS, $AO_PRICING, $AO_PRICING_WHY;
+    global $AO_SERVICES, $AO_BUILD, $AO_CASES, $AO_FAQ, $AO_FAQ_GROUPS, $AO_FLOW, $AO_SECTORS, $AO_PRICING, $AO_PRICING_WHY;
     $en = AO_LANG === 'en';
     $L = $en
         ? ['Saulius, remote, across Lithuania. I study how work moves in a company and join inquiries, quotes, orders, tasks, documents and reports into one live system built on Superhuman Docs. The system stays in the client\'s account.',
@@ -57,6 +57,8 @@ function ao_markdown_home(): string
     $md  = '# ' . t('home_title') . "\n\n> {$L[0]}\n\n";
     $md .= '## ' . t('flow_h2') . "\n\n" . t('flow_p') . "\n\n";
     foreach ($AO_FLOW as $f) { $md .= "- **{$f[0]}** — " . t('flow_now') . ": {$f[1]} " . t('flow_new') . ": {$f[2]}\n"; }
+    $md .= "\n## " . t('build_h2') . "\n\n" . t('build_p') . "\n\n";
+    foreach ($AO_BUILD as $b) { $md .= "- **{$b['name']}** — {$b['desc']}" . ($b['demo'] !== '' ? " {$b['demo']}" : '') . "\n"; }
     $md .= "\n## {$L[1]}\n\n" . implode(', ', $AO_SECTORS) . ". {$L[2]}\n\n";
     $md .= '## ' . t('cases_label') . "\n\n";
     foreach ($AO_CASES as $c) {
