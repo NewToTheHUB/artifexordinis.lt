@@ -74,6 +74,15 @@ $AO_CASES = [
     ],
 ];
 
+$AO_BUILD = [
+    ['name' => 'Užsakymų valdymas', 'desc' => 'Nuo užklausos iki sąskaitos vienoje vietoje. Likučiai nusirašo patys.', 'demo' => AO_ORDERS_DEMO, 'wide' => true, 'product' => false],
+    ['name' => 'Sąmatos ir skaičiuoklės', 'desc' => 'Kaina iš kainyno per kelias minutes. Be kopijavimo iš Excel.', 'demo' => '', 'wide' => false, 'product' => false],
+    ['name' => 'Registracija ir grafikas', 'desc' => 'Klientas pats renkasi laisvą laiką. Dublių nebelieka.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/2-registracija-ir-grafikas', 'wide' => false, 'product' => false],
+    ['name' => 'Paslaugos, aktai, sąskaitos', 'desc' => 'Darbus įvedate vieną kartą. Aktas ir sąskaita užsipildo patys.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/3-paslaugos-aktai-saskaitos', 'wide' => false, 'product' => false],
+    ['name' => 'Servisas', 'desc' => 'Vizitai, atlikti darbai, dalys ir klientai susieti vienoje sistemoje.', 'demo' => 'https://docs.superhuman.com/@artifexordinis/servisas', 'wide' => false, 'product' => false],
+    ['name' => 'Dance Check-in', 'desc' => 'QR registracija į šokių pamokas ir abonementų likučiai realiu laiku.', 'demo' => '', 'wide' => false, 'product' => true],
+];
+
 $AO_PRICING = [
     ['Sistemos sukūrimas', 'Mokate vieną kartą. Kainą sutariame iš anksto. Ją skaičiuojame iš apimties ir iš naudos, kurią sistema duoda.'],
     ['Platformos licencija', 'Ją mokate Superhuman tik už žmones, kurie kuria struktūrą. Darbuotojai, kurie sistemą tik pildo ir naudoja, kūrėjo licencijos nemoka.'],
@@ -184,6 +193,24 @@ $AO_T = [
     'hero_cta' => 'Užsisakyti 30 min. pokalbį',
     'hero_demo' => 'Išbandyti užsakymų valdymą',
     'hero_note' => 'Demo naudoja pavyzdinius duomenis. Galite spausti viską.',
+    'mock' => [
+        'title' => 'Užsakymai',
+        'sample' => 'Pavyzdiniai duomenys',
+        'cols' => ['Užsakymas', 'Kiekis', 'Suma', 'Būsena'],
+        'steps' => ['Užklausa', 'Pasiūlymas', 'Užsakymas', 'Gamyba', 'Sąskaita'],
+        'rows' => [['Laikiklis A-12', '120 vnt.', '840 €'], ['Korpusas K-3', '40 vnt.', '1 260 €'], ['Dangtelis D-7', '300 vnt.', '450 €'], ['Rėmelis R-2', '25 vnt.', '610 €']],
+        'done' => ['Ramunė', 'Tomas', 'Ramunė'],
+        'btn' => ['Paruošti pasiūlymą', 'Patvirtinti užsakymą', 'Perduoti gamybai', 'Išrašyti sąskaitą', 'Išsiųsta'],
+        'toast' => ['Pasiūlymas paruoštas iš kainyno', 'Likutis nurašytas automatiškai', 'Užduotis priskirta gamybai', 'Sąskaita PDF išsiųsta klientui'],
+        'aria' => 'Animuotas pavyzdys: užsakymas keliauja nuo užklausos iki sąskaitos vienoje lentelėje',
+    ],
+    'build_label' => 'Ką galima sukurti',
+    'build_h2' => 'Ne tik užsakymai.',
+    'build_p' => 'Ta pati platforma tinka skaičiuoklėms, registracijoms, servisui ir produktams. Kai kuriuos pavyzdžius galite išbandyti patys.',
+    'build_own_h' => 'Neradote savo darbo?',
+    'build_own_p' => 'Papasakokite, ką darote kasdien. Pokalbio metu parodysiu, kaip tai atrodytų.',
+    'build_own_cta' => 'Užsisakyti pokalbį →',
+    'build_product' => 'Mūsų produktas',
     'hero_fig' => 'Artifex Ordinis ženklas: arka iš penkių akmenų su variniu raktiniu akmeniu',
 
 
