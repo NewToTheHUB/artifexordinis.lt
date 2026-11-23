@@ -29,6 +29,14 @@ $AO_FLOW = [
 
 $AO_CASES = [
     [
+        'tag' => 'Order management',
+        'problem' => 'Only one person knows the status of an order.',
+        'old' => 'Inquiries, prices and statuses are scattered across emails, files and messages. When that person is on holiday, work stops.',
+        'new' => 'One order row connects the price, stage, deadline and the person in charge.',
+        'result' => 'Everyone sees what to do next, without calls.',
+        'demo' => AO_ORDERS_DEMO, 'embed' => '',
+    ],
+    [
         'tag' => 'Services, work reports, invoices',
         'problem' => 'You fill in invoices in Word and retype client details every time.',
         'old' => 'You note finished work separately and copy an old invoice. You change dates, amounts and details by hand.',
@@ -58,14 +66,6 @@ $AO_CASES = [
         'old' => 'You open an Excel file, look for the latest prices and copy them by hand. You check the totals again.',
         'new' => 'You pick goods and services from the price list. The system calculates the total and prepares a document for the client.',
         'result' => 'An estimate in a few minutes, with the same prices every time.',
-        'demo' => '', 'embed' => '',
-    ],
-    [
-        'tag' => 'Order management',
-        'problem' => 'Only one person knows the status of an order.',
-        'old' => 'Inquiries, prices and statuses are scattered across emails, files and messages. When that person is on holiday, work stops.',
-        'new' => 'One order row connects the price, stage, deadline and the person in charge.',
-        'result' => 'Everyone sees what to do next, without calls.',
         'demo' => '', 'embed' => '',
     ],
 ];
@@ -173,21 +173,12 @@ $AO_T = [
     'home_desc' => 'Inquiries, quotes, orders, tasks, documents and reports in one live system, built around how you work. The first call is free.',
     'hero_eyebrow' => 'Architect of order',
     'hero_h1' => 'Order that works for you.',
-    'hero_lead' => 'One place for your business that grows with you. Inquiries, quotes, orders, tasks, documents and reports are joined into one live system. I build it around how work already moves in your business.',
+    'hero_lead' => 'Orders from inquiry to invoice – in one place. I build the system around how your work moves today. The first process works within a week.',
     'hero_cta' => 'Book a 30-min call',
-    'hero_cases' => 'See examples',
-    'hero_note' => 'The first call is free. During it I show you working systems live.',
+    'hero_demo' => 'Try order management',
+    'hero_note' => 'The demo uses sample data. Feel free to click everything.',
     'hero_fig' => 'Artifex Ordinis mark: an arch of five stones with a copper keystone',
 
-    'pain_label' => 'Sound familiar?',
-    'pain_h2' => 'You cannot see disorder when you live in it.',
-    'pain_p' => 'From the inside it looks like “that is just how we do it”. So it is hard to imagine how it could be different.',
-    'pain_items' => [
-        'Information is scattered: Excel, email, Messenger and somebody\'s memory.',
-        '“Ask Rasa, only she knows.”',
-        'You enter the same thing two or three times — sometimes with a mistake.',
-        'The client reports the problem first, not your system.',
-    ],
 
     'flow_label' => 'How it works',
     'flow_h2' => 'From inquiry to report — without retyping.',
@@ -242,8 +233,8 @@ $AO_T = [
     'faq_lead' => 'Here you will also find what I do not do. Better to know now than in a year.',
 
     'contact_label' => 'Contact',
-    'contact_h2' => 'Tell me how your work runs.',
-    'contact_p' => 'You do not need to find the problem. Tick what takes the most time, or describe your usual day. We will find the problems together.',
+    'contact_h2' => 'Book the way that suits you.',
+    'contact_p' => 'Pick a call time in the form, or simply call me.',
     'contact_cases' => 'Not sure what you need yet? See the examples →',
     'c_email' => 'Email', 'c_phone' => 'Phone', 'c_work' => 'Work', 'c_work_val' => 'Remotely, across Lithuania',
 

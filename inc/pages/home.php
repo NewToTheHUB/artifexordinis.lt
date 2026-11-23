@@ -1,6 +1,6 @@
 <?php
 // Pagrindinio puslapio šablonas. Kalbą nustato failas, kuris jį įtraukia (/index.php arba /en/index.php).
-// Struktūra: problema → darbo eiga (dabar / su sistema) → pavyzdžiai → kaip dirbu → kaina → kodėl → DUK → kontaktai.
+// Struktūra: darbo eiga (dabar / su sistema) → pavyzdžiai → kaip dirbu → kaina → kodėl → DUK → kontaktai.
 
 if (ao_wants_markdown()) { ao_send_markdown(ao_markdown_home()); }
 require __DIR__ . '/parts.php';
@@ -16,8 +16,8 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
       <h1><?= e(t('hero_h1')) ?></h1>
       <p class="lead"><?= e(t('hero_lead')) ?></p>
       <div class="actions">
-        <a class="btn" href="<?= e(ao_cta()) ?>"><?= e(t('hero_cta')) ?></a>
-        <a class="btn ghost" href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('hero_cases')) ?></a>
+        <a class="btn" href="<?= e(AO_ORDERS_DEMO) ?>" target="_blank" rel="noopener"><?= e(t('hero_demo')) ?></a>
+        <a class="btn ghost" href="<?= e(ao_cta()) ?>"><?= e(t('hero_cta')) ?></a>
       </div>
       <p class="note"><?= e(t('hero_note')) ?></p>
     </div>
@@ -29,25 +29,10 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
   </div>
 </section>
 
-<section id="netvarka">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="label"><b>I</b> <?= e(t('pain_label')) ?></p>
-      <h2><?= e(t('pain_h2')) ?></h2>
-      <p><?= e(t('pain_p')) ?></p>
-    </div>
-    <ol class="numbered">
-<?php foreach (t('pain_items') as $p): ?>
-      <li><?= e($p) ?></li>
-<?php endforeach; ?>
-    </ol>
-  </div>
-</section>
-
 <section id="kaip-veikia">
   <div class="wrap">
     <div class="section-head">
-      <p class="label"><b>II</b> <?= e(t('flow_label')) ?></p>
+      <p class="label"><b>I</b> <?= e(t('flow_label')) ?></p>
       <h2><?= e(t('flow_h2')) ?></h2>
       <p><?= e(t('flow_p')) ?></p>
     </div>
@@ -72,7 +57,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 
 <section class="statement">
   <div class="wrap">
-    <p class="label"><b>III</b> <?= e(t('stmt_label')) ?></p>
+    <p class="label"><b>II</b> <?= e(t('stmt_label')) ?></p>
     <blockquote><?= t('stmt_quote') ?></blockquote>
     <p><?= e(t('stmt_p')) ?></p>
   </div>
@@ -81,7 +66,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 <section id="pavyzdziai">
   <div class="wrap">
     <div class="section-head">
-      <p class="label"><b>IV</b> <?= e(t('cases_label')) ?></p>
+      <p class="label"><b>III</b> <?= e(t('cases_label')) ?></p>
       <h2><?= e(t('cases_h2')) ?></h2>
       <p><?= e(t('cases_p')) ?></p>
     </div>
@@ -96,7 +81,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 <section id="kaip">
   <div class="wrap">
     <div class="section-head">
-      <p class="label"><b>V</b> <?= e(t('how_label')) ?></p>
+      <p class="label"><b>IV</b> <?= e(t('how_label')) ?></p>
       <h2><?= e(t('how_h2')) ?></h2>
     </div>
     <ol class="steps">
@@ -112,7 +97,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
   <div class="wrap split">
     <div>
       <div class="section-head">
-        <p class="label"><b>VI</b> <?= e(t('price_label')) ?></p>
+        <p class="label"><b>V</b> <?= e(t('price_label')) ?></p>
         <h2><?= e(t('price_h2')) ?></h2>
       </div>
       <dl class="pricing">
@@ -137,7 +122,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
     </figure>
     <div>
       <div class="section-head">
-        <p class="label"><b>VII</b> <?= e(t('about_label')) ?></p>
+        <p class="label"><b>VI</b> <?= e(t('about_label')) ?></p>
         <h2><?= e(t('about_h2')) ?></h2>
       </div>
       <p><?= e(t('about_p1')) ?></p>
@@ -150,7 +135,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
 <section id="duk">
   <div class="wrap">
     <div class="section-head">
-      <p class="label"><b>VIII</b> <?= e(t('faq_label')) ?></p>
+      <p class="label"><b>VII</b> <?= e(t('faq_label')) ?></p>
       <h2><?= e(t('faq_h2')) ?></h2>
     </div>
     <div class="faq">
@@ -164,18 +149,16 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
   <div class="wrap split<?= ao_docs_form_url() !== '' ? ' split-form' : '' ?>">
     <div>
       <div class="section-head">
-        <p class="label"><b>IX</b> <?= e(t('contact_label')) ?></p>
+        <p class="label"><b>VIII</b> <?= e(t('contact_label')) ?></p>
         <h2><?= e(t('contact_h2')) ?></h2>
         <p><?= e(t('contact_p')) ?></p>
       </div>
-      <p><a href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('contact_cases')) ?></a></p>
-<?php if (ao_docs_form_url() === ''): ?>
       <ul class="contact-list">
-        <li><span><?= e(t('c_email')) ?></span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span><?= e(t('c_phone')) ?></span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
+        <li><span><?= e(t('c_email')) ?></span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
         <li><span><?= e(t('c_work')) ?></span><?= e(t('c_work_val')) ?></li>
       </ul>
-<?php endif; ?>
+      <p><a href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('contact_cases')) ?></a></p>
     </div>
     <div class="contact-box">
       <?php ao_contact_form(); ?>
