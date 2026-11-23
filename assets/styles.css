@@ -49,7 +49,7 @@
   --lh-display: 1.118;
 
   --measure: 38.2rem;
-  --container: 61.8rem;
+  --container: 68rem;
 
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;
@@ -482,3 +482,13 @@ footer a { color: var(--muted); }
   .mock-foot { gap: var(--s-1); padding: var(--s-1); }
 }
 .tile-status { color: var(--muted); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* hero: platesnis pavyzdys (√φ santykis) ir stabilūs stulpeliai, kad vaizdai nekeistų pločio */
+@media (min-width: 900px) {
+  .hero .split { grid-template-columns: minmax(0, 1.04fr) minmax(0, 1fr); gap: var(--s1); }
+}
+.mock { width: 100%; }
+.mock-table { table-layout: fixed; }
+.mock-table th, .mock-table td { overflow: hidden; text-overflow: ellipsis; }
+.mock-table th:last-child, .mock-table td:last-child { width: 32%; }
+@media (min-width: 900px) { .mock { font-size: 0.86rem; } .mock-tabs span { font-size: var(--t1); } .bars { height: 11.5rem; } }
