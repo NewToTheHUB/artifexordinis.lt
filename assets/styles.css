@@ -295,8 +295,10 @@ section { padding: var(--s3) 0; border-bottom: 1px solid var(--line); }
 .form-open { padding: var(--s-1) var(--s0); margin: 0; }
 .contact-fallback { padding: var(--s2); }
 .contact-list { list-style: none; margin: var(--s1) 0 0; padding: 0; }
-.contact-list li { padding: var(--s-1) 0; border-bottom: 1px solid var(--line); }
-.contact-list span { display: block; color: var(--muted); font-size: var(--t-1); letter-spacing: 0.12em; text-transform: uppercase; }
+.contact-list li { padding: var(--s0) 0; border-bottom: 1px solid var(--line); }
+.contact-list span { display: block; color: var(--muted); font-size: var(--t0); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: var(--s-3); }
+.contact-list a { font-family: "Fraunces", Georgia, serif; font-size: var(--t2); line-height: 1.272; }
+#kontaktai .section-head p:not(.label) { font-size: var(--t2); line-height: 1.272; color: var(--ink); }
 
 /* ---------- footer ---------- */
 footer { padding: var(--s2) 0 var(--s3); color: var(--muted); font-size: var(--t-1); }

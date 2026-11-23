@@ -156,9 +156,7 @@ ao_head(t('home_title'), t('home_desc'), 'home', true);
       <ul class="contact-list">
         <li><span><?= e(t('c_phone')) ?></span><a href="tel:<?= e(AO_PHONE) ?>"><?= e(AO_PHONE_DISPLAY) ?></a></li>
         <li><span><?= e(t('c_email')) ?></span><a href="mailto:<?= e(AO_EMAIL) ?>"><?= e(AO_EMAIL) ?></a></li>
-        <li><span><?= e(t('c_work')) ?></span><?= e(t('c_work_val')) ?></li>
       </ul>
-      <p><a href="<?= e(ao_url('pavyzdziai')) ?>"><?= e(t('contact_cases')) ?></a></p>
     </div>
     <div class="contact-box">
       <?php ao_contact_form(); ?>
