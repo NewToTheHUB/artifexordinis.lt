@@ -186,10 +186,10 @@ $AO_T = [
     'md_title' => 'Santrauka AI agentams',
 
     'home_title' => 'Artifex Ordinis — viena vieta jūsų verslui',
-    'home_desc' => 'Užklausos, pasiūlymai, užsakymai, užduotys, dokumentai ir ataskaitos vienoje gyvoje sistemoje, sukurtoje pagal jūsų darbą. Pirmas pokalbis nemokamas.',
+    'home_desc' => 'Užklausos, pasiūlymai, užsakymai, užduotys, dokumentai ir ataskaitos vienoje gyvoje sistemoje, sukurtoje pagal jūsų darbą.',
     'hero_eyebrow' => 'Tvarkos architektas',
     'hero_h1' => 'Tvarka, kuri dirba jums.',
-    'hero_lead' => 'Užsakymai nuo užklausos iki sąskaitos – vienoje vietoje. Sistemą kuriu pagal tai, kaip jūsų darbas juda dabar. Pirmas procesas veikia per savaitę.',
+    'hero_lead' => 'Kiekvienas jūsų žmogus mato savo darbo dalį. Aš sujungiu tas dalis į vieną sistemą. Darbas juda sklandžiau, o pirmas procesas veikia per savaitę.',
     'hero_cta' => 'Užsisakyti 30 min. pokalbį',
     'hero_demo' => 'Išbandyti užsakymų valdymą',
     'hero_note' => 'Demo naudoja pavyzdinius duomenis. Galite spausti viską.',
@@ -252,7 +252,7 @@ $AO_T = [
 
     'how_label' => 'Kaip dirbu',
     'how_h2' => 'Pirma suprasti, tik tada kurti.',
-    'how_aside' => 'Kalbuosi su keliais jūsų žmonėmis, ne tik su vadovu. Kiekvienas parodo, kaip iš tikrųjų atlieka savo darbą. Taip randu vietas, kur darbas stringa ar kartojasi.',
+    'how_aside' => 'Kalbuosi su keliais jūsų žmonėmis, ne tik su vadovu. Kiekvienas parodo, kaip iš tikrųjų atlieka savo darbą. Taip suprantu visą procesą nuo pradžios iki galo ir matau, ko jam trūksta.',
 
     'price_label' => 'Kainos',
     'price_h2' => 'Kaina priklauso nuo naudos, ne nuo valandų.',
